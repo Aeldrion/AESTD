@@ -1,0 +1,10 @@
+replaceitem entity @s[scores={aestd.block_id=210}] weapon minecraft:blue_stained_glass
+replaceitem entity @s[scores={aestd.block_id=211}] weapon minecraft:brown_stained_glass
+replaceitem entity @s[scores={aestd.block_id=212}] weapon minecraft:green_stained_glass
+replaceitem entity @s[scores={aestd.block_id=213}] weapon minecraft:red_stained_glass
+replaceitem entity @s[scores={aestd.block_id=214}] weapon minecraft:black_stained_glass
+replaceitem entity @s[scores={aestd.block_id=215}] weapon minecraft:oak_trapdoor
+replaceitem entity @s[scores={aestd.block_id=216}] weapon minecraft:spruce_trapdoor
+replaceitem entity @s[scores={aestd.block_id=217}] weapon minecraft:birch_trapdoor
+replaceitem entity @s[scores={aestd.block_id=218}] weapon minecraft:jungle_trapdoor
+replaceitem entity @s[scores={aestd.block_id=219}] weapon minecraft:acacia_trapdoor

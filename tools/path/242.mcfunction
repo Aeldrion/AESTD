@@ -1,0 +1,11 @@
+replaceitem entity @s[scores={aestd.block_id=304}] weapon minecraft:acacia_button
+replaceitem entity @s[scores={aestd.block_id=305}] weapon minecraft:dark_oak_button
+replaceitem entity @s[scores={aestd.block_id=306}] weapon minecraft:skeleton_skull
+replaceitem entity @s[scores={aestd.block_id=307}] weapon minecraft:skeleton_skull
+replaceitem entity @s[scores={aestd.block_id=308}] weapon minecraft:wither_skeleton_skull
+replaceitem entity @s[scores={aestd.block_id=309}] weapon minecraft:wither_skeleton_skull
+replaceitem entity @s[scores={aestd.block_id=310}] weapon minecraft:zombie_head
+replaceitem entity @s[scores={aestd.block_id=311}] weapon minecraft:zombie_head
+replaceitem entity @s[scores={aestd.block_id=312}] weapon minecraft:player_head
+replaceitem entity @s[scores={aestd.block_id=313}] weapon minecraft:player_head
+replaceitem entity @s[scores={aestd.block_id=314}] weapon minecraft:creeper_head

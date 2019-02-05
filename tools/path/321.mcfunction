@@ -1,0 +1,10 @@
+replaceitem entity @s[scores={aestd.block_id=378}] weapon minecraft:prismarine_slab
+replaceitem entity @s[scores={aestd.block_id=379}] weapon minecraft:prismarine_brick_slab
+replaceitem entity @s[scores={aestd.block_id=380}] weapon minecraft:dark_prismarine_slab
+replaceitem entity @s[scores={aestd.block_id=381}] weapon minecraft:sea_lantern
+replaceitem entity @s[scores={aestd.block_id=382}] weapon minecraft:hay_block
+replaceitem entity @s[scores={aestd.block_id=383}] weapon minecraft:white_carpet
+replaceitem entity @s[scores={aestd.block_id=384}] weapon minecraft:orange_carpet
+replaceitem entity @s[scores={aestd.block_id=385}] weapon minecraft:magenta_carpet
+replaceitem entity @s[scores={aestd.block_id=386}] weapon minecraft:light_blue_carpet
+replaceitem entity @s[scores={aestd.block_id=387}] weapon minecraft:yellow_carpet

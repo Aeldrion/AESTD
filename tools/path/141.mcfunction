@@ -1,0 +1,10 @@
+replaceitem entity @s[scores={aestd.block_id=126}] weapon minecraft:pink_tulip
+replaceitem entity @s[scores={aestd.block_id=127}] weapon minecraft:oxeye_daisy
+replaceitem entity @s[scores={aestd.block_id=128}] weapon minecraft:cornflower
+replaceitem entity @s[scores={aestd.block_id=129}] weapon minecraft:wither_rose
+replaceitem entity @s[scores={aestd.block_id=130}] weapon minecraft:lily_of_the_valley
+replaceitem entity @s[scores={aestd.block_id=131}] weapon minecraft:brown_mushroom
+replaceitem entity @s[scores={aestd.block_id=132}] weapon minecraft:red_mushroom
+replaceitem entity @s[scores={aestd.block_id=133}] weapon minecraft:gold_block
+replaceitem entity @s[scores={aestd.block_id=134}] weapon minecraft:iron_block
+replaceitem entity @s[scores={aestd.block_id=135}] weapon minecraft:bricks

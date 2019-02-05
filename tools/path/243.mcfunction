@@ -1,0 +1,10 @@
+replaceitem entity @s[scores={aestd.block_id=315}] weapon minecraft:creeper_head
+replaceitem entity @s[scores={aestd.block_id=316}] weapon minecraft:dragon_head
+replaceitem entity @s[scores={aestd.block_id=317}] weapon minecraft:dragon_head
+replaceitem entity @s[scores={aestd.block_id=318}] weapon minecraft:anvil
+replaceitem entity @s[scores={aestd.block_id=319}] weapon minecraft:anvil
+replaceitem entity @s[scores={aestd.block_id=320}] weapon minecraft:anvil
+replaceitem entity @s[scores={aestd.block_id=321}] weapon minecraft:trapped_chest
+replaceitem entity @s[scores={aestd.block_id=322}] weapon minecraft:light_weighted_pressure_plate
+replaceitem entity @s[scores={aestd.block_id=323}] weapon minecraft:heavy_weighted_pressure_plate
+replaceitem entity @s[scores={aestd.block_id=324}] weapon minecraft:comparator

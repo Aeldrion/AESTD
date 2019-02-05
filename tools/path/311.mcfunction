@@ -1,0 +1,10 @@
+replaceitem entity @s[scores={aestd.block_id=336}] weapon minecraft:orange_terracotta
+replaceitem entity @s[scores={aestd.block_id=337}] weapon minecraft:magenta_terracotta
+replaceitem entity @s[scores={aestd.block_id=338}] weapon minecraft:light_blue_terracotta
+replaceitem entity @s[scores={aestd.block_id=339}] weapon minecraft:yellow_terracotta
+replaceitem entity @s[scores={aestd.block_id=340}] weapon minecraft:lime_terracotta
+replaceitem entity @s[scores={aestd.block_id=341}] weapon minecraft:pink_terracotta
+replaceitem entity @s[scores={aestd.block_id=342}] weapon minecraft:gray_terracotta
+replaceitem entity @s[scores={aestd.block_id=343}] weapon minecraft:light_gray_terracotta
+replaceitem entity @s[scores={aestd.block_id=344}] weapon minecraft:cyan_terracotta
+replaceitem entity @s[scores={aestd.block_id=345}] weapon minecraft:purple_terracotta

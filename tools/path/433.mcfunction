@@ -1,0 +1,9 @@
+replaceitem entity @s[scores={aestd.block_id=609}] weapon minecraft:blue_ice
+replaceitem entity @s[scores={aestd.block_id=610}] weapon minecraft:conduit
+replaceitem entity @s[scores={aestd.block_id=611}] weapon minecraft:bamboo
+replaceitem entity @s[scores={aestd.block_id=612}] weapon minecraft:bamboo
+replaceitem entity @s[scores={aestd.block_id=613}] weapon minecraft:bamboo
+replaceitem entity @s[scores={aestd.block_id=614}] weapon minecraft:air
+replaceitem entity @s[scores={aestd.block_id=615}] weapon minecraft:air
+replaceitem entity @s[scores={aestd.block_id=617}] weapon minecraft:polished_granite_stairs
+replaceitem entity @s[scores={aestd.block_id=618}] weapon minecraft:smooth_red_sandstone_stairs

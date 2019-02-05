@@ -1,0 +1,10 @@
+replaceitem entity @s[scores={aestd.block_id=420}] weapon minecraft:brown_banner
+replaceitem entity @s[scores={aestd.block_id=421}] weapon minecraft:green_banner
+replaceitem entity @s[scores={aestd.block_id=422}] weapon minecraft:red_banner
+replaceitem entity @s[scores={aestd.block_id=423}] weapon minecraft:black_banner
+replaceitem entity @s[scores={aestd.block_id=424}] weapon minecraft:white_banner
+replaceitem entity @s[scores={aestd.block_id=425}] weapon minecraft:orange_banner
+replaceitem entity @s[scores={aestd.block_id=426}] weapon minecraft:magenta_banner
+replaceitem entity @s[scores={aestd.block_id=427}] weapon minecraft:light_blue_banner
+replaceitem entity @s[scores={aestd.block_id=428}] weapon minecraft:yellow_banner
+replaceitem entity @s[scores={aestd.block_id=429}] weapon minecraft:lime_banner

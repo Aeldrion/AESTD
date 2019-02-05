@@ -1,0 +1,10 @@
+replaceitem entity @s[scores={aestd.block_id=588}] weapon minecraft:dead_tube_coral_fan
+replaceitem entity @s[scores={aestd.block_id=589}] weapon minecraft:dead_brain_coral_fan
+replaceitem entity @s[scores={aestd.block_id=590}] weapon minecraft:dead_bubble_coral_fan
+replaceitem entity @s[scores={aestd.block_id=591}] weapon minecraft:dead_fire_coral_fan
+replaceitem entity @s[scores={aestd.block_id=592}] weapon minecraft:dead_horn_coral_fan
+replaceitem entity @s[scores={aestd.block_id=593}] weapon minecraft:tube_coral_fan
+replaceitem entity @s[scores={aestd.block_id=594}] weapon minecraft:brain_coral_fan
+replaceitem entity @s[scores={aestd.block_id=595}] weapon minecraft:bubble_coral_fan
+replaceitem entity @s[scores={aestd.block_id=596}] weapon minecraft:fire_coral_fan
+replaceitem entity @s[scores={aestd.block_id=597}] weapon minecraft:horn_coral_fan

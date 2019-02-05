@@ -1,0 +1,11 @@
+replaceitem entity @s[scores={aestd.block_id=262}] weapon minecraft:ender_chest
+replaceitem entity @s[scores={aestd.block_id=263}] weapon minecraft:tripwire_hook
+replaceitem entity @s[scores={aestd.block_id=264}] weapon minecraft:string
+replaceitem entity @s[scores={aestd.block_id=265}] weapon minecraft:emerald_block
+replaceitem entity @s[scores={aestd.block_id=266}] weapon minecraft:spruce_stairs
+replaceitem entity @s[scores={aestd.block_id=267}] weapon minecraft:birch_stairs
+replaceitem entity @s[scores={aestd.block_id=268}] weapon minecraft:jungle_stairs
+replaceitem entity @s[scores={aestd.block_id=269}] weapon minecraft:command_block
+replaceitem entity @s[scores={aestd.block_id=270}] weapon minecraft:beacon
+replaceitem entity @s[scores={aestd.block_id=271}] weapon minecraft:cobblestone_wall
+replaceitem entity @s[scores={aestd.block_id=272}] weapon minecraft:mossy_cobblestone_wall

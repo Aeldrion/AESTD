@@ -1,0 +1,10 @@
+replaceitem entity @s[scores={aestd.block_id=63}] weapon minecraft:dark_oak_leaves
+replaceitem entity @s[scores={aestd.block_id=64}] weapon minecraft:sponge
+replaceitem entity @s[scores={aestd.block_id=65}] weapon minecraft:wet_sponge
+replaceitem entity @s[scores={aestd.block_id=66}] weapon minecraft:glass
+replaceitem entity @s[scores={aestd.block_id=67}] weapon minecraft:lapis_ore
+replaceitem entity @s[scores={aestd.block_id=68}] weapon minecraft:lapis_block
+replaceitem entity @s[scores={aestd.block_id=69}] weapon minecraft:dispenser
+replaceitem entity @s[scores={aestd.block_id=70}] weapon minecraft:sandstone
+replaceitem entity @s[scores={aestd.block_id=71}] weapon minecraft:chiseled_sandstone
+replaceitem entity @s[scores={aestd.block_id=72}] weapon minecraft:cut_sandstone

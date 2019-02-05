@@ -1,0 +1,10 @@
+replaceitem entity @s[scores={aestd.block_id=567}] weapon minecraft:turtle_egg
+replaceitem entity @s[scores={aestd.block_id=568}] weapon minecraft:dead_tube_coral_block
+replaceitem entity @s[scores={aestd.block_id=569}] weapon minecraft:dead_brain_coral_block
+replaceitem entity @s[scores={aestd.block_id=570}] weapon minecraft:dead_bubble_coral_block
+replaceitem entity @s[scores={aestd.block_id=571}] weapon minecraft:dead_fire_coral_block
+replaceitem entity @s[scores={aestd.block_id=572}] weapon minecraft:dead_horn_coral_block
+replaceitem entity @s[scores={aestd.block_id=573}] weapon minecraft:tube_coral_block
+replaceitem entity @s[scores={aestd.block_id=574}] weapon minecraft:brain_coral_block
+replaceitem entity @s[scores={aestd.block_id=575}] weapon minecraft:bubble_coral_block
+replaceitem entity @s[scores={aestd.block_id=576}] weapon minecraft:fire_coral_block

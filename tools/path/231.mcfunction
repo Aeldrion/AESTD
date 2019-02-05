@@ -1,0 +1,9 @@
+replaceitem entity @s[scores={aestd.block_id=252}] weapon minecraft:brewing_stand
+replaceitem entity @s[scores={aestd.block_id=253}] weapon minecraft:cauldron
+replaceitem entity @s[scores={aestd.block_id=255}] weapon minecraft:end_portal_frame
+replaceitem entity @s[scores={aestd.block_id=256}] weapon minecraft:end_stone
+replaceitem entity @s[scores={aestd.block_id=257}] weapon minecraft:dragon_egg
+replaceitem entity @s[scores={aestd.block_id=258}] weapon minecraft:redstone_lamp
+replaceitem entity @s[scores={aestd.block_id=259}] weapon minecraft:cocoa_beans
+replaceitem entity @s[scores={aestd.block_id=260}] weapon minecraft:sandstone_stairs
+replaceitem entity @s[scores={aestd.block_id=261}] weapon minecraft:emerald_ore

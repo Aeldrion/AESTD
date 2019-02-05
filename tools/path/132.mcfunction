@@ -1,0 +1,9 @@
+replaceitem entity @s[scores={aestd.block_id=94}] weapon minecraft:grass
+replaceitem entity @s[scores={aestd.block_id=95}] weapon minecraft:fern
+replaceitem entity @s[scores={aestd.block_id=96}] weapon minecraft:dead_bush
+replaceitem entity @s[scores={aestd.block_id=97}] weapon minecraft:seagrass
+replaceitem entity @s[scores={aestd.block_id=99}] weapon minecraft:piston
+replaceitem entity @s[scores={aestd.block_id=101}] weapon minecraft:white_wool
+replaceitem entity @s[scores={aestd.block_id=102}] weapon minecraft:orange_wool
+replaceitem entity @s[scores={aestd.block_id=103}] weapon minecraft:magenta_wool
+replaceitem entity @s[scores={aestd.block_id=104}] weapon minecraft:light_blue_wool

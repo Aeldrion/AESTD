@@ -1,0 +1,10 @@
+replaceitem entity @s[scores={aestd.block_id=147}] weapon minecraft:diamond_ore
+replaceitem entity @s[scores={aestd.block_id=148}] weapon minecraft:diamond_block
+replaceitem entity @s[scores={aestd.block_id=149}] weapon minecraft:crafting_table
+replaceitem entity @s[scores={aestd.block_id=150}] weapon minecraft:wheat
+replaceitem entity @s[scores={aestd.block_id=151}] weapon minecraft:farmland
+replaceitem entity @s[scores={aestd.block_id=152}] weapon minecraft:furnace
+replaceitem entity @s[scores={aestd.block_id=153}] weapon minecraft:oak_sign
+replaceitem entity @s[scores={aestd.block_id=154}] weapon minecraft:spruce_sign
+replaceitem entity @s[scores={aestd.block_id=155}] weapon minecraft:birch_sign
+replaceitem entity @s[scores={aestd.block_id=156}] weapon minecraft:acacia_sign

@@ -1,0 +1,10 @@
+replaceitem entity @s[scores={aestd.block_id=462}] weapon minecraft:smooth_sandstone
+replaceitem entity @s[scores={aestd.block_id=463}] weapon minecraft:smooth_quartz
+replaceitem entity @s[scores={aestd.block_id=464}] weapon minecraft:smooth_red_sandstone
+replaceitem entity @s[scores={aestd.block_id=465}] weapon minecraft:spruce_fence_gate
+replaceitem entity @s[scores={aestd.block_id=466}] weapon minecraft:birch_fence_gate
+replaceitem entity @s[scores={aestd.block_id=467}] weapon minecraft:jungle_fence_gate
+replaceitem entity @s[scores={aestd.block_id=468}] weapon minecraft:acacia_fence_gate
+replaceitem entity @s[scores={aestd.block_id=469}] weapon minecraft:dark_oak_fence_gate
+replaceitem entity @s[scores={aestd.block_id=470}] weapon minecraft:spruce_fence
+replaceitem entity @s[scores={aestd.block_id=471}] weapon minecraft:birch_fence

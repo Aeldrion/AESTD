@@ -1,0 +1,10 @@
+replaceitem entity @s[scores={aestd.block_id=105}] weapon minecraft:yellow_wool
+replaceitem entity @s[scores={aestd.block_id=106}] weapon minecraft:lime_wool
+replaceitem entity @s[scores={aestd.block_id=107}] weapon minecraft:pink_wool
+replaceitem entity @s[scores={aestd.block_id=108}] weapon minecraft:gray_wool
+replaceitem entity @s[scores={aestd.block_id=109}] weapon minecraft:light_gray_wool
+replaceitem entity @s[scores={aestd.block_id=110}] weapon minecraft:cyan_wool
+replaceitem entity @s[scores={aestd.block_id=111}] weapon minecraft:purple_wool
+replaceitem entity @s[scores={aestd.block_id=112}] weapon minecraft:blue_wool
+replaceitem entity @s[scores={aestd.block_id=113}] weapon minecraft:brown_wool
+replaceitem entity @s[scores={aestd.block_id=114}] weapon minecraft:green_wool

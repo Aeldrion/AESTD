@@ -1,0 +1,21 @@
+{
+	"comment": "This advancement makes players run the #aestd:player_killed_entity function tag every time the player kills an entity",
+	"display": {
+		"icon": {
+			"item": "minecraft:barrier"
+		},
+		"announce_to_chat": false,
+		"show_toast": false,
+		"hidden": true,
+		"title": "Player kill",
+		"description": ""
+	},
+	"criteria": {
+		"death": {
+			"trigger": "minecraft:player_killed_entity"
+		}
+	},
+	"rewards": {
+		"function": "aestd:tick/run_tag_player_killed_entity"
+	}
+}

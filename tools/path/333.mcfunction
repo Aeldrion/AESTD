@@ -1,0 +1,10 @@
+replaceitem entity @s[scores={aestd.block_id=441}] weapon minecraft:chiseled_red_sandstone
+replaceitem entity @s[scores={aestd.block_id=442}] weapon minecraft:cut_red_sandstone
+replaceitem entity @s[scores={aestd.block_id=443}] weapon minecraft:red_sandstone_stairs
+replaceitem entity @s[scores={aestd.block_id=444}] weapon minecraft:oak_slab
+replaceitem entity @s[scores={aestd.block_id=445}] weapon minecraft:spruce_slab
+replaceitem entity @s[scores={aestd.block_id=446}] weapon minecraft:birch_slab
+replaceitem entity @s[scores={aestd.block_id=447}] weapon minecraft:jungle_slab
+replaceitem entity @s[scores={aestd.block_id=448}] weapon minecraft:acacia_slab
+replaceitem entity @s[scores={aestd.block_id=449}] weapon minecraft:dark_oak_slab
+replaceitem entity @s[scores={aestd.block_id=450}] weapon minecraft:stone_slab

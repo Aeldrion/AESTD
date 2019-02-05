@@ -1,0 +1,10 @@
+replaceitem entity @s[scores={aestd.block_id=546}] weapon minecraft:red_concrete
+replaceitem entity @s[scores={aestd.block_id=547}] weapon minecraft:black_concrete
+replaceitem entity @s[scores={aestd.block_id=548}] weapon minecraft:white_concrete_powder
+replaceitem entity @s[scores={aestd.block_id=549}] weapon minecraft:orange_concrete_powder
+replaceitem entity @s[scores={aestd.block_id=550}] weapon minecraft:magenta_concrete_powder
+replaceitem entity @s[scores={aestd.block_id=551}] weapon minecraft:light_blue_concrete_powder
+replaceitem entity @s[scores={aestd.block_id=552}] weapon minecraft:yellow_concrete_powder
+replaceitem entity @s[scores={aestd.block_id=553}] weapon minecraft:lime_concrete_powder
+replaceitem entity @s[scores={aestd.block_id=554}] weapon minecraft:pink_concrete_powder
+replaceitem entity @s[scores={aestd.block_id=555}] weapon minecraft:gray_concrete_powder

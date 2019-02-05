@@ -1,0 +1,9 @@
+replaceitem entity @s[scores={aestd.block_id=189}] weapon minecraft:oak_fence
+replaceitem entity @s[scores={aestd.block_id=190}] weapon minecraft:pumpkin
+replaceitem entity @s[scores={aestd.block_id=191}] weapon minecraft:netherrack
+replaceitem entity @s[scores={aestd.block_id=192}] weapon minecraft:soul_sand
+replaceitem entity @s[scores={aestd.block_id=193}] weapon minecraft:glowstone
+replaceitem entity @s[scores={aestd.block_id=195}] weapon minecraft:carved_pumpkin
+replaceitem entity @s[scores={aestd.block_id=196}] weapon minecraft:jack_o_lantern
+replaceitem entity @s[scores={aestd.block_id=197}] weapon minecraft:cake
+replaceitem entity @s[scores={aestd.block_id=198}] weapon minecraft:repeater

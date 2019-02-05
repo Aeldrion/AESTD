@@ -1,0 +1,11 @@
+replaceitem entity @s[scores={aestd.block_id=157}] weapon minecraft:jungle_sign
+replaceitem entity @s[scores={aestd.block_id=158}] weapon minecraft:dark_oak_sign
+replaceitem entity @s[scores={aestd.block_id=159}] weapon minecraft:oak_door
+replaceitem entity @s[scores={aestd.block_id=160}] weapon minecraft:ladder
+replaceitem entity @s[scores={aestd.block_id=161}] weapon minecraft:rail
+replaceitem entity @s[scores={aestd.block_id=162}] weapon minecraft:cobblestone_stairs
+replaceitem entity @s[scores={aestd.block_id=163}] weapon minecraft:oak_sign
+replaceitem entity @s[scores={aestd.block_id=164}] weapon minecraft:spruce_sign
+replaceitem entity @s[scores={aestd.block_id=165}] weapon minecraft:birch_sign
+replaceitem entity @s[scores={aestd.block_id=166}] weapon minecraft:acacia_sign
+replaceitem entity @s[scores={aestd.block_id=167}] weapon minecraft:jungle_sign

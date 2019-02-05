@@ -1,0 +1,21 @@
+{
+	"comment": "This advancement makes players run the #aestd:player_hurt_entity function tag every time the player damages an entity",
+	"display": {
+		"icon": {
+			"item": "minecraft:barrier"
+		},
+		"announce_to_chat": false,
+		"show_toast": false,
+		"hidden": true,
+		"title": "Player kill",
+		"description": ""
+	},
+	"criteria": {
+		"death": {
+			"trigger": "minecraft:player_hurt_entity"
+		}
+	},
+	"rewards": {
+		"function": "aestd.internal:run_tag_player_hurt_entity"
+	}
+}

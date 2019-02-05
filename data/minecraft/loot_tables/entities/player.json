@@ -1,0 +1,33 @@
+{
+	"//comment": [
+		"This loot table drops the player's head if they have the aestd.player.get_head tag.",
+		"This is used for getting the name of the player in the aestd:player/get_name function."
+	],
+	"type": "minecraft:entity",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:player_head",
+					"functions": [
+						{
+							"function": "minecraft:fill_player_head",
+							"entity": "this"
+						}
+					],
+					"conditions": [
+						{
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"nbt": "{Tags:[\"aestd.player.get_name\"]}"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

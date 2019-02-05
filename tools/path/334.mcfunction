@@ -1,0 +1,11 @@
+replaceitem entity @s[scores={aestd.block_id=451}] weapon minecraft:smooth_stone_slab
+replaceitem entity @s[scores={aestd.block_id=452}] weapon minecraft:sandstone_slab
+replaceitem entity @s[scores={aestd.block_id=453}] weapon minecraft:petrified_oak_slab
+replaceitem entity @s[scores={aestd.block_id=454}] weapon minecraft:cobblestone_slab
+replaceitem entity @s[scores={aestd.block_id=455}] weapon minecraft:brick_slab
+replaceitem entity @s[scores={aestd.block_id=456}] weapon minecraft:stone_brick_slab
+replaceitem entity @s[scores={aestd.block_id=457}] weapon minecraft:nether_brick_slab
+replaceitem entity @s[scores={aestd.block_id=458}] weapon minecraft:quartz_slab
+replaceitem entity @s[scores={aestd.block_id=459}] weapon minecraft:red_sandstone_slab
+replaceitem entity @s[scores={aestd.block_id=460}] weapon minecraft:purpur_slab
+replaceitem entity @s[scores={aestd.block_id=461}] weapon minecraft:smooth_stone

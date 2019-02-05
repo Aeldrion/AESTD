@@ -1,0 +1,57 @@
+{
+	"type": "minecraft:generic",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:weather_check",
+									"thundering": true
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:golden_hoe",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": 2
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:weather_check",
+									"raining": true
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:golden_hoe",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:golden_hoe",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": 0
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

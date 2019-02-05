@@ -1,0 +1,10 @@
+replaceitem entity @s[scores={aestd.block_id=168}] weapon minecraft:dark_oak_sign
+replaceitem entity @s[scores={aestd.block_id=169}] weapon minecraft:lever
+replaceitem entity @s[scores={aestd.block_id=170}] weapon minecraft:stone_pressure_plate
+replaceitem entity @s[scores={aestd.block_id=171}] weapon minecraft:iron_door
+replaceitem entity @s[scores={aestd.block_id=172}] weapon minecraft:oak_pressure_plate
+replaceitem entity @s[scores={aestd.block_id=173}] weapon minecraft:spruce_pressure_plate
+replaceitem entity @s[scores={aestd.block_id=174}] weapon minecraft:birch_pressure_plate
+replaceitem entity @s[scores={aestd.block_id=175}] weapon minecraft:jungle_pressure_plate
+replaceitem entity @s[scores={aestd.block_id=176}] weapon minecraft:acacia_pressure_plate
+replaceitem entity @s[scores={aestd.block_id=177}] weapon minecraft:dark_oak_pressure_plate

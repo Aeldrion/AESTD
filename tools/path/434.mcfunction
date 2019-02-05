@@ -1,0 +1,11 @@
+replaceitem entity @s[scores={aestd.block_id=619}] weapon minecraft:mossy_stone_brick_stairs
+replaceitem entity @s[scores={aestd.block_id=620}] weapon minecraft:polished_diorite_stairs
+replaceitem entity @s[scores={aestd.block_id=621}] weapon minecraft:mossy_cobblestone_stairs
+replaceitem entity @s[scores={aestd.block_id=622}] weapon minecraft:end_stone_brick_stairs
+replaceitem entity @s[scores={aestd.block_id=623}] weapon minecraft:stone_stairs
+replaceitem entity @s[scores={aestd.block_id=624}] weapon minecraft:smooth_sandstone_stairs
+replaceitem entity @s[scores={aestd.block_id=625}] weapon minecraft:smooth_quartz_stairs
+replaceitem entity @s[scores={aestd.block_id=626}] weapon minecraft:granite_stairs
+replaceitem entity @s[scores={aestd.block_id=627}] weapon minecraft:andesite_stairs
+replaceitem entity @s[scores={aestd.block_id=628}] weapon minecraft:red_nether_brick_stairs
+replaceitem entity @s[scores={aestd.block_id=629}] weapon minecraft:polished_andesite_stairs
