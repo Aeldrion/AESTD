@@ -9,10 +9,10 @@ scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=aestd.sine.
 execute as @e[type=minecraft:area_effect_cloud,tag=aestd.sine.cloud,limit=1] run function aestd:entity/set_rotation
 
 # Get z position before and after teleportation
-execute as @e[type=minecraft:area_effect_cloud,tag=aestd.sine.cloud,limit=1] run function aestd:entity/get_coordinates
+execute as @e[type=minecraft:area_effect_cloud,tag=aestd.sine.cloud,limit=1] run function aestd:entity/get_position
 scoreboard players operation #aestd aestd.coords.x = @e[type=minecraft:area_effect_cloud,tag=aestd.sine.cloud,limit=1] aestd.coords.x
 execute as @e[type=minecraft:area_effect_cloud,tag=aestd.sine.cloud,limit=1] at @s run teleport @s ^ ^ ^1000
-execute as @e[type=minecraft:area_effect_cloud,tag=aestd.sine.cloud,limit=1] run function aestd:entity/get_coordinates
+execute as @e[type=minecraft:area_effect_cloud,tag=aestd.sine.cloud,limit=1] run function aestd:entity/get_position
 
 # Calculate delta
 scoreboard players operation @s aestd.math.out = #aestd aestd.coords.x

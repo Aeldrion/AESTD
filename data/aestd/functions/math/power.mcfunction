@@ -14,4 +14,4 @@ scoreboard players remove @s aestd.math.var2 1
 execute if score @s aestd.math.var2 matches 2..29 run function aestd:math/power
 
 # Stop function
-execute unless score @s aestd.math.in2 matches 2..29 run tag @s remove aestd.math.running_power
+execute unless score @s aestd.math.var2 matches 2..29 run tag @s remove aestd.math.running_power
