@@ -16,6 +16,6 @@
 		}
 	},
 	"rewards": {
-		"function": "aestd.internal:run_tag_player_hurt_entity"
+		"function": "aestd.internal:tags/run_player_hurt_entity"
 	}
 }
