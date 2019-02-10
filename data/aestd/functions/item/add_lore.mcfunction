@@ -1,5 +1,5 @@
 # Written by Aeldrion, Minecraft 19w05a
-# Adds to the count an item (see aestd:item/save for slot index)
+# Adds a line of lore an item (see aestd:item/save for slot index)
 # Input: sender|aestd.item_slot|save chunk/RecordItem.tag.aestd.String
 
 function aestd:item/save
