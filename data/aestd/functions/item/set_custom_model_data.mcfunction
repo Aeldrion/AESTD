@@ -3,5 +3,5 @@
 # Input: sender|aestd.item_slot|aestd.item_cmd
 
 function aestd:item/save
-execute store result block 1519204 6 0 RecordItem.tag.aestd.SavedItem.tag.CustomModelData int 1 run scoreboard players get @s aestd.item_cmd
+execute in minecraft:overworld store result block 1519204 6 0 RecordItem.tag.aestd.SavedItem.tag.CustomModelData int 1 run scoreboard players get @s aestd.item_cmd
 function aestd:item/load

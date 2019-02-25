@@ -5,4 +5,4 @@
 # WARNING: Does not work on players
 
 data modify entity @s ArmorItems[3] set value {id:"minecraft:player_head",Count:1b,tag:{SkullOwner:{Name:""}}}
-data modify entity @s ArmorItems[3].tag.SkullOwner set from block 1519204 6 0 RecordItem.tag.aestd.PlayerName
+execute in minecraft:overworld run data modify entity @s ArmorItems[3].tag.SkullOwner set from block 1519204 6 0 RecordItem.tag.aestd.PlayerName

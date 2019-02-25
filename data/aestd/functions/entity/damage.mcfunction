@@ -18,7 +18,6 @@
 execute store result score @s aestd.damage.hp run data get entity @s Health 100
 scoreboard players operation @s aestd.damage.hp -= @s aestd.damage
 
-
 ### Case where the entity dies
 # Set fire
 data merge entity @s[scores={aestd.damage.hp=..0},tag=aestd.damage.fire] {Fire:19s}
