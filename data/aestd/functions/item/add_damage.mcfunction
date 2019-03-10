@@ -7,5 +7,8 @@ execute store result score #aestd aestd.item_dmg run data get block 1519204 6 0 
 execute store result block 1519204 6 0 RecordItem.tag.aestd.SavedItem.tag.Damage int 1 run scoreboard players operation #aestd aestd.item_dmg += @s aestd.item_dmg
 function aestd:item/load
 
+tag @s add aestd.item.already_saved
 function aestd:item/get_max_durability
+tag @s remove aestd.item.alread_saved
+
 execute if score #aestd aestd.item_dmg >= @s aestd.item_drblt run function aestd:item/break

@@ -110,7 +110,8 @@ scoreboard objectives add aestd.deaths deathCount
 ## OTHER
 
 # villager trades generator
-scoreboard objectives add aestd.trades dummy
+scoreboard objectives add aestd.vt.level dummy
+scoreboard objectives add aestd.vt.prv_lvl dummy
 
 # raycast (internal use only)
 scoreboard objectives add aestd.rcdistance dummy
