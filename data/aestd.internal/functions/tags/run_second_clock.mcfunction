@@ -1,2 +1,2 @@
 function #aestd:second
-schedule function aestd.internal:tags/start_second_clock 1s
+schedule function aestd.internal:tags/run_second_clock 1s

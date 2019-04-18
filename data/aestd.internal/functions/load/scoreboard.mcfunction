@@ -54,6 +54,9 @@ scoreboard objectives add aestd.rot.y dummy
 # get_biome
 scoreboard objectives add aestd.biome dummy
 
+# get_dimension
+scoreboard objectives add aestd.dimension dummy
+
 
 ## MATH FUNCTIONS
 
@@ -83,6 +86,8 @@ scoreboard objectives add aestd.item_count dummy
 scoreboard objectives add aestd.item_dmg dummy
 scoreboard objectives add aestd.item_drblt dummy
 
+# set_custom_model_data/add_custom_model_data
+scoreboard objectives add aestd.item_cmd dummy
 
 ## PLAYER FUNCTIONS
 
@@ -106,6 +111,8 @@ scoreboard objectives add aestd.time.dayp dummy
 # aestd:player_dies
 scoreboard objectives add aestd.deaths deathCount
 
+# aestd:click_coas
+scoreboard objectives add aestd.click_coas minecraft.used:minecraft.carrot_on_a_stick
 
 ## OTHER
 
