@@ -1,6 +1,6 @@
-# Written by Aeldrion, Minecraft 19w05a
+# Written by Aeldrion, Minecraft 1.14
 # Loads an item to the sender's inventory (see aestd:item/save)
-# Input: save chunk/aestd.SavedItem, output: sender|aestd.item_slot
+# Input: save chunk/aestd.SavedItem, output: sender|aestd.item.slot
 
 execute in minecraft:overworld run data remove block 1519204 2 0 Items
 execute in minecraft:overworld run data modify block 1519204 2 0 Items append from block 1519204 6 0 RecordItem.tag.aestd.SavedItem

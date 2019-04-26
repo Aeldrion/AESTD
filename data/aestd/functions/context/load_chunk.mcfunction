@@ -1,4 +1,4 @@
-# Written by Aeldrion, Minecraft 19w05a
+# Written by Aeldrion, Minecraft 1.14
 # Loads the chunk in which the command is run for the current tick
 
 # See if the chunk is loaded

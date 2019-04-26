@@ -1,6 +1,6 @@
-# Written by Aeldrion, Minecraft 19w05a
+# Written by Aeldrion, Minecraft 1.14
 # Removes all NBT data from an item (see aestd:item/save for slot index)
-# Input: sender|aestd.item_slot
+# Input: sender|aestd.item.slot
 
 function aestd:item/save
 execute in minecraft:overworld run data remove block 1519204 6 0 RecordItem.tag.aestd.SavedItem.tag

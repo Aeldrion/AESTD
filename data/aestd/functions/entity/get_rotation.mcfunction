@@ -1,4 +1,4 @@
-# Written by Aeldrion, Minecraft 19w05a
+# Written by Aeldrion, Minecraft 1.14
 # Saves the sender's rotation to its rotation scores
 # Input: sender, output: aestd.rot.x|aestd.rot.y
 

@@ -5,6 +5,10 @@
 		"#aestd:shulker_boxes",
 		"minecraft:dispenser",
 		"minecraft:dropper",
-		"minecraft:jukebox"
+		"minecraft:jukebox",
+		"minecraft:barrel",
+		"#aestd:furnaces",
+		"minecraft:campfire",
+		"minecraft:lectern"
 	]
 }

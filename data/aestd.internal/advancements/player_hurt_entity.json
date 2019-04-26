@@ -7,7 +7,7 @@
 		"announce_to_chat": false,
 		"show_toast": false,
 		"hidden": true,
-		"title": "Player kill",
+		"title": "Player hurt entity",
 		"description": ""
 	},
 	"criteria": {

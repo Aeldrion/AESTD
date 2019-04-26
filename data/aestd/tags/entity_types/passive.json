@@ -5,6 +5,7 @@
 		"minecraft:cod",
 		"minecraft:cow",
 		"minecraft:donkey",
+		"minecraft:fox",
 		"minecraft:horse",
 		"minecraft:mooshroom",
 		"minecraft:mule",
@@ -19,6 +20,7 @@
 		"minecraft:squid",
 		"minecraft:turtle",
 		"minecraft:tropical_fish",
-		"minecraft:villager"
+		"minecraft:villager",
+		"minecraft:wandering_trader"
 	]
 }

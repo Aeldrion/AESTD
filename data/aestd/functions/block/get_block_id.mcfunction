@@ -1,6 +1,6 @@
-# Written by Aeldrion, Minecraft 19w05a
+# Written by Aeldrion, Minecraft 1.14
 # Saves the numerical block ID of a block. This ID corresponds to the protocol_id found in registries.json.
-# Input: context, output: aestd.block_id
+# Input: context, output: aestd.block.id
 
 execute if block ~ ~ ~ #aestd.internal:block_id_tree/quarter_1 run function aestd:block/get_block_id/tree/1
 execute if block ~ ~ ~ #aestd.internal:block_id_tree/quarter_2 run function aestd:block/get_block_id/tree/2

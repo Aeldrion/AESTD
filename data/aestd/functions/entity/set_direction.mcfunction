@@ -1,4 +1,4 @@
-# Written by Aeldrion, Minecraft 1.13
+# Written by Aeldrion, Minecraft 1.14
 # Loads the sender's direction from its direction scores divided by 1000
 # Input: aestd.dir.x|aestd.dir.y|aestd.dir.z, output: sender
 

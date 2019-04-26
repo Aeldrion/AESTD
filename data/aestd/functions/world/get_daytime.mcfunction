@@ -1,4 +1,4 @@
-# Written by Aeldrion, Minecraft 18w50a
+# Written by Aeldrion, Minecraft 19w05a
 # Returns the period of the day
 # Input: time, output: aestd.time.dayp
 

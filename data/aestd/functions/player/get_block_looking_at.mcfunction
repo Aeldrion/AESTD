@@ -1,4 +1,4 @@
-# Written by Aeldrion, Minecraft 18w43c
+# Written by Aeldrion, Minecraft 1.14
 # Finds the block the player is looking at, if no block is to find, resets scores
 # Output: aestd.coords.x|aestd.coords.y|aestd.coords.z
 

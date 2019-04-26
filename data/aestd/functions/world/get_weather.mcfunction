@@ -1,4 +1,4 @@
-# Written by Aeldrion, Minecraft 18w46a
+# Written by Aeldrion, Minecraft 19w05a
 # Returns the current weather
 # Output: aestd.weather
 

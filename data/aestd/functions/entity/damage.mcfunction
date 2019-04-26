@@ -1,4 +1,4 @@
-# Written by Aeldrion, Minecraft 19w05a
+# Written by Aeldrion, Minecraft 1.14
 # Damages the sender by (damage/100) HP, does not work on players
 # Input: aestd.damage, output: sender
 

@@ -1,4 +1,4 @@
-# Written by Aeldrion, Minecraft 19w05a
+# Written by Aeldrion, Minecraft 1.14
 # Hurts the sender without actually dealing damage, playing its hurt sound and turning it red
 
 effect give @s minecraft:resistance 1 255 true

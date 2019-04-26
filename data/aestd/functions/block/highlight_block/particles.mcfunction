@@ -1,4 +1,4 @@
-# Written by Aeldrion, Minecraft 18w43c
+# Written by Aeldrion, Minecraft 1.14
 # Used internally by aestd:block/highlight_block
 
 particle minecraft:end_rod ~0.5 ~ ~ 0.25 0 0 0 10 force

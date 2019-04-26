@@ -1,4 +1,4 @@
-# Written by Aeldrion, Minecraft 18w43c
+# Written by Aeldrion, Minecraft 1.14
 # Loads the sender's motion from its motion scores divided by 1000
 # Input: aestd.motion.x|aestd.motion.y|aestd.motion.z, output: sender
 

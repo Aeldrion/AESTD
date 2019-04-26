@@ -1,4 +1,4 @@
-# Written by Aeldrion, Minecraft 18w50a
+# Written by Aeldrion, Minecraft 19w05a
 # Calculates the moon phase of the current day
 # Input: time, output: aestd.time.moon
 

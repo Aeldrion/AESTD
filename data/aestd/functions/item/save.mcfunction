@@ -1,6 +1,6 @@
 # Written by Aeldrion, Minecraft 19w05a
 # Saves an item to the save chunk (see aestd:item/load)
-# Input: sender|aestd.item_slot, output: save chunk/aestd.SavedItem
+# Input: sender|aestd.item.slot, output: save chunk/aestd.SavedItem
 
 execute in minecraft:overworld run data modify block 1519204 6 0 RecordItem.tag.aestd.SavedItem set value {id:"minecraft:air",Count:1b,Slot:0b}
 execute if entity @s[type=minecraft:player] in minecraft:overworld run function aestd.internal:save_player_item

@@ -1,4 +1,4 @@
-# Written by Aeldrion, Minecraft 18w43c
+# Written by Aeldrion, Minecraft 1.14
 # Generates a random integer in a range, max excluded
 # Input: aestd.random.min|aestd.random.max, output: aestd.random
 

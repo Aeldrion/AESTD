@@ -1,4 +1,4 @@
-# Written by Aeldrion, Minecraft 18w43c
+# Written by Aeldrion, Minecraft 1.14
 # Generates a random integer from 0 (included) to aestd.random.max (excluded)
 # Input: aestd.random.max, output: aestd.random
 

@@ -1,4 +1,4 @@
-# Written by Aeldrion, Minecraft 19w05a
+# Written by Aeldrion, Minecraft 1.14
 # Sets the player head at context position to a player's name (see function aestd:player/get_name)
 # Input: save chunk/aestd.PlayerName, output: context/Owner
 

@@ -1,14 +1,11 @@
-# Written by Aeldrion, Minecraft 19w05a
+# Written by Aeldrion, Minecraft 1.14
 # Adds to the damage of an item (see aestd:item/save for slot index)
-# Input: aestd.item_dmg|aestd.item_slot, output: sender
+# Input: aestd.item.dmg|aestd.item.slot, output: sender
 
-function aestd:item/save
-execute store result score #aestd aestd.item_dmg run data get block 1519204 6 0 RecordItem.tag.aestd.SavedItem.tag.Damage
-execute store result block 1519204 6 0 RecordItem.tag.aestd.SavedItem.tag.Damage int 1 run scoreboard players operation #aestd aestd.item_dmg += @s aestd.item_dmg
+# This function already saves the item, so aestd:item/save doesn't need to run
+function aestd:item/get_max_durability
+execute store result score #aestd aestd.item.dmg run data get block 1519204 6 0 RecordItem.tag.aestd.SavedItem.tag.Damage
+execute store result block 1519204 6 0 RecordItem.tag.aestd.SavedItem.tag.Damage int 1 run scoreboard players operation #aestd aestd.item.dmg += @s aestd.item.dmg
 function aestd:item/load
 
-tag @s add aestd.item.already_saved
-function aestd:item/get_max_durability
-tag @s remove aestd.item.alread_saved
-
-execute if score #aestd aestd.item_dmg >= @s aestd.item_drblt run function aestd:item/break
+execute if score #aestd aestd.item.dmg >= @s aestd.item.drblt run function aestd:item/break

@@ -1,5 +1,5 @@
-# Written by Aeldrion, Minecraft 19w05a
-# Creates the scoreboard objectives that AESTD uses
+# Written by Aeldrion, Minecraft 1.14
+# Sets up the scoreboard for AESTD
 
 
 ## GENERIC OBJECTIVES
@@ -8,14 +8,15 @@ scoreboard objectives add aestd.var dummy
 scoreboard objectives add aestd.recursion dummy
 
 
+
+## BLOCK FUNCTIONS
+
+# get_block_id/set_block_id
+scoreboard objectives add aestd.block.id dummy
+
+
+
 ## ENTITY FUNCTIONS
-
-# get_block_id/set_block_id/set_head_to_block/set_falling_block_to_id
-scoreboard objectives add aestd.block_id dummy
-
-# block_to_chunk
-scoreboard objectives add aestd.chunk.x dummy
-scoreboard objectives add aestd.chunk.z dummy
 
 # get_position/set_position
 scoreboard objectives add aestd.coords.x dummy
@@ -49,6 +50,7 @@ scoreboard objectives add aestd.rot.x dummy
 scoreboard objectives add aestd.rot.y dummy
 
 
+
 ## CONTEXT FUNCTIONS
 
 # get_biome
@@ -56,6 +58,7 @@ scoreboard objectives add aestd.biome dummy
 
 # get_dimension
 scoreboard objectives add aestd.dimension dummy
+
 
 
 ## MATH FUNCTIONS
@@ -74,25 +77,29 @@ scoreboard objectives add aestd.random.min dummy
 scoreboard objectives add aestd.random.max dummy
 
 
+
 ## ITEM FUNCTIONS
 
-# load/save
-scoreboard objectives add aestd.item_slot dummy
+# set_custom_model_data/add_custom_model_data
+scoreboard objectives add aestd.item.cmd dummy
 
 # set_count
-scoreboard objectives add aestd.item_count dummy
+scoreboard objectives add aestd.item.count dummy
 
 # set_damage/add_damage
-scoreboard objectives add aestd.item_dmg dummy
-scoreboard objectives add aestd.item_drblt dummy
+scoreboard objectives add aestd.item.dmg dummy
+scoreboard objectives add aestd.item.drblt dummy
 
-# set_custom_model_data/add_custom_model_data
-scoreboard objectives add aestd.item_cmd dummy
+# load/save
+scoreboard objectives add aestd.item.slot dummy
+
+
 
 ## PLAYER FUNCTIONS
 
 # set_experience/add_experience
-scoreboard objectives add aestd.xp dummy
+scoreboard objectives add aestd.player.xp dummy
+
 
 
 ## WORLD FUNCTIONS
@@ -106,6 +113,7 @@ scoreboard objectives add aestd.time.moon dummy
 scoreboard objectives add aestd.time.dayp dummy
 
 
+
 ## FUNCTION TAGS
 
 # aestd:player_dies
@@ -113,6 +121,8 @@ scoreboard objectives add aestd.deaths deathCount
 
 # aestd:click_coas
 scoreboard objectives add aestd.click_coas minecraft.used:minecraft.carrot_on_a_stick
+
+
 
 ## OTHER
 
@@ -126,3 +136,6 @@ scoreboard objectives add aestd.rcdistance dummy
 # performance tests
 scoreboard objectives add aestd.wbdiameter dummy
 scoreboard objectives add aestd.iterations dummy
+
+execute unless score #aestd.loaded aestd.var matches 1 run scoreboard players set #aestd.chunk_setup aestd.var 0
+scoreboard players set #aestd.loaded aestd.var 1

@@ -1,12 +1,19 @@
-# Written by Aeldrion, Minecraft 19w05a
-# Adds a line of lore an item (see aestd:item/save for slot index)
-# Input: sender|aestd.item_slot|save chunk/RecordItem.tag.aestd.String
+# Written by Aeldrion, Minecraft 1.14
+# Adds a line of lore to an item (see aestd:item/save for slot index)
+# If the sender has the aestd.preformatted_text tag, text will not be formatted to JSON (see below)
+# Input: sender|aestd.item_slot|save chunk/RecordItem.tag.aestd.text
+
+execute unless entity @s[tag=aestd.preformatted_text] run data merge block 1519204 3 0 {Text1:'{"nbt":"RecordItem.tag.aestd.text","block":"1519204 6 0"}'}
 
 function aestd:item/save
-execute unless data block 1519204 6 0 RecordItem.tag.aestd.SavedItem.tag.display.Lore run data merge block 1519204 6 0 {RecordItem:{tag:{aestd:{SavedItem:{tag:{display:{Lore:[]}}}}}}}
-data modify block 1519204 6 0 RecordItem.tag.aestd.SavedItem.tag.display.Lore append from block 1519204 6 0 RecordItem.tag.aestd.String
+execute unless data block 1519204 6 0 RecordItem.tag.aestd.SavedItem.tag.display.Lore run data modify block 1519204 6 0 RecordItem.tag.aestd.SavedItem merge value {tag:{display:{Lore:[]}}}
+execute if entity @s[tag=aestd.preformatted_text] run data modify block 1519204 6 0 RecordItem.tag.aestd.SavedItem.tag.display.Lore append from block 1519204 6 0 RecordItem.tag.aestd.text
+execute unless entity @s[tag=aestd.preformatted_text] run data modify block 1519204 6 0 RecordItem.tag.aestd.SavedItem.tag.display.Lore append from block 1519204 3 0 Text1
 function aestd:item/load
 
-# To specify the added lore:
-# data modify block 1519204 6 0 RecordItem.tag.aestd.String set value "\"a line of lore\""
-# Needs to be a valid text component (such as "\"hey\"" or "{\"text\":\"hey\"}")
+# By default, text will be converted to a JSON text component. For example, if the input is "Hello world", AESTD will convert it to '{"text":"Hello world"}'. The lore on the item will still read Hello world.
+# If you want to use preformatted text (eg. '{"text":"Hello world","color":"red"}'), add the tag aestd.preformatted_text to the sender.
+
+# EXAMPLE
+# Default: data modify block 1519204 6 0 RecordItem.tag.aestd.text set value "A line of lore"
+# Preformatted: data modify block 1519204 6 0 RecordItem.tag.aestd.text set value '{"text":"A preformatted line of lore"}'

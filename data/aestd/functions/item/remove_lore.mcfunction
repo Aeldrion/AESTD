@@ -1,6 +1,6 @@
-# Written by Aeldrion, Minecraft 19w05a
+# Written by Aeldrion, Minecraft 1.14
 # Removes lines of lore from an item (see aestd:item/save for slot index)
-# Input: sender|aestd.item_slot|aestd.list_mode
+# Input: sender|aestd.item.slot|aestd.list_mode
 
 function aestd:item/save
 execute if score @s aestd.list_mode matches 0 in minecraft:overworld run data remove block 1519204 6 0 RecordItem.tag.aestd.SavedItem.tag.display.Lore[0]

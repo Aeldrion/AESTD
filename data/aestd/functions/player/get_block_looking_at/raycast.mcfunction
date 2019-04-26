@@ -1,4 +1,4 @@
-# Written by Aeldrion, Minecraft 18w43c
+# Written by Aeldrion, Minecraft 19w05a
 # Used internally by aestd:player/get_block_looking_at
 
 execute unless block ^ ^ ^ #aestd.internal:raycast positioned ^ ^ ^-0.5 run function aestd:player/get_block_looking_at/precision_raycast

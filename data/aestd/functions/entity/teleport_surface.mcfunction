@@ -1,4 +1,4 @@
-# Written by Aeldrion, Minecraft 19w05a
+# Written by Aeldrion, Minecraft 1.14
 # Teleports the sender to the highest block matching the x and z coordinates of the context position
 
 teleport @s[tag=!aestd.teleporting_to_surface] ~ 256 ~

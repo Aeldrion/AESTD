@@ -1,4 +1,4 @@
-# Written by Aeldrion, Minecraft 18w43c
+# Written by Aeldrion, Minecraft 1.14
 # Returns the absolute value of an integer
 # Input: aestd.math.in, output: aestd.math.out
 

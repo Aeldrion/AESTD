@@ -1,0 +1,21 @@
+{
+	"comment": "This advancement makes players run the #aestd:take_damage function tag every time the player is damaged",
+	"display": {
+		"icon": {
+			"item": "minecraft:barrier"
+		},
+		"announce_to_chat": false,
+		"show_toast": false,
+		"hidden": true,
+		"title": "Hurt player",
+		"description": ""
+	},
+	"criteria": {
+		"death": {
+			"trigger": "minecraft:entity_hurt_player"
+		}
+	},
+	"rewards": {
+		"function": "aestd.internal:tags/run_take_damage"
+	}
+}

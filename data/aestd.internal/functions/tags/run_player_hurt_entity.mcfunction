@@ -1,4 +1,4 @@
-# Written by Aeldrion, Minecraft 19w04a
+# Written by Aeldrion, Minecraft 19w05a
 # Revokes the advancement running this function, run the #aestd:player_hurt_entity function tag and gives the damaged mob the tag aestd.damaged
 
 tag @e[tag=aestd.damaged] remove aestd.damaged

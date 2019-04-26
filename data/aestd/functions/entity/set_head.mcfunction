@@ -1,4 +1,4 @@
-# Written by Aeldrion, Minecraft 18w50a
+# Written by Aeldrion, Minecraft 1.14
 # Places a player head with a player's name on the entity's head slot (see function aestd:player/get_name)
 # Input: save chunk/aestd.PlayerName, output: sender's head slot
 
