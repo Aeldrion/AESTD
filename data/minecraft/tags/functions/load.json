@@ -1,7 +1,6 @@
 {
 	"values": [
-		"aestd.internal:load/scoreboard",
-		"aestd.internal:load/check_save_chunk",
-		"aestd.internal:tags/run_second_clock"
+		"aestd.internal:tags/run_second_clock",
+		"aestd.core:load"
 	]
 }

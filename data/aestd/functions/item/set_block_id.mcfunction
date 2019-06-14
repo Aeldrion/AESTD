@@ -1,6 +1,6 @@
 # Written by Aeldrion, Minecraft 1.14
-# Changes the item to correspond to a block ID (see aestd:item/save for slot index and aestd:block/get_block.id)
-# Input: sender|aestd.block.id
+# Changes the item to correspond to a block ID (see aestd:item/save for slot index and aestd:block/get_block_id)
+# Input: sender|aestd.item.slot|aestd.block.id
 
 function aestd:item/save
 execute if score @s aestd.block.id matches 0 in minecraft:overworld run data modify block 1519204 6 0 RecordItem.tag.aestd.SavedItem.id set value "minecraft:air"

@@ -1,7 +1,7 @@
 # Written by Aeldrion, Minecraft 1.14
-# Updates the save chunk's jukebox
+# Updates the save chunk's jukebox data
 
-execute unless data block 1519204 6 0 RecordItem run data merge block 1519204 6 0 {RecordItem:{id:"minecraft:command_block",Count:1b,tag:{aestd:{}}}}
+execute unless data block 1519204 6 0 RecordItem.tag.aestd run data merge block 1519204 6 0 {RecordItem:{id:"minecraft:command_block",Count:1b,tag:{aestd:{}}}}
 
 execute unless data block 1519204 6 0 RecordItem.tag.aestd.PlayerName run data modify block 1519204 6 0 RecordItem.tag.aestd merge value {PlayerName:""}
 execute unless data block 1519204 6 0 RecordItem.tag.aestd.PlayerUUID run data modify block 1519204 6 0 RecordItem.tag.aestd merge value {PlayerUUID:""}

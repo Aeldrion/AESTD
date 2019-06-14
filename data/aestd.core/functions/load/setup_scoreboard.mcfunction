@@ -129,6 +129,7 @@ scoreboard objectives add aestd.click_coas minecraft.used:minecraft.carrot_on_a_
 # villager trades generator
 scoreboard objectives add aestd.vt.level dummy
 scoreboard objectives add aestd.vt.prv_lvl dummy
+scoreboard objectives add aestd.vt.total_t dummy
 
 # raycast (internal use only)
 scoreboard objectives add aestd.rcdistance dummy

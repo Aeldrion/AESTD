@@ -8,6 +8,7 @@ execute if score @s aestd.item.slot matches 0 run data modify block 1519204 6 0 
 execute if score @s aestd.item.slot matches 1 run data modify block 1519204 6 0 RecordItem.tag.aestd.SavedItem set from entity @s Inventory[{Slot:1b}]
 execute if score @s aestd.item.slot matches 2 run data modify block 1519204 6 0 RecordItem.tag.aestd.SavedItem set from entity @s Inventory[{Slot:2b}]
 execute if score @s aestd.item.slot matches 3 run data modify block 1519204 6 0 RecordItem.tag.aestd.SavedItem set from entity @s Inventory[{Slot:3b}]
+execute if score @s aestd.item.slot matches 4 run data modify block 1519204 6 0 RecordItem.tag.aestd.SavedItem set from entity @s Inventory[{Slot:4b}]
 execute if score @s aestd.item.slot matches 5 run data modify block 1519204 6 0 RecordItem.tag.aestd.SavedItem set from entity @s Inventory[{Slot:5b}]
 execute if score @s aestd.item.slot matches 6 run data modify block 1519204 6 0 RecordItem.tag.aestd.SavedItem set from entity @s Inventory[{Slot:6b}]
 execute if score @s aestd.item.slot matches 7 run data modify block 1519204 6 0 RecordItem.tag.aestd.SavedItem set from entity @s Inventory[{Slot:7b}]
