@@ -67,14 +67,20 @@ scoreboard objectives add aestd.dimension dummy
 scoreboard objectives add aestd.math.in dummy
 scoreboard objectives add aestd.math.in2 dummy
 scoreboard objectives add aestd.math.out dummy
+scoreboard objectives add aestd.math.seed dummy
 scoreboard objectives add aestd.math.var dummy
 scoreboard objectives add aestd.math.var2 dummy
 scoreboard objectives add aestd.math.var3 dummy
 
-# random/random_range
+# random/random_range/random_lcg
 scoreboard objectives add aestd.random dummy
 scoreboard objectives add aestd.random.min dummy
 scoreboard objectives add aestd.random.max dummy
+
+# vector
+scoreboard objectives add aestd.vector.x dummy
+scoreboard objectives add aestd.vector.y dummy
+scoreboard objectives add aestd.vector.z dummy
 
 
 
