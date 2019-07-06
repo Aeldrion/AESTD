@@ -2,9 +2,10 @@
 # Places necessary blocks in the save chunk at 1519204, 0
 
 # Build bedrock protection
-fill 1519203 1 -1 1519205 7 1 minecraft:bedrock hollow
+fill 1519203 1 -1 1519205 8 1 minecraft:bedrock hollow
 
 # Place blocks
+setblock 1519204 7 0 minecraft:quartz_block
 setblock 1519204 6 0 minecraft:jukebox{RecordItem:{id:"minecraft:command_block",Count:1b,tag:{aestd:{VERSION:-1}}}}
 setblock 1519204 2 0 minecraft:orange_shulker_box
 setblock 1519204 3 0 minecraft:oak_sign
