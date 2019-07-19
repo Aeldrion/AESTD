@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Simulates the hitting of an entity from another at context position
 
 # WARNING: Does not work on players

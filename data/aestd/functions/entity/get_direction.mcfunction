@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Saves the sender's direction multiplied by 1000 to its direction scores
 # Input: sender, output: aestd.dir.x|aestd.dir.y|aestd.dir.z
 

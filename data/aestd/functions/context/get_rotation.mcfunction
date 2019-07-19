@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Saves the context rotation to the sender's rotation scores
 # Input: context, output: aestd.rot.x|aestd.raw.y
 

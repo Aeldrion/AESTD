@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Offsets an entity's position by its position delta scores
 # Input: sender|aestd.delta.x|aestd.delta.y|aestd.delta.z, output: sender
 

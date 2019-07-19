@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Sets the NBT of the 'tag' tag of an item (see aestd:item/save for slot index)
 # Input: aestd.item.slot|save chunk/RecordItem.tag.aestd.nbt
 

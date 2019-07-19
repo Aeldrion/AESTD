@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Loads an item to the sender's inventory (see aestd:item/save)
 # Input: save chunk/aestd.SavedItem, output: sender|aestd.item.slot
 

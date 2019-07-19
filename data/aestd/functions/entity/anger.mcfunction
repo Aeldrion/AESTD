@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Makes the sender angry at an entity with a given UUID if it can (see aestd:entity/get_uuid)
 
 execute unless entity @s[nbt={HurtTime:10s}] run tag @s add aestd.damage.summon_cloud

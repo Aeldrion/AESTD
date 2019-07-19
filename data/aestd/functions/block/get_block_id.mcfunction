@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Saves the numerical block ID of a block. This ID corresponds to the protocol_id found in registries.json.
 # Input: context, output: aestd.block.id
 

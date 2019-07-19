@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Sets the count an item (see aestd:item/save for slot index)
 # Input: sender|aestd.item.slot|aestd.item.count
 

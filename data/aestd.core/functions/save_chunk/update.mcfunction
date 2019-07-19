@@ -16,3 +16,6 @@ execute unless data block 1519204 6 0 RecordItem.tag.aestd.nbt run data modify b
 
 data modify block 1519204 6 0 RecordItem.tag.aestd merge value {VERSION:-1}
 execute store result block 1519204 6 0 RecordItem.tag.aestd.VERSION int 1 run scoreboard players get #aestd.version aestd.var
+
+
+execute if block 1519204 2 0 minecraft:orange_shulker_box run setblock 1519204 2 0 minecraft:yellow_shulker_box

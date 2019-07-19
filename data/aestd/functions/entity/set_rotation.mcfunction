@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Loads the sender's rotation from its rotation scores
 # Input: aestd.rotation.x|aestd.rotation.y, output: sender
 

@@ -1,9 +1,0 @@
-replaceitem entity @s[scores={aestd.block_id=136}] weapon minecraft:tnt
-replaceitem entity @s[scores={aestd.block_id=137}] weapon minecraft:bookshelf
-replaceitem entity @s[scores={aestd.block_id=138}] weapon minecraft:mossy_cobblestone
-replaceitem entity @s[scores={aestd.block_id=139}] weapon minecraft:obsidian
-replaceitem entity @s[scores={aestd.block_id=140}] weapon minecraft:torch
-replaceitem entity @s[scores={aestd.block_id=141}] weapon minecraft:torch
-replaceitem entity @s[scores={aestd.block_id=143}] weapon minecraft:spawner
-replaceitem entity @s[scores={aestd.block_id=144}] weapon minecraft:oak_stairs
-replaceitem entity @s[scores={aestd.block_id=145}] weapon minecraft:chest

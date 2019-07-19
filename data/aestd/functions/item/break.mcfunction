@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Simulates the breaking of an item
 
 execute at @s run playsound minecraft:item.shield.break player @a ~ ~ ~ 1 1.1

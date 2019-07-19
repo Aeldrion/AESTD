@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Saves the context position to the sender's position scores if the position is loaded
 # If the sender has the aestd.coords.scale_up tag, the results will be scaled up by 50
 # Input: context, output: aestd.coords.x|aestd.coords.y|aestd.coords.z

@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Changes the item to correspond to a block ID (see aestd:item/save for slot index and aestd:block/get_block_id)
 # Input: sender|aestd.item.slot|aestd.block.id
 

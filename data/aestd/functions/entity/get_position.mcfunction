@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Saves the sender's position to its position scores
 # If the sender has the aestd.coords.scale_up tag, the results will be scaled up by 50
 # Input: sender, output: aestd.coords.x|aestd.coords.y|aestd.coords.z

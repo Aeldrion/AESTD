@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Adds a line of lore to an item (see aestd:item/save for slot index)
 # If the sender has the aestd.preformatted_text tag, text will not be formatted to JSON (see below)
 # Input: sender|aestd.item.slot|save chunk/RecordItem.tag.aestd.text

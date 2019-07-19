@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Sets the sender's owner to an entity with a given UUID (see aestd:entity/get_uuid)
 # Note: This is for projectiles only. For animals, use aestd:entity/tame
 

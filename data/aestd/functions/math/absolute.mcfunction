@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Returns the absolute value of an integer
 # Input: aestd.math.in, output: aestd.math.out
 

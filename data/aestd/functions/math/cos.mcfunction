@@ -1,19 +1,12 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Returns the cosine of an integer (in degrees) multiplied by 1000
 # Example: 0 returns 1000, 30 returns 866, 120 returns -500
 # Input: aestd.math.in, output: aestd.math.out
 
-# Summon the cloud and apply rotation
-execute at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["aestd","aestd.cosine.cloud"]}
-scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=aestd.cosine.cloud,limit=1] aestd.rot.x = @s aestd.math.in
-execute as @e[type=minecraft:area_effect_cloud,tag=aestd.cosine.cloud,limit=1] run function aestd:entity/set_rotation
-
-# Get x position before and after teleportation
-execute as @e[type=minecraft:area_effect_cloud,tag=aestd.cosine.cloud,limit=1] run function aestd:entity/get_position
-scoreboard players operation #aestd aestd.coords.z = @e[type=minecraft:area_effect_cloud,tag=aestd.cosine.cloud,limit=1] aestd.coords.z
-execute as @e[type=minecraft:area_effect_cloud,tag=aestd.cosine.cloud,limit=1] at @s run teleport @s ^ ^ ^1000
-execute as @e[type=minecraft:area_effect_cloud,tag=aestd.cosine.cloud,limit=1] run function aestd:entity/get_position
-
-# Calculate delta
-scoreboard players operation @s aestd.math.out = @e[type=minecraft:area_effect_cloud,tag=aestd.cosine.cloud,limit=1] aestd.coords.z
-scoreboard players operation @s aestd.math.out -= #aestd aestd.coords.z
+execute at @s run summon minecraft:area_effect_cloud 1519204 1 0 {Tags:["aestd","aestd.cos.cloud"]}
+execute store result entity @e[type=minecraft:area_effect_cloud,tag=aestd.cos.cloud,limit=1] Rotation[0] float 1 run scoreboard players get @s aestd.math.in
+execute as @e[type=minecraft:area_effect_cloud,tag=aestd.cos.cloud,limit=1] at @s run function aestd.internal:cos_teleport
+scoreboard players operation @s aestd.math.out = #aestd aestd.math.out

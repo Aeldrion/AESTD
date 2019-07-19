@@ -1,5 +1,5 @@
 # Written by Aeldrion, Minecraft 1.14.2
-# Used internally by aestd:math/perlin
+# Used internally by aestd:math/perlin_noise
 # Input: aestd.math.var scores of #aestd.perlin.dgg.ix, iz
 # Output: aestd.math.var score of #aestd.perlin.dgg.dot_product
 
@@ -38,9 +38,9 @@ execute if score #aestd.perlin.dgg.(*4+30)%100 aestd.math.var matches 75..99 run
 scoreboard players operation #aestd.perlin.dgg.ix aestd.math.var *= #aestd.1000 aestd.math.var
 scoreboard players operation #aestd.perlin.dgg.iz aestd.math.var *= #aestd.1000 aestd.math.var
 
-scoreboard players operation #aestd.perlin.dgg.dx aestd.math.var = #aestd.perlin.x aestd.math.var
+scoreboard players operation #aestd.perlin.dgg.dx aestd.math.var = #aestd.perlin_noise.x aestd.math.var
 scoreboard players operation #aestd.perlin.dgg.dx aestd.math.var -= #aestd.perlin.dgg.ix aestd.math.var
-scoreboard players operation #aestd.perlin.dgg.dz aestd.math.var = #aestd.perlin.z aestd.math.var
+scoreboard players operation #aestd.perlin.dgg.dz aestd.math.var = #aestd.perlin_noise.z aestd.math.var
 scoreboard players operation #aestd.perlin.dgg.dz aestd.math.var -= #aestd.perlin.dgg.iz aestd.math.var
 
 

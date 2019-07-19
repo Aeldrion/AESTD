@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14.2
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Sets a wandering trader's WanderTarget position from its position scores
 # Input: aestd.coords.x|aestd.coords.y|aestd.coords.z
 

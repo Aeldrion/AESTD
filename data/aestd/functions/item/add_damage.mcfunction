@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Adds to the damage of an item (see aestd:item/save for slot index)
 # Input: aestd.item.dmg|aestd.item.slot, output: sender
 

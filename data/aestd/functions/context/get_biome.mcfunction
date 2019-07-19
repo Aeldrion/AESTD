@@ -1,4 +1,7 @@
-# Loot table by Amber, written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion/AmberW
+# Version: 1.14.4
+# Project: AESTD
+
 # Stores the biome's numerical ID into a score
 # Input: context position, output: aestd.biome
 

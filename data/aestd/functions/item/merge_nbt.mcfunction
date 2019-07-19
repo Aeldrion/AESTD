@@ -1,5 +1,8 @@
-# Written by Aeldrion, Minecraft 1.14
-# Merges NBT with the 'tag' tag of an item (see aestd:item/save for slot index)
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
+# Merges NBT to the 'tag' tag of an item (see aestd:item/save for slot index)
 # Input: aestd.item.slot|save chunk/RecordItem.tag.aestd.nbt
 
 function aestd:item/save

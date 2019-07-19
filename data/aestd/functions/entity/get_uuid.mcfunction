@@ -1,4 +1,7 @@
-# Written by Aeldrion, 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Saves the UUID least/most pair of an entity to the save chunk's data item
 # The entity whose UUID is currently saved has the tag aestd.uuid_selected
 # Input: sender, output: save chunk/aestd.EntityUUIDLeast|aestd.EntityUUIDMost

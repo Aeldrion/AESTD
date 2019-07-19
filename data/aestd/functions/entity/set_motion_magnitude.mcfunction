@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14.2
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Sets the magnitude of the motion vector
 # Input: aestd.math.in
 

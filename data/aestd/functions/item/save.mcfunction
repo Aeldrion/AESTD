@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Saves an item to the save chunk (see aestd:item/load)
 # Input: sender|aestd.item.slot, output: save chunk/aestd.SavedItem
 

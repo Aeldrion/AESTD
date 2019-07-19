@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Places a block on the entity's head slot, with the numerical ID saved as a score under aestd.block_id (see aestd:block/get_block_id)
 # Input: aestd.block_id, output: sender's head slot
 

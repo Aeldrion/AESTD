@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Randomly modifies the mirror/rotation settings of a load structure block
 # If the sender has the aestd.block.adjust_structure_pos tag, the structure loading position will be adjusted symmetrically to the structure block (only works if its mirror/rotation settings are set to default when calling the function).
 # For instance, if the structure block is in the middle of the bounding box and posX and posZ are set, the structure block would still be in the middle of the bounding box after the operation.

@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Sets the motion of the sender towards the context position
 # The magnitude of the motion vector is defined by distance to context position
 

@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Loads block at context position from save chunk (see aestd:block/save)
 # Input: save chunk, output: context
 

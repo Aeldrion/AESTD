@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Gets the distance (x50) between the sender's position and the context position
 # Ex. execute at @s positioned ^ ^ ^20 run function aestd:entity/get_distance yields 1000
 # Input: sender|context position, output: aestd.math.out

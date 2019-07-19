@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Teleports an entity to the minimum x and z coordinates in the chunk it is in
 
 execute store result entity @s Pos[0] double 16 run data get entity @s Pos[0] 0.0625

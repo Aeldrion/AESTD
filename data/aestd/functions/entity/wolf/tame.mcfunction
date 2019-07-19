@@ -1,4 +1,7 @@
-# Written by Aeldrion, 19w05a
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Tames a wolf and sets its owner to a player with a given UUID (see aestd:player/get_uuid)
 # Input: save chunk/aestd.PlayerUUID, output: sender's OwnerUUID
 

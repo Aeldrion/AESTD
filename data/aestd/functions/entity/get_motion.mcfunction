@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Saves the sender's motion multiplied by 1000 to its motion scores
 # Input: sender, output: aestd.motion.x|aestd.motion.y|aestd.motion.z
 

@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Loads the sender's position from its position scores
 # If the sender has the aestd.coords.scale_up tag, the position will be scaled down by 50(as the get_position function uses scale_up to scale up the score)
 # Input: aestd.coords.x|aestd.coords.y|aestd.coords.z, output: sender
