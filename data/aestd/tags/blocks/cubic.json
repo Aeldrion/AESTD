@@ -1,0 +1,14 @@
+{
+	"values": [
+		"#aestd:glass",
+		"#minecraft:leaves",
+		"#aestd:opaque",
+		"minecraft:furnace",
+		"minecraft:ice",
+		"minecraft:jack_o_lantern",
+		"minecraft:sea_lantern",
+		"minecraft:slime_block",
+		"minecraft:spawner",
+		"minecraft:tnt"
+	]
+}

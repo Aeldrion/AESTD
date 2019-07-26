@@ -4,4 +4,4 @@
 
 worldborder set 30000000
 function #aestd.tools:benchmark_init
-schedule function aestd.tools:function_test/start 1t
+schedule function aestd.internal:benchmark/start 1t

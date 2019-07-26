@@ -4,6 +4,7 @@
 execute unless block 1519204 6 0 minecraft:jukebox{RecordItem:{tag:{aestd:{VERSION:-1}}}} run schedule function aestd.core:message/save_chunk_update 5s
 
 execute unless data block 1519204 6 0 RecordItem.tag.aestd run data merge block 1519204 6 0 {RecordItem:{id:"minecraft:command_block",Count:1b,tag:{aestd:{}}}}
+execute unless data block 1519204 6 0 RecordItem.tag.aestd_internal run data modify block 1519204 6 0 RecordItem.tag merge value {aestd_internal:{nbt:{}}}
 
 execute unless data block 1519204 6 0 RecordItem.tag.aestd.PlayerName run data modify block 1519204 6 0 RecordItem.tag.aestd merge value {PlayerName:""}
 execute unless data block 1519204 6 0 RecordItem.tag.aestd.PlayerUUID run data modify block 1519204 6 0 RecordItem.tag.aestd merge value {PlayerUUID:""}
