@@ -7,10 +7,10 @@
 
 execute if entity @s in minecraft:overworld run data modify block 1519204 6 0 RecordItem.tag.aestd.SavedItem set value {id:"minecraft:air",Count:1b,Slot:0b}
 
-execute if entity @s[type=minecraft:player,tag=!aestd.item.container] in minecraft:overworld run function aestd.internal:save_player_item
-execute if entity @s[type=minecraft:item,tag=!aestd.item.container] in minecraft:overworld run function aestd.internal:save_dropped_item
-execute if entity @s[type=#aestd:mobs,tag=!aestd.item.container] in minecraft:overworld run function aestd.internal:save_mob_item
-execute if entity @s[tag=aestd.item.container] run function aestd.internal:save_container_item
+execute if entity @s[type=minecraft:player,tag=!aestd.item.container] in minecraft:overworld run function aestd.internal:inventory/save_player_item
+execute if entity @s[type=minecraft:item,tag=!aestd.item.container] in minecraft:overworld run function aestd.internal:inventory/save_dropped_item
+execute if entity @s[type=#aestd:mobs,tag=!aestd.item.container] in minecraft:overworld run function aestd.internal:inventory/save_mob_item
+execute if entity @s[tag=aestd.item.container] run function aestd.internal:inventory/save_container_item
 
 execute if entity @s in minecraft:overworld run data modify block 1519204 6 0 RecordItem.tag.aestd.SavedItem.Slot set value 0b
 

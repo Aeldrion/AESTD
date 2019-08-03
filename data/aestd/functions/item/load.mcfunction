@@ -8,10 +8,10 @@
 execute if entity @s in minecraft:overworld run data remove block 1519204 2 0 Items
 execute if entity @s in minecraft:overworld run data modify block 1519204 2 0 Items append from block 1519204 6 0 RecordItem.tag.aestd.SavedItem
 
-execute if entity @s[type=minecraft:player,tag=!aestd.item.container] in minecraft:overworld run function aestd.internal:load_player_item
-execute if entity @s[type=minecraft:item,tag=!aestd.item.container] in minecraft:overworld run function aestd.internal:load_dropped_item
-execute if entity @s[type=#aestd:mobs,tag=!aestd.item.container] in minecraft:overworld run function aestd.internal:load_mob_item
-execute if entity @s[tag=aestd.item.container] in minecraft:overworld run function aestd.internal:load_container_item
+execute if entity @s[type=minecraft:player,tag=!aestd.item.container] in minecraft:overworld run function aestd.internal:inventory/load_player_item
+execute if entity @s[type=minecraft:item,tag=!aestd.item.container] in minecraft:overworld run function aestd.internal:inventory/load_dropped_item
+execute if entity @s[type=#aestd:mobs,tag=!aestd.item.container] in minecraft:overworld run function aestd.internal:inventory/load_mob_item
+execute if entity @s[tag=aestd.item.container] in minecraft:overworld run function aestd.internal:inventory/load_container_item
 
 ## If the sender is an item entity, its data will be changed directly from the save chunk
 

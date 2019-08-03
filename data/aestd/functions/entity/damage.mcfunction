@@ -6,16 +6,8 @@
 # Input: aestd.damage, output: sender
 
 # Settings:
-# - aestd.damage.hurt_by_player : when a mob has this tag, it will act as if it was hit by the player whose UUID is saved (see aestd:player/get_uuid)
-# - aestd.damage.fire : when a mob has this tag, it will be set on fire
-
-# Notes:
-# There are a lot of bugs with nbt editing, health and damage. The order of these commands is
-# important and the distinction between the case where the entity dies and the case where it
-# doesn't is necessary.
-# Don't increase the fire value as the entity may die instantly.
-# If you notice any issue, report them on the discord server linked here: https://discord.gg/mUBnAcM
-
+# - aestd.damage.hurt_by_player : if the executing mob has this tag, it will act as if it was hit by the latest entity whose UUID was previously saved to the save chunk (see aestd:entity/get_uuid)
+# - aestd.damage.fire : if the executing mob has this tag, it will be set on fire
 
 # Take health
 execute store result score @s aestd.damage.hp run data get entity @s Health 100
@@ -45,6 +37,12 @@ execute unless entity @s[tag=aestd.damage.hurt_by_player] run function aestd:ent
 # Anger the mob if it has a hurt_by_player tag
 execute if entity @s[tag=aestd.damage.hurt_by_player] run function aestd:entity/anger
 
+# Notes:
+# There are a lot of bugs with nbt editing, health and damage. The order of these commands is
+# important and the distinction between the case where the entity dies and the case where it
+# doesn't is necessary.
+# Don't increase the fire value as the entity may die instantly.
+# If you notice any issue, report them on the discord server linked here: https://discord.gg/mUBnAcM
 
 # Explanation:
 # If the entity dies, it is necessary to run the anger and fire commands so that it drops the

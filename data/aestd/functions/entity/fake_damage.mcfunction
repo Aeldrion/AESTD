@@ -3,6 +3,7 @@
 # Project: AESTD
 
 # Hurts the sender without actually dealing damage, playing its hurt sound and turning it red
+# Does not work on players
 
 effect give @s minecraft:resistance 1 255 true
 effect give @s[type=#aestd:undead] minecraft:instant_health 1 1

@@ -103,6 +103,13 @@ scoreboard objectives add aestd.item.slot dummy
 
 ## PLAYER FUNCTIONS
 
+# Attributes
+scoreboard objectives add aestd.player.akb dummy
+scoreboard objectives add aestd.player.dmg dummy
+scoreboard objectives add aestd.player.kbr dummy
+scoreboard objectives add aestd.player.mhp dummy
+scoreboard objectives add aestd.player.spd dummy
+
 # set_experience/add_experience
 scoreboard objectives add aestd.player.xp dummy
 

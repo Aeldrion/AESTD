@@ -3,7 +3,7 @@
 
 execute in minecraft:overworld store success score #aestd.chunk_loaded aestd.var run forceload query 1519204 0
 
-execute if score #aestd.chunk_loaded aestd.var matches 0 in minecraft:overworld run forceload add 1519204 0
+execute if score #aestd.chunk_loaded aestd.var matches 0 run function aestd.core:save_chunk/mark_forceloading
 execute if score #aestd.chunk_loaded aestd.var matches 0 in minecraft:overworld if block 1519204 7 0 minecraft:quartz_block run function aestd.core:save_chunk/check_version
 execute if score #aestd.chunk_loaded aestd.var matches 0 in minecraft:overworld unless block 1519204 7 0 minecraft:quartz_block run function aestd.core:save_chunk/setup
 
