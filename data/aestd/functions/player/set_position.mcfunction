@@ -1,7 +1,11 @@
-# Written by Aeldrion, Minecraft 1.14s
-# Teleports the player to its position scores
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
+# Teleports the player to their position scores
 # Input: aestd.coords.x|aestd.coords.y|aestd.coords.z
 
-function aestd:world/add_marker
-execute positioned as @e[type=minecraft:area_effect_cloud,tag=aestd.marker,limit=1] run teleport @s ~ ~ ~
-kill @e[type=minecraft:area_effect_cloud,tag=aestd.marker,limit=1]
+tag @s add aestd.player.setting_position
+summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["aestd","aestd.player.position_cloud"],UUIDLeast:0L,UUIDMost:3067078466247364L}
+execute at @s as 000ae57d-da7a-9ac4-0000-000000000000 run function aestd.internal:set_player_position
+tag @s remove aestd.player.setting_position

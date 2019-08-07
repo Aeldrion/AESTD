@@ -2,7 +2,7 @@
 # Version: 1.14.4
 # Project: AESTD
 
-# Teleports the sender to the highest block matching the x and z coordinates of the context position
+# Teleports the executing entity to the highest block matching the x and z coordinates of the context position
 
 teleport @s[tag=!aestd.teleporting_to_surface] ~ 256 ~
 tag @s add aestd.teleporting_to_surface

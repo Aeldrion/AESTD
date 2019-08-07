@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 19w05a
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Calculates pow(a,b) with b in [1;30]
 # Input: aestd.math.in|aestd.math.in2, output: aestd.math.out
 

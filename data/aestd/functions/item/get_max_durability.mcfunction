@@ -2,7 +2,7 @@
 # Version: 1.14.4
 # Project: AESTD
 
-# Returns the durability of an item (see aestd:item/save for slot index)
+# Returns the durability of an item (see aestd:item/save for slot index and details)
 # Input: aestd.item.slot, output: aestd.item.drblt
 
 function aestd:item/save

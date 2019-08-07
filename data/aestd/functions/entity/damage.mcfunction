@@ -2,8 +2,8 @@
 # Version: 1.14.4
 # Project: AESTD
 
-# Damages the sender by (damage/100) HP, does not work on players
-# Input: aestd.damage, output: sender
+# Damages the executing entity by (damage/100) HP, does not work on players
+# Input: aestd.damage
 
 # Settings:
 # - aestd.damage.hurt_by_player : if the executing mob has this tag, it will act as if it was hit by the latest entity whose UUID was previously saved to the save chunk (see aestd:entity/get_uuid)

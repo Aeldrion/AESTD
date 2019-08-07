@@ -2,17 +2,15 @@
 # Version: 1.14.4
 # Project: AESTD
 
-# Simulates the hitting of an entity from another at context position
-
+# Simulates the hitting of the executing entity from another at context position
 # WARNING: Does not work on players
 
-
 # Calculate difference between context and entity
-function aestd:entity/get_position
+function aestd:entity/get_position_scale50
 scoreboard players operation @s aestd.motion.x = @s aestd.coords.x
 scoreboard players operation @s aestd.motion.z = @s aestd.coords.z
 
-function aestd:context/get_position
+function aestd:context/get_position_scale50
 scoreboard players operation @s aestd.motion.x -= @s aestd.coords.x
 scoreboard players operation @s aestd.motion.z -= @s aestd.coords.z
 

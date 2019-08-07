@@ -1,7 +1,11 @@
-# Written by Aeldrion, Minecraft 1.14.2
-# Returns lerp(1000t=var,v0=in,v1=in2)
-# aestd.math.var should be between 0 and 1000
-# Input: aestd.math.var|aestd.math.in|aestd.math.in2
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
+# Calculates an interpolation between two inputs (in and in2) for a parameter (var) in the closed interval [0, 1000]
+# When var is 0, returns in. When var is 1000, returns in2.
+# If var is not in the interval [0, 1000], aestd.math.out is reset
+# Input: aestd.math.var|aestd.math.in|aestd.math.in2, output: aestd.math.out
 
 scoreboard players set #aestd.1000 aestd.math.var 1000
 

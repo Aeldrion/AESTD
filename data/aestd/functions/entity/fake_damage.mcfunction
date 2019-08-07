@@ -2,7 +2,7 @@
 # Version: 1.14.4
 # Project: AESTD
 
-# Hurts the sender without actually dealing damage, playing its hurt sound and turning it red
+# Hurts the executing entity without actually dealing damage, playing its hurt sound and turning it red
 # Does not work on players
 
 effect give @s minecraft:resistance 1 255 true

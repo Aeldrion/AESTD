@@ -2,14 +2,12 @@
 # Version: 1.14.4
 # Project: AESTD
 
-# Sets the motion of the sender towards the context position
+# Sets the motion of the executing entity towards the context position
 # The magnitude of the motion vector is defined by distance to context position
 
 # Get coordinates
-tag @s add aestd.coords.scale_up
-function aestd:context/get_position
-function aestd:entity/get_position
-tag @s remove aestd.coords.scale_up
+function aestd:context/get_position_scale50
+function aestd:entity/get_position_scale50
 
 # Calculate delta
 execute store result score @s aestd.math.var run scoreboard players operation #aestd aestd.coords.x -= @s aestd.coords.x

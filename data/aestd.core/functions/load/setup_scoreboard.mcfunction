@@ -27,11 +27,6 @@ scoreboard objectives add aestd.coords.z dummy
 scoreboard objectives add aestd.damage dummy
 scoreboard objectives add aestd.damage.hp dummy
 
-# offset_position
-scoreboard objectives add aestd.delta.x dummy
-scoreboard objectives add aestd.delta.y dummy
-scoreboard objectives add aestd.delta.z dummy
-
 # get_direction/set_direction
 scoreboard objectives add aestd.dir.x dummy
 scoreboard objectives add aestd.dir.y dummy
@@ -86,17 +81,13 @@ scoreboard objectives add aestd.vector.z dummy
 
 ## ITEM FUNCTIONS
 
-# set_custom_model_data/add_custom_model_data
 scoreboard objectives add aestd.item.cmd dummy
-
-# set_count
 scoreboard objectives add aestd.item.count dummy
-
-# set_damage/add_damage
 scoreboard objectives add aestd.item.dmg dummy
 scoreboard objectives add aestd.item.drblt dummy
+scoreboard objectives add aestd.item.ench dummy
+scoreboard objectives add aestd.item.lvl dummy
 
-# load/save
 scoreboard objectives add aestd.item.slot dummy
 
 

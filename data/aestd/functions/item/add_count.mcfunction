@@ -2,8 +2,8 @@
 # Version: 1.14.4
 # Project: AESTD
 
-# Adds to the count an item (see aestd:item/save for slot index)
-# Input: sender|aestd.item.slot|aestd.item.count
+# Adds to the count of an item (see aestd:item/save for slot index and details)
+# Input: aestd.item.slot|aestd.item.count
 
 function aestd:item/save
 execute in minecraft:overworld store result score @s aestd.var run data get block 1519204 6 0 RecordItem.tag.aestd.SavedItem.Count

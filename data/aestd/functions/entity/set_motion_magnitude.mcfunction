@@ -2,7 +2,7 @@
 # Version: 1.14.4
 # Project: AESTD
 
-# Sets the magnitude of the motion vector
+# Sets the magnitude (/1000) of the executing entity's motion vector
 # Input: aestd.math.in
 
 function aestd:entity/get_motion
