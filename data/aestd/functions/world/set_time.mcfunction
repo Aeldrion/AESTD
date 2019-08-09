@@ -1,6 +1,9 @@
-# Written by Aeldrion, Minecraft 19w05a
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Sets the world time to any value
-# Input: aestd.time, output: time
+# Input: aestd.time
 
 # Reset the time
 time set 0

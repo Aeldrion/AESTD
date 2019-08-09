@@ -6,8 +6,9 @@
 # Input: context position, output: aestd.biome
 
 # Call loot table and insert into chest
-execute in minecraft:overworld run replaceitem block 1519204 2 0 container.0 minecraft:air
-execute in minecraft:overworld store result score #aestd aestd.biome run loot insert 1519204 2 0 loot aestd.internal:biome
+function aestd:context/get_dimension
+replaceitem block 1519204 2 0 container.0 minecraft:air
+execute store result score #aestd aestd.biome run loot insert 1519204 2 0 loot aestd.internal:biome
 
 # Copy ID to sender, if there is one
 execute if entity @s run scoreboard players operation @s aestd.biome = #aestd aestd.biome

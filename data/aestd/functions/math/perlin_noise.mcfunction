@@ -11,11 +11,11 @@
 scoreboard players operation #aestd.perlin_noise.x aestd.math.var = @s aestd.math.in
 scoreboard players operation #aestd.perlin_noise.z aestd.math.var = @s aestd.math.in2
 
-scoreboard players set #aestd.1000 aestd.math.var 1000
+scoreboard players set $1000 aestd.math.var 1000
 scoreboard players operation #aestd.perlin_noise.floor(x) aestd.math.var = #aestd.perlin_noise.x aestd.math.var
-scoreboard players operation #aestd.perlin_noise.floor(x) aestd.math.var /= #aestd.1000 aestd.math.var
+scoreboard players operation #aestd.perlin_noise.floor(x) aestd.math.var /= $1000 aestd.math.var
 scoreboard players operation #aestd.perlin_noise.floor(z) aestd.math.var = #aestd.perlin_noise.z aestd.math.var
-scoreboard players operation #aestd.perlin_noise.floor(z) aestd.math.var /= #aestd.1000 aestd.math.var
+scoreboard players operation #aestd.perlin_noise.floor(z) aestd.math.var /= $1000 aestd.math.var
 
 scoreboard players operation #aestd.perlin_noise.ceil(x) aestd.math.var = #aestd.perlin_noise.floor(x) aestd.math.var
 scoreboard players add #aestd.perlin_noise.ceil(x) aestd.math.var 1
@@ -24,9 +24,9 @@ scoreboard players add #aestd.perlin_noise.ceil(z) aestd.math.var 1
 
 # Determine interpolation weights
 scoreboard players operation #aestd.perlin_noise.sx aestd.math.var = @s aestd.math.in
-scoreboard players operation #aestd.perlin_noise.sx aestd.math.var %= #aestd.1000 aestd.math.var
+scoreboard players operation #aestd.perlin_noise.sx aestd.math.var %= $1000 aestd.math.var
 scoreboard players operation #aestd.perlin_noise.sz aestd.math.var = @s aestd.math.in2
-scoreboard players operation #aestd.perlin_noise.sz aestd.math.var %= #aestd.1000 aestd.math.var
+scoreboard players operation #aestd.perlin_noise.sz aestd.math.var %= $1000 aestd.math.var
 
 
 # Calculate grid point gradients

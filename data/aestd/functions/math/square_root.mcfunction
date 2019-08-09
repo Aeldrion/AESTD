@@ -1,10 +1,15 @@
-# Written by Aeldrion, Minecraft 1.14.2
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Calculates the square root of a given number
+# If input is strictly negative, resets output
 # Input: aestd.math.in, output: aestd.math.out
 
 # Initialising
 execute if entity @s[tag=!aestd.square_root.computing] run scoreboard players set #aestd.square_root.xn aestd.math.var 1000
 execute if entity @s[tag=!aestd.square_root.computing] run scoreboard players set #aestd.square_root.n aestd.math.var 0
+execute if entity @s[tag=!aestd.square_root.computing,scores={aestd.math.in=..-1}] run scoreboard players set #aestd.square_root.n aestd.math.var 10
 tag @s add aestd.square_root.computing
 
 # x(n+1) = 1/2(xn+s/xn)
@@ -26,3 +31,5 @@ execute if score #aestd.square_root.n aestd.math.var matches ..9 run function ae
 execute if score #aestd.square_root.n aestd.math.var matches 10.. run scoreboard players operation @s aestd.math.out = #aestd.square_root.xn aestd.math.var
 execute if score #aestd.square_root.n aestd.math.var matches 10.. run tag @s remove aestd.square_root.computing
 execute if score #aestd.square_root.n aestd.math.var matches 10.. run scoreboard players reset #aestd.square_root.n aestd.math.var
+
+execute if score @s aestd.math.in matches ..-1 run scoreboard players reset @s aestd.math.out

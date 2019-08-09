@@ -3,6 +3,7 @@
 # Project: AESTD
 
 # Saves block at context position to save chunk (see aestd:block/load)
+# Doesn't sync between dimensions: the saved block can only be loaded in the same dimension
 # Input: context, output: save chunk
 
 clone ~ ~ ~ ~ ~ ~ 1519204 4 0
