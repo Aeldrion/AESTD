@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Teleports a player to the minimum x and z coordinates in the chunk it is in
 
 summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["aestd.new"]}

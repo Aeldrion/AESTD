@@ -4,6 +4,7 @@
 
 # Sets the motion of the executing entity towards the context position
 # The magnitude of the motion vector is defined by distance to context position
+# Further than 40 blocks away, direction is not guaranteed to be exact due to Motion resetting values above 10
 
 # Get coordinates
 function aestd:context/get_position_scale50
@@ -13,6 +14,11 @@ function aestd:entity/get_position_scale50
 execute store result score @s aestd.math.var run scoreboard players operation #aestd aestd.coords.x -= @s aestd.coords.x
 execute store result score @s aestd.math.var2 run scoreboard players operation #aestd aestd.coords.y -= @s aestd.coords.y
 execute store result score @s aestd.math.var3 run scoreboard players operation #aestd aestd.coords.z -= @s aestd.coords.z
+
+# Truncate coords (Motion caps at 10 and resets values above 10 to 0)
+scoreboard players set @s[scores={aestd.math.var=2000..}] aestd.math.var 2000
+scoreboard players set @s[scores={aestd.math.var2=2000..}] aestd.math.var2 2000
+scoreboard players set @s[scores={aestd.math.var3=2000..}] aestd.math.var3 2000
 
 # Set motion
 execute store result entity @s Motion[0] double 0.005 run scoreboard players get @s aestd.math.var

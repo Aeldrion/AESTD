@@ -6,6 +6,7 @@
 
 scoreboard objectives add aestd.var dummy
 scoreboard objectives add aestd.recursion dummy
+scoreboard objectives add aestd.list_mode dummy
 
 
 
@@ -104,6 +105,9 @@ scoreboard objectives add aestd.player.spd dummy
 # set_experience/add_experience
 scoreboard objectives add aestd.player.xp dummy
 
+# get_block_looking_at
+scoreboard objectives add aestd.player.rcd dummy
+
 
 
 ## WORLD FUNCTIONS
@@ -131,6 +135,7 @@ scoreboard objectives add aestd.click_coas minecraft.used:minecraft.carrot_on_a_
 ## OTHER
 
 # villager trades generator
+# this is actually just for my own data packs right now, since the trade generator hasn't been published yet
 scoreboard objectives add aestd.vt.level dummy
 scoreboard objectives add aestd.vt.prv_lvl dummy
 scoreboard objectives add aestd.vt.total_t dummy
@@ -138,7 +143,7 @@ scoreboard objectives add aestd.vt.total_t dummy
 # raycast (internal use only)
 scoreboard objectives add aestd.rcdistance dummy
 
-# performance tests
+# benchmarking
 scoreboard objectives add aestd.wbdiameter dummy
 scoreboard objectives add aestd.iterations dummy
 

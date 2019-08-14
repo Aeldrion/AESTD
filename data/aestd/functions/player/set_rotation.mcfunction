@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
 # Teleports the player to its rotation scores
 # Input: aestd.rot.x|aestd.rot.y
 

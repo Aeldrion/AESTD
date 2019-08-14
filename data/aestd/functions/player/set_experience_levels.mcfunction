@@ -1,6 +1,9 @@
-# Written by Aeldrion, Minecraft 1.14
-# Sets the player's experience levels to a fixed value
-# Input: aestd.player.xp, output: player
+# Author: Aeldrion
+# Version: 1.14.4
+# Project: AESTD
+
+# Sets the executing player's experience levels to a fixed value
+# Input: aestd.player.xp
 
 experience set @s 0 levels
 scoreboard players operation #aestd aestd.player.xp = @s aestd.player.xp

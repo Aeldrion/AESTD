@@ -35,7 +35,7 @@ tag @s remove aestd.damage.fire
 
 ## aestd:entity/fake_damage
 
-# This function will simulate the damaging of all cows that stand on concrete
+# This command will simulate the damaging of all cows that stand on concrete
 execute as @e[type=minecraft:cow] at @s if block ~ ~-1 ~ #aestd:concrete run function aestd:entity/fake_damage
 
 
@@ -61,10 +61,10 @@ execute as @a run title @s actionbar {"score":{"name":"@s","objective":"aestd.ma
 
 ## aestd:entity/get_motion
 
-# This function will display end rod particles if the nearest arrow is going upwards, flame particles if it is going downwards
-execute as @e[type=minecraft:arrow,limit=1,sort=nearest] run function aestd:entity/get_motion
-execute as @e[type=minecraft:arrow,limit=1,sort=nearest] at @s[scores={aestd.motion.y=1..}] run particle minecraft:end_rod ~ ~ ~ 0 0 0 0 1 force
-execute as @e[type=minecraft:arrow,limit=1,sort=nearest] at @s[scores={aestd.motion.y=..-1}] run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force
+# This function will display end rod particles at arrows that are going upwards, flame particles at arrows that are going downwards
+execute as @e[type=minecraft:arrow] run function aestd:entity/get_motion
+execute as @e[type=minecraft:arrow] at @s[scores={aestd.motion.y=1..}] run particle minecraft:end_rod ~ ~ ~ 0 0 0 0 1 force
+execute as @e[type=minecraft:arrow] at @s[scores={aestd.motion.y=..-1}] run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force
 
 
 
@@ -100,28 +100,28 @@ execute as @e[type=minecraft:cow,limit=1,sort=nearest] at @p run function aestd:
 execute as @p run function aestd:entity/get_uuid
 scoreboard players set @e[type=minecraft:cow,limit=1,sort=nearest] aestd.damage 100 
 tag @e[type=minecraft:cow,limit=1,sort=nearest] add aestd.damage.hurt_by_entity
-execute as @e[type=minecraft:cow,limit=1,sort=nearest] run function aestd.damage.hurt_by_entity
+execute as @e[type=minecraft:cow,limit=1,sort=nearest] run function aestd:entity/damage
 
 
 
 ## aestd:entity/offset_position
 
-# This function will have the same effect as teleport @s ~4 ~ ~-2
-scoreboard players set @s aestd.delta.x 4
-scoreboard players set @s aestd.delta.y 0
-scoreboard players set @s aestd.delta.z -2
+# This function will have the same effect as teleport @s ~4 ~0.5 ~-2
+scoreboard players set @s aestd.vector.x 4000
+scoreboard players set @s aestd.vector.y 500
+scoreboard players set @s aestd.vector.z -2000
 function aestd:entity/offset_position
 
 # Another, more useful example: this function will teleport the executing entity randomly in the current chunk
 # (see random functions and aestd:entity/teleport_to_chunk_corner)
-scoreboard players set @s aestd.random.max 32
+scoreboard players set @s aestd.random.max 32000
 function aestd:math/random_lcg
-scoreboard players operation @s aestd.delta.x = @s aestd.random
+scoreboard players operation @s aestd.vector.x = @s aestd.random
 function aestd:math/random_lcg
-scoreboard players operation @s aestd.delta.z = @s aestd.random
-scoreboard players set @s aestd.random.max 256
+scoreboard players operation @s aestd.vector.z = @s aestd.random
+scoreboard players set @s aestd.random.max 256000
 function aestd:math/random_lcg
-scoreboard players operation @s aestd.delta.y = @s aestd.random
+scoreboard players operation @s aestd.vector.y = @s aestd.random
 function aestd:entity/teleport_to_chunk_corner
 execute at @s run teleport @s ~ 0 ~
 function aestd:entity/offset_position
@@ -132,9 +132,9 @@ function aestd:entity/offset_position
 
 # This function mirrors the nearest fireball's vertical direction (if it is going upwards, it will go downwards at the same speed instead)
 execute as @e[type=minecraft:fireball,limit=1,sort=nearest] run function aestd:entity/get_direction
-scoreboard players set #-1 aestd.math.var -1
+scoreboard players set $-1 aestd.math.var -1
 # Multiply by -1
-scoreboard players operation @e[type=minecraft:fireball,limit=1,sort=nearest] aestd.dir.y *= #-1 aestd.math.var
+scoreboard players operation @e[type=minecraft:fireball,limit=1,sort=nearest] aestd.dir.y *= $-1 aestd.math.var
 execute as @e[type=minecraft:fireball,limit=1,sort=nearest] run function aestd:entity/set_direction
 
 
@@ -149,9 +149,9 @@ function aestd:entity/set_head
 
 ## aestd:entity/set_head_to_block
 
-# This function places on a mob's head the block it is standing on
-execute positioned ~ ~-1 ~ run function aestd:block/get_block_id
-function aestd:entity/set_head_to_block
+# This function places on every mob's head the block it is standing on
+execute as @e[type=#aestd:mobs] positioned ~ ~-1 ~ run function aestd:block/get_block_id
+execute as @e[type=#aestd:mobs] run function aestd:entity/set_head_to_block
 
 
 
@@ -166,20 +166,24 @@ function aestd:math/random_range_lcg
 scoreboard players operation @s aestd.motion.y = @s aestd.random
 function aestd:math/random_range_lcg
 scoreboard players operation @s aestd.motion.z = @s aestd.random
+function aestd:entity/set_motion
 
 
 
 ## aestd:entity/set_motion_from_position
 
-# This function shoots creepers to the nearest player
+# This command shoots creepers to the nearest player (the further away the faster)
 execute as @e[type=minecraft:creeper] at @p run function aestd:entity/set_motion_from_position
 
+# This one shoots creepers to the nearest player with a constant motion regardless of the player's distance, because the command is ran five blocks away from the creeper and facing the player
+execute as @e[type=minecraft:creeper] at @s facing entity @p eyes positioned ^ ^ ^5 run function aestd:entity/set_motion_from_position
 
 
 ## aestd:entity/set_moton_from_rotation
 
-# This function shoots creepers to the nearest player
-execute as @e[type=minecraft:creeper] facing entity @p eyes run function aestd:entity/set_motion_from_rotation
+# This command shoots creepers to the nearest player, similarly to the above command
+# Note: running the function at the creeper (with at @s) is important because the context rotation needs to be the rotation from the creeper to the player
+execute as @e[type=minecraft:creeper] at @s facing entity @p eyes run function aestd:entity/set_motion_from_rotation
 
 
 
@@ -187,8 +191,8 @@ execute as @e[type=minecraft:creeper] facing entity @p eyes run function aestd:e
 
 # This function triples the motion of all mobs
 execute as @e[type=#aestd:mobs] run function aestd:entity/get_motion_magnitude
-scoreboard players set #3 aestd.math.var 3
-execute as @e[type=#aestd:mobs] run scoreboard players operation @s aestd.math.out *= #3 aestd.math.var
+scoreboard players set $3 aestd.math.var 3
+execute as @e[type=#aestd:mobs] run scoreboard players operation @s aestd.math.out *= $3 aestd.math.var
 execute as @e[type=#aestd:mobs] run scoreboard players operation @s aestd.math.in = @s aestd.math.out
 execute as @e[type=#aestd:mobs] run function aestd:entity/set_motion_magnitude
 
@@ -204,14 +208,40 @@ execute as @e[type=minecraft:creeper] run function aestd:entity/set_motion_magni
 execute as @e[type=minecraft:arrow,tag=!shot] run function aestd:entity/get_position
 tag @e[type=minecraft:arrow] add shot
 execute as @e[type=minecraft:arrow,tag=shot,nbt={inGround:1b},tag=!in_ground] run function aestd:entity/set_position
+execute as @e[type=minecraft:arrow,tag=shot,nbt={inGround:1b},tag=!in_ground] run data merge entity @s {Color:-1}
+# The Color tag ensures the arrow doesn't make potion particles once teleported (Minecraft bug)
 tag @e[type=minecraft:arrow,tag=shot,nbt={inGround:1b}] add in_ground
 
 
 
 ## aestd:entity/teleport_surface
 
-# This function teleports all players who hold a clock to the surface
+# This command teleports all players who hold a clock to the surface
 execute as @a[nbt={SelectedItem:{id:"minecraft:clock"}}] at @s run function aestd:entity/teleport_surface
+
+
+
+## aestd:entity/projectile/set_owner_uuid
+
+# This function shoots an arrow from the executing player. The arrow's owner is the player, registrating all damage dealt by the arrow as player damage, triggering neutral behaviours and counting as player deaths
+# Summon arrow in front of the player's eyes
+execute anchored eyes run summon minecraft:arrow ^ ^ ^1 {Tags:["new"],Color:-1,pickup:1b}
+# Set motion forward
+execute anchored eyes positioned ^ ^ ^13 as @e[type=minecraft:arrow,tag=new,limit=1] run function aestd:entity/set_motion_from_position
+# Set arrow's owner UUID to the player's
+function aestd:entity/get_uuid
+execute as @e[type=minecraft:arrow,tag=new,limit=1] run function aestd:entity/projectile/set_owner_uuid
+tag @e[type=arrow] remove new
+# Play shooting sound
+playsound entity.arrow.shoot master @a
+
+
+
+## aestd:entity/wolf/tame
+
+# This function makes all wild wolves tamed to a random player
+execute as @r run function aestd:player/get_uuid
+execute as @e[type=minecraft:wolf,nbt={OwnerUUID:""}] run function aestd:entity/wolf/tame
 
 
 
@@ -306,9 +336,62 @@ function aestd:item/remove_enchantments
 
 
 
+## aestd:item/set_block_id
+
+# This function makes all players hold the block they're standing on in their offhand
+scoreboard players set @a aestd.item.slot -2
+execute as @a at @s positioned ~ ~-0.1 ~ run function aestd:block/get_block_id
+execute as @a run function aestd:item/set_block_id
+
+
+
 ## aestd:item/set_nbt
 
 # Completely resets a player's head item NBT (damage, enchantments, modifiers, repair cost, etc) and sets its name to hello
 data modify block 1519204 6 0 RecordItem.tag.aestd.nbt set value {display:{Name:'"hello"'}}
 scoreboard players set @s aestd.item.slot 103
 function aestd:item/set_nbt
+
+
+
+
+
+
+
+####### WORLD
+
+## aestd:world/get_daytime
+
+# This function gives hunger to all players during night
+function aestd:world/get_daytime
+execute if score #aestd aestd.time.dayp matches 2 run effect give @a minecraft:hunger 2 0
+# Note: here, the aestd.time.dayp score is given to the #aestd fake player. Had this function been executed by an entity, the executing entity's score would have been set as well.
+
+
+
+## aestd:world/get_moon_phase
+
+# This function turns all wolves into zombies during nights of full moon
+function aestd:world/get_daytime
+function aestd:world/get_moon_phase
+execute if score #aestd aestd.time.dayp matches 2 if score #aestd aestd.time.moon matches 0 as @e[type=minecraft:wolf] at @s run summon minecraft:zombie
+execute if score #aestd aestd.time.dayp matches 2 if score #aestd aestd.time.moon matches 0 run teleport @e[type=minecraft:wolf] ~ -512 ~
+
+
+
+## aestd:world/get_weather
+
+# This function gives night vision to all players during rains and thunderstorms
+function aestd:world/get_weather
+execute if score #aestd aestd.weather matches 1..2 run effect give @a minecraft:night_vision 10 0
+
+
+
+
+## aestd:world/set_time
+
+# This function randomizes the time of the day
+scoreboard players set @s aestd.random.max 24000
+function aestd:math/random_lcg
+scoreboard players operation @s aestd.time = @s aestd.random
+function aestd:world/set_time

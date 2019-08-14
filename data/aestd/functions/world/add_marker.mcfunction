@@ -8,7 +8,6 @@
 # Input: aestd.coords.x|aestd.coords.y|aestd.coords.z
 
 kill 000ae57d-da7a-9ac4-0000-000000000001
-
 summon minecraft:area_effect_cloud 1519204 1 0 {Tags:["aestd","aestd.marker"],UUIDLeast:1L,UUIDMost:3067078466247364L}
 
 scoreboard players operation 000ae57d-da7a-9ac4-0000-000000000001 aestd.coords.x = @s aestd.coords.x
