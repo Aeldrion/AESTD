@@ -11,7 +11,6 @@ execute store result score #aestd aestd.weather run loot insert 1519204 2 0 loot
 # Copy score to sender, if there is one
 execute if entity @s run scoreboard players operation @s aestd.weather = #aestd aestd.weather
 
-# Documentation
 # 0: clear
 # 1: raining
 # 2: thundering

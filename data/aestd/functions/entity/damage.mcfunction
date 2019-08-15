@@ -6,8 +6,8 @@
 # Input: aestd.damage
 
 # Settings:
-# - aestd.damage.hurt_by_player : if the executing mob has this tag, it will act as if it was hit by the latest entity whose UUID was previously saved to the save chunk (see aestd:entity/get_uuid)
-# - aestd.damage.fire : if the executing mob has this tag, it will be set on fire
+# - aestd.damage.hurt_by_player: if the executing mob has this tag, it will act as if it was hit by the latest entity whose UUID was previously saved to the save chunk (see aestd:entity/get_uuid)
+# - aestd.damage.fire: if the executing mob has this tag, it will be set on fire
 
 # Take health
 execute store result score @s aestd.damage.hp run data get entity @s Health 100

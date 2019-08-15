@@ -2,7 +2,7 @@
 # Version: 1.14.4
 # Project: AESTD
 
-# Generates a random integer from 0 (included) to aestd.random.max (excluded)
+# Generates a random integer from 0 (included) to aestd.random.max (excluded). Uses a linear congruential generator, which is more efficient than the UUID method used in aestd:math/random.
 # Input: aestd.random.max, output: aestd.random
 
 scoreboard players set #aestd.lcg.multiplier aestd.math.var 22695477

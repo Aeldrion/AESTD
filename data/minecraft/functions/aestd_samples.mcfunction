@@ -179,7 +179,7 @@ execute as @e[type=minecraft:creeper] at @p run function aestd:entity/set_motion
 execute as @e[type=minecraft:creeper] at @s facing entity @p eyes positioned ^ ^ ^5 run function aestd:entity/set_motion_from_position
 
 
-## aestd:entity/set_moton_from_rotation
+## aestd:entity/set_motion_from_rotation
 
 # This command shoots creepers to the nearest player, similarly to the above command
 # Note: running the function at the creeper (with at @s) is important because the context rotation needs to be the rotation from the creeper to the player
@@ -385,6 +385,13 @@ execute if score #aestd aestd.time.dayp matches 2 if score #aestd aestd.time.moo
 function aestd:world/get_weather
 execute if score #aestd aestd.weather matches 1..2 run effect give @a minecraft:night_vision 10 0
 
+
+
+## aestd:world/remove_time
+
+# This function rewinds time. If used in a repeating command block while the doDaylightCycle gamerule is set to false, it will look like time is going backwards
+scoreboard players set @s aestd.time 1
+function aestd:world/remove_time
 
 
 

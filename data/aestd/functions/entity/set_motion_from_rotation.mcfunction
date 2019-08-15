@@ -4,4 +4,6 @@
 
 # Sets the motion of the executing entity following context rotation
 
+# WARNING: Does not work on players
+
 execute positioned as @s positioned ^ ^ ^5 run function aestd:entity/set_motion_from_position

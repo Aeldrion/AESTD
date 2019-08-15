@@ -3,7 +3,7 @@
 # Project: AESTD
 
 # Offsets the executing entity's position by its vector scores, in millimeters (1000 = 1 block)
-# Input: sender|aestd.vector.x|aestd.vector.y|aestd.vector.z, output: sender
+# Input: aestd.vector.x|aestd.vector.y|aestd.vector.z
 
 # Save position/vector scores
 scoreboard players operation #aestd.temp aestd.coords.x = @s aestd.coords.x

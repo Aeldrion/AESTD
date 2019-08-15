@@ -3,7 +3,7 @@
 # Project: AESTD
 
 # Adds a line of lore to an item (see aestd:item/save for slot index and details)
-# If the executing has the aestd.preformatted_text tag, text will not be formatted to JSON (see below)
+# If the executing entity has the aestd.preformatted_text tag, text will not be formatted to JSON (see below)
 # Input: aestd.item.slot|save chunk (1519204 6 0 RecordItem.tag.aestd.text)
 
 execute unless entity @s[tag=aestd.preformatted_text] run data merge block 1519204 3 0 {Text1:'{"nbt":"RecordItem.tag.aestd.text","block":"1519204 6 0"}'}

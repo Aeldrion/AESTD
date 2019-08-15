@@ -5,6 +5,8 @@
 # Sets the magnitude (/1000) of the executing entity's motion vector
 # Input: aestd.math.in
 
+# WARNING: Does not work on players
+
 function aestd:entity/get_motion
 scoreboard players operation @s aestd.vector.x = @s aestd.motion.x
 scoreboard players operation @s aestd.vector.y = @s aestd.motion.y

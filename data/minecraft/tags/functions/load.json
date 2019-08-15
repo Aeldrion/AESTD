@@ -1,6 +1,5 @@
 {
 	"values": [
-		"aestd.internal:tags/run_second_clock",
 		"aestd.core:load"
 	]
 }

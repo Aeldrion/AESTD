@@ -88,3 +88,5 @@ function aestd:item/load
 # 34 - Piercing
 # 35 - Mending
 # 36 - Curse of Vanishing
+
+# These values do not all correspond to the ones previously used in the ench NBT tag.

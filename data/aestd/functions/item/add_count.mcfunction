@@ -2,7 +2,7 @@
 # Version: 1.14.4
 # Project: AESTD
 
-# Adds to the count of an item (see aestd:item/save for slot index and details)
+# Adds to the count of an item, limiting to the item's stack size (see aestd:item/save for slot index and details)
 # Input: aestd.item.slot|aestd.item.count
 
 function aestd:item/save

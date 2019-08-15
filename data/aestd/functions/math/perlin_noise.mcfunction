@@ -2,8 +2,8 @@
 # Version: 1.14.4
 # Project: AESTD
 
-# Uses a perlin noise algorithm to generate values between -1000 and 1000
-# Interpolates between thousands (algorithms usually interpolate between integers but the scoreboard cannot compute decimals)
+# Uses a modified Perlin noise algorithm to generate values between -1000 and 1000
+# Interpolates between thousands (actual Perlin noise interpolates between integers but the scoreboard cannot compute decimals)
 # Input: aestd.math.in|aestd.math.in2|(aestd.seed), output: aestd.math.out
 
 

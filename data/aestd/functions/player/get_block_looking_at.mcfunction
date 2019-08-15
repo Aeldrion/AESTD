@@ -2,7 +2,8 @@
 # Version: 1.14.4
 # Project: AESTD
 
-# Finds the block the player is looking at up to 64 blocks away. Resets scores if no block is found.
+# Finds the block the player is looking at, up to 64 blocks away. Looks through water and lava
+# Resets scores if no block is found
 # Output: aestd.coords.x|aestd.coords.y|aestd.coords.z
 
 scoreboard players set @s aestd.player.rcd 512

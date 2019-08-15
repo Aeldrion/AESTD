@@ -3,7 +3,9 @@
 # Project: AESTD
 
 # Adds to the damage of an item (see aestd:item/save for slot index and details)
-# Input: aestd.item.dmg|aestd.item.slot
+# Breaks the item if durability becomes negative.
+# Negative inputs will repair the item instead of damaging it.
+# Input: aestd.item.slot|aestd.item.dmg
 
 # This function already saves the item, so aestd:item/save doesn't need to run
 function aestd:item/get_max_durability

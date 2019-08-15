@@ -1,33 +1,33 @@
 # AESTD
 
-**AESTD**, or **Aeldrion's standard command library**, is a utility datapack for Minecraft 1.14.2 meant to be used by other data pack creators.
-It contains tools that make the development of data packs easier.
-It is used by several datapacks, including some of my own.
+**AESTD**, or **Aeldrion's standard command library**, is a utility data pack for Minecraft 1.14.4 meant to be used by other data pack creators.
+It contains tools that make the development of data packs easier, and relies on little-known tricks that may help command learners and advanced creators alike.
 
 ## Contents
 
 ### Function library
-The AESTD function library contains over sixty functions to simplify command making.
+The AESTD function library contains over 90 functions to simplify command making.
 It includes the following, and many more:
 - Biome detection
 - Weather detection
 - Player inventory manipulation
 - Flexible mob damage ("/damage")
 - Getting the name/the head of a player
-- Generating random numbers
+- Random number generation
+- 2D Perlin noise generation
 
 ### Tag library
-The AESTD tag library adds over 150 block, item, entity type and function tags.
-The function tags can be used to detect efficiently the following events:
+The AESTD tag library is a collection of over 180 block, item, entity type and function tags.
+Other data packs may append their functions to the function tags in order to detect efficiently the following events:
 - Taking damage
 - Dealing damage
 - Killing an entity
 - Dying
 - Using a carrot on a stick (right-click detection)
-- Inventory change
+- Inventory changes
 
-### Function evaluator
-The function evaluator can be used to evaluate accurately the performance cost of a function.
+### Benchmarking tool
+The benchmarking tools can be used to evaluate accurately the performance cost of a function.
 This can be used to see what options are the most performant and therefore to optimise functions.
 
 ## Why should I use AESTD?
@@ -36,17 +36,40 @@ This can be used to see what options are the most performant and therefore to op
 AESTD is easy to install, to merge with your data packs and to use.
 Functions require no extensive knowledge of commands and tricks on which they rely to be used by other command artists.
 Everything is already setup.
-From the perspective of a player, once the save chunk is loaded, AESTD will be completely invisible.
+From the perspective of a player using your data pack or playing your map, AESTD will be completely invisible.
 
 ### Compatibility
 AESTD is compatible with other data packs and replaces almost nothing from vanilla.
-It can be used with other library data packs such as Phi.
-Multiple data packs can also use the save chunk for storing data.
+It can be used with other library data packs such as Phi or Lantern.
+Multiple data packs can also use the save chunk system for storing data.
 
 ### Efficiency
-AESTD will not affect the game's performance heavily on its own as it does not run any commands most of the time.
-The functions included in the function library are optimised to reduce the total amount of commands, NBT operations and the use of entities.
+AESTD will not affect the game's performance heavily on its own.
+The functions included in the function library are optimised to reduce the total amount of commands, NBT operations and use of entities. Commands used by AESTD are evaluated by benchmarking tools to leave as little overhang as possible.
 Furthermore, the function tags use hidden advancements instead of scoreboard objectives so that you do not need to check for a score every tick.
+
+## How do I use AESTD?
+
+### Maps
+* Download AESTD below. Note that only the latest version is supported, meaning that you are on your own if you encounter bugs. However, later AESTD versions may be incompatible with outdated Minecraft versions.
+* Place the data pack in your map's `datapacks` folder.
+* AESTD will be automatically setup.
+
+### Data packs
+If your data pack uses AESTD, you can share AESTD separately with your data pack. I however recommend merging AESTD with your data pack. Instructions for doing so can be found [here](https::/)
+
+### Crediting
+You are free to share maps or data packs that rely on AESTD without crediting. You will not get into any trouble. However, crediting is always welcome. If you want to credit me, you can use the following information:
+
+```
+Uses AESTD by Aeldrion
+https://www.github.com/Aeldrion/AESTD
+https://www.twitter.com/Aeldrion
+```
+
+## Downloads
+
+[AESTD v0.1 (19w05a)](http://www.mediafire.com/file/m7cwbkzd4jddqu6/AESTD_-_Aeldrion%2527s_standard_command_library.zip)
 
 ## Links
 

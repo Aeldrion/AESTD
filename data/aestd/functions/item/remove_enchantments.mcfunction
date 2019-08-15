@@ -3,7 +3,7 @@
 # Project: AESTD
 
 # Removes enchantments from an item (see aestd:item/save for slot index and details)
-# Input: aestd.item.slot|aestd.list_mode
+# Input: aestd.item.slot|(aestd.list_mode)
 
 function aestd:item/save
 execute if score @s aestd.list_mode matches 0 in minecraft:overworld run data remove block 1519204 6 0 RecordItem.tag.aestd.SavedItem.tag.Enchantments[0]

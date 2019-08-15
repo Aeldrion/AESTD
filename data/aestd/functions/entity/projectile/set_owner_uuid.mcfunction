@@ -3,6 +3,7 @@
 # Project: AESTD
 
 # Sets the executing entity's owner to an entity with a given UUID (see aestd:entity/get_uuid)
+# Input: save chunk (1519204 6 0 RecordItem.tag.aestd.OwnerUUIDLeast|RecordItem.tag.aestd.OwnerUUIDMost)
 
 execute unless data entity @s OwnerUUIDLeast run data merge entity @s {OwnerUUIDLeast:0L,OwnerUUIDMost:0L}
 execute in minecraft:overworld run data modify entity @s OwnerUUIDLeast set from block 1519204 6 0 RecordItem.tag.aestd.EntityUUIDLeast

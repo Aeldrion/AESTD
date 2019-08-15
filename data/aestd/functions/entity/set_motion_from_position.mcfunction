@@ -5,6 +5,7 @@
 # Sets the motion of the executing entity towards the context position
 # The magnitude of the motion vector is defined by distance to context position
 # Further than 40 blocks away, direction is not guaranteed to be exact due to Motion resetting values above 10
+# WARNING: Does not work on players
 
 # Get coordinates
 function aestd:context/get_position_scale50

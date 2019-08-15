@@ -2,7 +2,7 @@
 # Version: 1.14.4
 # Project: AESTD
 
-# Places a player head on executing entity's head slot, replacing any helmet the entity may be wearing. The skin corresponds to the player name saved in the save chunk (see function aestd:player/get_name)
+# Places a player head on the executing entity's head slot, replacing any helmet the entity may be wearing. The skin corresponds to the player name saved in the save chunk (see function aestd:player/get_name)
 # For players, the player function alternative (aestd:player/set_head) should be more efficient
 # Input: save chunk (1519204 6 0 RecordItem.tag.aestd.PlayerName)
 
