@@ -52,11 +52,11 @@ Furthermore, the function tags use hidden advancements instead of scoreboard obj
 
 ### Maps
 * Download AESTD below. Note that only the latest version is supported, meaning that you are on your own if you encounter bugs. However, later AESTD versions may be incompatible with outdated Minecraft versions.
-* Place the data pack in your map's `datapacks` folder.
-* AESTD will be automatically setup.
+* Place the data pack in your map's `datapacks` folder. You don't need to extract it - it works both as a zip and as a folder.
+* AESTD will be automatically setup: all features are ready to be used.
 
 ### Data packs
-If your data pack uses AESTD, you can share AESTD separately with your data pack. I however recommend merging AESTD with your data pack. Instructions for doing so can be found [here](https::/)
+If your data pack uses AESTD, you can share AESTD separately with your data pack. I however recommend merging AESTD with your data pack. Instructions for doing so can be found [here](https://)
 
 ### Crediting
 You are free to share maps or data packs that rely on AESTD without crediting. You will not get into any trouble. However, crediting is always welcome. If you want to credit me, you can use the following information:
@@ -69,7 +69,8 @@ https://www.twitter.com/Aeldrion
 
 ## Downloads
 
-[AESTD v0.1 (19w05a)](http://www.mediafire.com/file/m7cwbkzd4jddqu6/AESTD_-_Aeldrion%2527s_standard_command_library.zip)
+[AESTD v0.2 (1.14.4)](http://www.mediafire.com/file/swp4mn1coisodfi)
+[AESTD v0.1 (19w05a)](http://www.mediafire.com/file/m7cwbkzd4jddqu6)
 
 ## Links
 
