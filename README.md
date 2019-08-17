@@ -76,4 +76,5 @@ https://www.twitter.com/Aeldrion
 ## Links
 
 [Official wiki](minecraft.gamepedia.com/User:Aeldrion/Projects/AESTD)
+
 [Discord server](https://discord.gg/KJet4xF)
