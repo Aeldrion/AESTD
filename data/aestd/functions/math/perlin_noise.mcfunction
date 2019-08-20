@@ -22,6 +22,7 @@ scoreboard players add #aestd.perlin_noise.ceil(x) aestd.math.var 1
 scoreboard players operation #aestd.perlin_noise.ceil(z) aestd.math.var = #aestd.perlin_noise.floor(z) aestd.math.var
 scoreboard players add #aestd.perlin_noise.ceil(z) aestd.math.var 1
 
+
 # Determine interpolation weights
 scoreboard players operation #aestd.perlin_noise.sx aestd.math.var = @s aestd.math.in
 scoreboard players operation #aestd.perlin_noise.sx aestd.math.var %= $1000 aestd.math.var
@@ -74,3 +75,12 @@ scoreboard players operation @s aestd.math.var = @s aestd.math.out
 scoreboard players operation @s aestd.math.in = #aestd.perlin_noise.ix0 aestd.math.var
 scoreboard players operation @s aestd.math.in2 = #aestd.perlin_noise.ix1 aestd.math.var
 function aestd:math/linear_interpolation
+
+
+# [0, 1000]
+scoreboard players set $2 aestd.math.var 2
+scoreboard players add @s aestd.math.out 1000
+scoreboard players operation @s aestd.math.out /= $2 aestd.math.var
+
+scoreboard players operation @s aestd.math.in = #aestd.perlin_noise.x aestd.math.var
+scoreboard players operation @s aestd.math.in2 = #aestd.perlin_noise.x aestd.math.var

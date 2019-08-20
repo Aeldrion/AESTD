@@ -4,6 +4,7 @@
 		"minecraft:redstone_lamp",
 		"#aestd:furnaces",
 		"minecraft:redstone_ore",
-		"minecraft:redstone_torch"
+		"minecraft:redstone_torch",
+		"minecraft:redstone_wall_torch"
 	]
 }

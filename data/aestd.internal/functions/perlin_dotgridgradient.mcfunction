@@ -4,8 +4,8 @@
 # Output: aestd.math.var score of #aestd.perlin.dgg.dot_product
 
 # Compute the gradient vector
-scoreboard players set #aestd.100 aestd.math.var 100
-scoreboard players set #aestd.4 aestd.math.var 4
+scoreboard players set $100 aestd.math.var 100
+scoreboard players set $4 aestd.math.var 4
 
 scoreboard players operation #aestd.perlin.dgg.ix^2+37 aestd.math.var = #aestd.perlin.dgg.ix aestd.math.var
 scoreboard players operation #aestd.perlin.dgg.ix^2+37 aestd.math.var *= #aestd.perlin.dgg.ix aestd.math.var
@@ -18,11 +18,11 @@ scoreboard players add #aestd.perlin.dgg.iz^2+11 aestd.math.var 12
 
 scoreboard players operation #aestd.perlin.dgg.(ix^2+37)(iz^2+11)%100 aestd.math.var = #aestd.perlin.dgg.ix^2+37 aestd.math.var
 scoreboard players operation #aestd.perlin.dgg.(ix^2+37)(iz^2+11)%100 aestd.math.var *= #aestd.perlin.dgg.iz^2+11 aestd.math.var
-scoreboard players operation #aestd.perlin.dgg.(ix^2+37)(iz^2+11)%100 aestd.math.var %= #aestd.100 aestd.math.var
+scoreboard players operation #aestd.perlin.dgg.(ix^2+37)(iz^2+11)%100 aestd.math.var %= $100 aestd.math.var
 scoreboard players operation #aestd.perlin.dgg.(*4+30)%100 aestd.math.var = #aestd.perlin.dgg.(ix^2+37)(iz^2+11)%100 aestd.math.var
-scoreboard players operation #aestd.perlin.dgg.(*4+30)%100 aestd.math.var *= #aestd.4 aestd.math.var
+scoreboard players operation #aestd.perlin.dgg.(*4+30)%100 aestd.math.var *= $4 aestd.math.var
 scoreboard players add #aestd.perlin.dgg.(*4+30)%100 aestd.math.var 30
-scoreboard players operation #aestd.perlin.dgg.(*4+30)%100 aestd.math.var %= #aestd.100 aestd.math.var
+scoreboard players operation #aestd.perlin.dgg.(*4+30)%100 aestd.math.var %= $100 aestd.math.var
 
 execute if score #aestd.perlin.dgg.(*4+30)%100 aestd.math.var matches 0..24 run scoreboard players set #aestd.perlin.dgg.gx aestd.math.var 1
 execute if score #aestd.perlin.dgg.(*4+30)%100 aestd.math.var matches 0..24 run scoreboard players set #aestd.perlin.dgg.gz aestd.math.var 0
@@ -35,8 +35,8 @@ execute if score #aestd.perlin.dgg.(*4+30)%100 aestd.math.var matches 75..99 run
 
 
 # Compute the distance vector
-scoreboard players operation #aestd.perlin.dgg.ix aestd.math.var *= #aestd.1000 aestd.math.var
-scoreboard players operation #aestd.perlin.dgg.iz aestd.math.var *= #aestd.1000 aestd.math.var
+scoreboard players operation #aestd.perlin.dgg.ix aestd.math.var *= $1000 aestd.math.var
+scoreboard players operation #aestd.perlin.dgg.iz aestd.math.var *= $1000 aestd.math.var
 
 scoreboard players operation #aestd.perlin.dgg.dx aestd.math.var = #aestd.perlin_noise.x aestd.math.var
 scoreboard players operation #aestd.perlin.dgg.dx aestd.math.var -= #aestd.perlin.dgg.ix aestd.math.var
