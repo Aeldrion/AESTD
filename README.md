@@ -56,7 +56,7 @@ Furthermore, the function tags use hidden advancements instead of scoreboard obj
 * AESTD will be automatically setup: all features are ready to be used.
 
 ### Data packs
-If your data pack uses AESTD, you can share AESTD separately with your data pack. I however recommend merging AESTD with your data pack. Instructions for doing so can be found [here](https://)
+If your data pack uses AESTD, you can share AESTD separately with your data pack. I however recommend merging AESTD with your data pack. Instructions for doing so can be found [on the wiki](https://minecraft.gamepedia.com/User:Aeldrion/Projects/AESTD#Merging_AESTD_with_your_data_pack).
 
 ### Crediting
 You are free to share maps or data packs that rely on AESTD without crediting. You will not get into any trouble. However, crediting is always welcome. If you want to credit me, you can use the following information:
@@ -68,6 +68,8 @@ https://www.twitter.com/Aeldrion
 ```
 
 ## Downloads
+
+[AESTD v0.2 (19w34a)](http://www.mediafire.com/file/y73kgz0l39z9zq3)
 
 [AESTD v0.2 (1.14.4)](http://www.mediafire.com/file/swp4mn1coisodfi)
 
