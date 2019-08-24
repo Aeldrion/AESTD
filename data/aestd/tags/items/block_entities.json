@@ -1,5 +1,7 @@
 {
 	"values": [
+		"minecraft:bee_hive",
+		"minecraft:bee_nest",
 		"#minecraft:signs",
 		"#minecraft:banners",
 		"#aestd:store_items",

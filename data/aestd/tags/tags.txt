@@ -2,11 +2,10 @@ This list explains what certain tags contain. It does not include every tag in A
 
 
 BLOCKS
-all: every block, including air and liquids. Useful for state/nbt detection
-big_flowers: flowers that are two blocks tall (does not include tall grass)
+all: every block, including air and liquids, useful for state/nbt detection
 can_emit_light: blocks that can emit light
 cubic: every block whose collision box is 1*1*1 (needs verification)
-double_blocks: every block that takes the space of two blocks when placed. Does not include banners because their collision box is actually one block tall even though their model is two blocks tall
+double_blocks: every block that takes the space of two blocks when placed, does not include banners because their collision box is actually one block tall even though their model is two blocks tall
 emit_light: blocks that constantly emit light (excludes eg redstone lamps which can be turned off)
 end_blocks: blocks that generate in the end (needs verification)
 falling_blocks: blocks that fall when unsupported (eg sand)
@@ -29,6 +28,7 @@ redstone_power_components: blocks that can emit a redstone signal (does not incl
 seeds: nether warts and seeds that can grow on farmland
 silk_touch_changes_drops: blocks that drop different items when mined using a silk touch tool using Minecraft's default loot tables
 standing_banners: banners that are not hanging on a wall
+store_entities: block entities that can store entities as an NBT tag.
 store_items: block entities that can store items. Does not contain blocks that only contain items while a player is using their interface such as enchanting tables and crafting tables
 stripped_logs: stripped logs (does not include stripped wood)
 tnt_cannot_destroy: blocks that cannot be destroyed by TNT. Includes bubble columns since they can only be destroyed indirectly

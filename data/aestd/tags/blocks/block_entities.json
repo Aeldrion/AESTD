@@ -2,21 +2,25 @@
 	"values": [
 		"#minecraft:signs",
 		"#minecraft:banners",
+
+		"#aestd:beds",
+		"#aestd:command_blocks",
+		"#aestd:heads",
 		"#aestd:store_items",
+
 		"minecraft:beacon",
-		"minecraft:spawner",
-		"minecraft:piston_head",
+		"minecraft:bee_hive",
+		"minecraft:bee_nest",
+		"minecraft:bell",
+		"minecraft:comparator",
+		"minecraft:conduit",
+		"minecraft:daylight_detector",
 		"minecraft:enchanting_table",
+		"minecraft:end_gateway",
 		"minecraft:end_portal",
 		"minecraft:ender_chest",
-		"#aestd:heads",
-		"#aestd:command_blocks",
-		"minecraft:end_gateway",
-		"minecraft:structure_block",
-		"minecraft:daylight_detector",
-		"minecraft:comparator",
-		"#aestd:beds",
-		"minecraft:conduit",
-		"minecraft:bell"
+		"minecraft:piston_head",
+		"minecraft:spawner",
+		"minecraft:structure_block"
 	]
 }
