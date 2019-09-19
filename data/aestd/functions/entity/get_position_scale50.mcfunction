@@ -1,10 +1,10 @@
 # Author: Aeldrion
-# Version: 1.14.4
+# Version: 19w38b
 # Project: AESTD
 
 # Saves the executing entity's position (x50) to its position scores
-# Output: aestd.coords.x|aestd.coords.y|aestd.coords.z
+# Output: aestd.pos.x|aestd.pos.y|aestd.pos.z
 
-execute store result score @s aestd.coords.x run data get entity @s Pos[0] 50
-execute store result score @s aestd.coords.y run data get entity @s Pos[1] 50
-execute store result score @s aestd.coords.z run data get entity @s Pos[2] 50
+execute store result score @s aestd.pos.x run data get entity @s Pos[0] 50
+execute store result score @s aestd.pos.y run data get entity @s Pos[1] 50
+execute store result score @s aestd.pos.z run data get entity @s Pos[2] 50

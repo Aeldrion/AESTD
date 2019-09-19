@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 1.14.4
+# Version: 19w38b
 # Project: AESTD
 
 # Simulates the hitting of the executing entity from another at context position
@@ -8,12 +8,12 @@
 
 # Calculate difference between context and entity
 function aestd:entity/get_position_scale50
-scoreboard players operation @s aestd.motion.x = @s aestd.coords.x
-scoreboard players operation @s aestd.motion.z = @s aestd.coords.z
+scoreboard players operation @s aestd.motion.x = @s aestd.pos.x
+scoreboard players operation @s aestd.motion.z = @s aestd.pos.z
 
 function aestd:context/get_position_scale50
-scoreboard players operation @s aestd.motion.x -= @s aestd.coords.x
-scoreboard players operation @s aestd.motion.z -= @s aestd.coords.z
+scoreboard players operation @s aestd.motion.x -= @s aestd.pos.x
+scoreboard players operation @s aestd.motion.z -= @s aestd.pos.z
 
 scoreboard players set @s aestd.motion.y 300
 
@@ -29,14 +29,14 @@ scoreboard players operation @s aestd.math.var2 = @s aestd.math.out
 execute if score @s aestd.math.var > @s aestd.math.var2 run tag @s add aestd.knockback.x_greater_than_z
 
 # Scale to 300
-scoreboard players set #300 aestd.math.var 300
+scoreboard players set $300 aestd.math.var 300
 
-execute if entity @s[tag=aestd.knockback.x_greater_than_z] run scoreboard players operation @s aestd.motion.z *= #300 aestd.math.var
+execute if entity @s[tag=aestd.knockback.x_greater_than_z] run scoreboard players operation @s aestd.motion.z *= $300 aestd.math.var
 execute if entity @s[tag=aestd.knockback.x_greater_than_z] run scoreboard players operation @s aestd.motion.z /= @s aestd.math.var
 execute if entity @s[tag=aestd.knockback.x_greater_than_z] run scoreboard players set @s[scores={aestd.motion.x=..-1}] aestd.motion.x -300
 execute if entity @s[tag=aestd.knockback.x_greater_than_z] run scoreboard players set @s[scores={aestd.motion.x=1..}] aestd.motion.x 300
 
-execute unless entity @s[tag=aestd.knockback.x_greater_than_z] run scoreboard players operation @s aestd.motion.x *= #300 aestd.math.var
+execute unless entity @s[tag=aestd.knockback.x_greater_than_z] run scoreboard players operation @s aestd.motion.x *= $300 aestd.math.var
 execute unless entity @s[tag=aestd.knockback.x_greater_than_z] run scoreboard players operation @s aestd.motion.x /= @s aestd.math.var2
 execute unless entity @s[tag=aestd.knockback.x_greater_than_z] run scoreboard players set @s[scores={aestd.motion.z=..-1}] aestd.motion.z -300
 execute unless entity @s[tag=aestd.knockback.x_greater_than_z] run scoreboard players set @s[scores={aestd.motion.z=1..}] aestd.motion.z 300

@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 19w38b
+# Project: AESTD
+
 # Saves an item entity to the save chunk
 
-data modify block 1519204 6 0 RecordItem.tag.aestd.SavedItem set from entity @s Item
+data modify storage aestd:data Item set from entity @s Item

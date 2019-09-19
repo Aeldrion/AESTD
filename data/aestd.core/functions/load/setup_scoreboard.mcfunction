@@ -20,9 +20,9 @@ scoreboard objectives add aestd.block.id dummy
 ## ENTITY FUNCTIONS
 
 # get_position/set_position
-scoreboard objectives add aestd.coords.x dummy
-scoreboard objectives add aestd.coords.y dummy
-scoreboard objectives add aestd.coords.z dummy
+scoreboard objectives add aestd.pos.x dummy
+scoreboard objectives add aestd.pos.y dummy
+scoreboard objectives add aestd.pos.z dummy
 
 # damage
 scoreboard objectives add aestd.damage dummy

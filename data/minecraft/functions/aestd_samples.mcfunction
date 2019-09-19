@@ -1,5 +1,5 @@
-# Author: Amberw / Aeldrion
-# Version: 1.14.4
+# Author: Aeldrion
+# Version: 19w38b
 # Project: AESTD documentation
 
 # This function is not meant to be used in a world. It contains samples of codes that use the functions from AESTD's function library so that you can understand what each function does and how it can be used.
@@ -81,7 +81,7 @@ execute at @e[type=minecraft:arrow,scores={aestd.math.out=1000..}] run particle 
 # This function will display a player's position in their actionbar if they are holding a compass
 tag @a[nbt={SelectedItem:{id:"minecraft:compass"}}] add holding_compass
 execute as @a[tag=holding_compass] run function aestd:entity/get_position
-execute as @a[tag=holding_compass] run title @s actionbar [{"score":{"name":"@s","objective":"aestd.coords.x"}}," ",{"score":{"name":"@s","objective":"aestd.coords.y"}}," ",{"score":{"name":"@s","objective":"aestd.coords.z"}}]
+execute as @a[tag=holding_compass] run title @s actionbar [{"score":{"name":"@s","objective":"aestd.pos.x"}}," ",{"score":{"name":"@s","objective":"aestd.pos.y"}}," ",{"score":{"name":"@s","objective":"aestd.pos.z"}}]
 tag @a remove holding_compass
 
 

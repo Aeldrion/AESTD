@@ -1,10 +1,10 @@
 # Author: Aeldrion
-# Version: 1.14.4
+# Version: 19w38b
 # Project: AESTD
 
 # Sets the NBT of the 'tag' tag of an item (see aestd:item/save for slot index)
-# Input: aestd.item.slot|save chunk/RecordItem.tag.aestd.nbt
+# Input: aestd.item.slot|storage aestd:input nbt tag
 
 function aestd:item/save
-execute in minecraft:overworld run data modify block 1519204 6 0 RecordItem.tag.aestd.SavedItem.tag set from block 1519204 6 0 RecordItem.tag.aestd.nbt
+data modify storage aestd:data Item.tag set from storage aestd:input nbt
 function aestd:item/load

@@ -1,17 +1,15 @@
 # Author: Aeldrion
-# Version: 1.14.4
+# Version: 19w38b
 # Project: AESTD
 
-# Stores the dimension into a score
-# Input: context dimension, output: aestd.dimension
+# Stores the context dimension into a score
+# Output: aestd.dimension
 
-scoreboard players reset @s aestd.dimension
+scoreboard players reset #aestd aestd.dimension
 
-summon minecraft:area_effect_cloud 1519204 1 0 {Tags:["aestd.context.dimension_cloud","aestd"]}
-execute in minecraft:the_end positioned 1519204 1 0 if entity @e[type=minecraft:area_effect_cloud,tag=aestd.context.dimension_cloud,distance=..1,limit=1] run scoreboard players set #aestd aestd.dimension 1
-execute in minecraft:overworld positioned 1519204 1 0 if entity @e[type=minecraft:area_effect_cloud,tag=aestd.context.dimension_cloud,distance=..1,limit=1] run scoreboard players set #aestd aestd.dimension 0
-execute in minecraft:the_nether positioned 1519204 1 0 if entity @e[type=minecraft:area_effect_cloud,tag=aestd.context.dimension_cloud,distance=..1,limit=1] run scoreboard players set #aestd aestd.dimension -1
-kill @e[type=minecraft:area_effect_cloud,tag=aestd.context.dimension_cloud,limit=1]
+execute positioned -30000000 0 8880 if predicate aestd:in_the_nether run scoreboard players set #aestd aestd.dimension -1
+execute positioned -30000000 0 8880 if predicate aestd:in_overworld run scoreboard players set #aestd aestd.dimension 0
+execute positioned -30000000 0 8880 if predicate aestd:in_the_end run scoreboard players set #aestd aestd.dimension 1
 
 scoreboard players operation @s aestd.dimension = #aestd aestd.dimension
 

@@ -12,11 +12,11 @@ function aestd:context/get_position_scale50
 function aestd:entity/get_position_scale50
 
 # Calculate delta
-execute store result score @s aestd.math.var run scoreboard players operation #aestd aestd.coords.x -= @s aestd.coords.x
-execute store result score @s aestd.math.var2 run scoreboard players operation #aestd aestd.coords.y -= @s aestd.coords.y
-execute store result score @s aestd.math.var3 run scoreboard players operation #aestd aestd.coords.z -= @s aestd.coords.z
+execute store result score @s aestd.math.var run scoreboard players operation #aestd aestd.pos.x -= @s aestd.pos.x
+execute store result score @s aestd.math.var2 run scoreboard players operation #aestd aestd.pos.y -= @s aestd.pos.y
+execute store result score @s aestd.math.var3 run scoreboard players operation #aestd aestd.pos.z -= @s aestd.pos.z
 
-# Truncate coords (Motion caps at 10 and resets values above 10 to 0)
+# Truncate pos (Motion caps at 10 and resets values above 10 to 0)
 scoreboard players set @s[scores={aestd.math.var=2000..}] aestd.math.var 2000
 scoreboard players set @s[scores={aestd.math.var2=2000..}] aestd.math.var2 2000
 scoreboard players set @s[scores={aestd.math.var3=2000..}] aestd.math.var3 2000

@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 1.14.4
+# Version: 19w38b
 # Project: AESTD
 
 # Saves the UUID least/most pair of the executing entity to the save chunk's data item
@@ -7,9 +7,9 @@
 # This UUID can then be used in aestd:entity/anger, aestd:entity/damage, aestd:entity/projectile/set_owner_uuid and aestd:entity/wolf/tame
 # Output: save chunk (1519204 6 0 RecordItem.tag.aestd.EntityUUIDLeast|RecordItem.tag.aestd.EntityUUIDMost)
 
-execute in minecraft:overworld run data modify block 1519204 6 0 RecordItem.tag.aestd.EntityUUIDLeast set from entity @s UUIDLeast
-execute in minecraft:overworld run data modify block 1519204 6 0 RecordItem.tag.aestd.EntityUUIDMost set from entity @s UUIDMost
-tag @e[tag=aestd.uuid_selected,limit=1] remove aestd.uuid_selected
+data modify storage aestd:data UUID.Least set from entity @s UUIDLeast
+data modify storage aestd:data UUID.Most set from entity @s UUIDMost
+tag @e[tag=aestd.uuid_selected, limit=1] remove aestd.uuid_selected
 tag @s add aestd.uuid_selected
 
 # Note: the aestd:player/get_uuid function retrieves the full length string UUID, which is only used by aestd:entity/wolf/tame

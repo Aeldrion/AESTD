@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 1.14.4
+# Version: 19w38b
 # Project: AESTD
 
 # Gets the distance (x50) between the executing entity's position and the context position
@@ -8,14 +8,14 @@
 # Output: aestd.math.out
 
 function aestd:context/get_position_scale50
-scoreboard players operation @s aestd.vector.x = @s aestd.coords.x
-scoreboard players operation @s aestd.vector.y = @s aestd.coords.y
-scoreboard players operation @s aestd.vector.z = @s aestd.coords.z
+scoreboard players operation @s aestd.vector.x = @s aestd.pos.x
+scoreboard players operation @s aestd.vector.y = @s aestd.pos.y
+scoreboard players operation @s aestd.vector.z = @s aestd.pos.z
 
 function aestd:entity/get_position_scale50
-scoreboard players operation @s aestd.vector.x -= @s aestd.coords.x
-scoreboard players operation @s aestd.vector.y -= @s aestd.coords.y
-scoreboard players operation @s aestd.vector.z -= @s aestd.coords.z
+scoreboard players operation @s aestd.vector.x -= @s aestd.pos.x
+scoreboard players operation @s aestd.vector.y -= @s aestd.pos.y
+scoreboard players operation @s aestd.vector.z -= @s aestd.pos.z
 
 function aestd:math/get_vector_magnitude
 execute if entity @s[distance=926..] run scoreboard players set @s aestd.math.out 46300

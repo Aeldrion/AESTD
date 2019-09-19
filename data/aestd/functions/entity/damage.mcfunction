@@ -1,12 +1,12 @@
 # Author: Aeldrion
-# Version: 1.14.4
+# Version: 19w38b
 # Project: AESTD
 
 # Damages the executing entity by (damage/100) HP, does not work on players
 # Input: aestd.damage
 
 # Settings:
-# - aestd.damage.hurt_by_player: if the executing mob has this tag, it will act as if it was hit by the latest entity whose UUID was previously saved to the save chunk (see aestd:entity/get_uuid)
+# - aestd.damage.hurt_by_player: if the executing mob has this tag, it will act as if it was hit by another entity with a given UUID saved in the storage (see aestd:entity/get_uuid)
 # - aestd.damage.fire: if the executing mob has this tag, it will be set on fire
 
 # Take health
@@ -15,10 +15,10 @@ scoreboard players operation @s aestd.damage.hp -= @s aestd.damage
 
 ### Case where the entity dies
 # Set fire
-data merge entity @s[scores={aestd.damage.hp=..0},tag=aestd.damage.fire] {Fire:19s}
+data merge entity @s[scores={aestd.damage.hp=..0}, tag=aestd.damage.fire] {Fire: 19s}
 
 # Anger
-execute if entity @s[scores={aestd.damage.hp=..0},tag=aestd.damage.hurt_by_player] run function aestd:entity/anger
+execute if entity @s[scores={aestd.damage.hp=..0}, tag=aestd.damage.hurt_by_player] run function aestd:entity/anger
 
 # Kill
 kill @s[scores={aestd.damage.hp=..0}]

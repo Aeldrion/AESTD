@@ -3,7 +3,7 @@
 # Project: AESTD
 
 # Teleports the player to their position scores (/50)
-# Input: aestd.coords.x|aestd.coords.y|aestd.coords.z
+# Input: aestd.pos.x|aestd.pos.y|aestd.pos.z
 
 tag @s add aestd.player.setting_position
 summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["aestd","aestd.player.position_cloud"],UUIDLeast:0L,UUIDMost:3067078466247364L}

@@ -1,10 +1,10 @@
 # Author: Aeldrion
-# Version: 1.14.4
+# Version: 19w38b
 # Project: AESTD
 
 # Changes the damage of an item (see aestd:item/save for slot index)
 # Input: sender|aestd.item.slot|aestd.item.dmg
 
 function aestd:item/save
-execute in minecraft:overworld store result block 1519204 6 0 RecordItem.tag.aestd.SavedItem.tag.Damage int 1 run scoreboard players get @s aestd.item.dmg
+execute store result storage aestd:data Item.tag.Damage int 1 run scoreboard players get @s aestd.item.dmg
 function aestd:item/load

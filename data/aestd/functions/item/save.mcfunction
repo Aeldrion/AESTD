@@ -1,19 +1,17 @@
 # Author: Aeldrion
-# Version: 1.14.4
+# Version: 19w38b
 # Project: AESTD
 
-# Saves an item to the save chunk (see aestd:item/load)
+# Saves an item to the storage (see aestd:item/load)
 # The slot index is detailed below
-# Input: aestd.item.slot, output: save chunk (1519204 6 0 RecordItem.tag.aestd.SavedItem)
+# Input: aestd.item.slot, output: storage aestd:data Item
 
-execute if entity @s in minecraft:overworld run data modify block 1519204 6 0 RecordItem.tag.aestd.SavedItem set value {id:"minecraft:air",Count:1b,Slot:0b}
-
-execute if entity @s[type=minecraft:player,tag=!aestd.item.container] in minecraft:overworld run function aestd.internal:inventory/save_player_item
-execute if entity @s[type=minecraft:item,tag=!aestd.item.container] in minecraft:overworld run function aestd.internal:inventory/save_dropped_item
-execute if entity @s[type=#aestd:mobs,tag=!aestd.item.container] in minecraft:overworld run function aestd.internal:inventory/save_mob_item
+execute if entity @s[type=minecraft:player,tag=!aestd.item.container] run function aestd.internal:inventory/save_player_item
+execute if entity @s[type=minecraft:item,tag=!aestd.item.container] run function aestd.internal:inventory/save_dropped_item
+execute if entity @s[type=#aestd:mobs,tag=!aestd.item.container] run function aestd.internal:inventory/save_mob_item
 execute if entity @s[tag=aestd.item.container] run function aestd.internal:inventory/save_container_item
 
-execute if entity @s in minecraft:overworld run data modify block 1519204 6 0 RecordItem.tag.aestd.SavedItem.Slot set value 0b
+data remove storage aestd:data Item.Slot
 
 ## If the executing entity is an item entity, it will be directly saved to the save chunk
 

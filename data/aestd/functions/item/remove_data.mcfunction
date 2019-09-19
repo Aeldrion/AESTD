@@ -1,10 +1,10 @@
 # Author: Aeldrion
-# Version: 1.14.4
+# Version: 19w38b
 # Project: AESTD
 
 # Removes all NBT data from an item (name, enchantments, lore, damage…) (see aestd:item/save for slot index)
 # Input: aestd.item.slot
 
 function aestd:item/save
-execute in minecraft:overworld run data remove block 1519204 6 0 RecordItem.tag.aestd.SavedItem.tag
+data remove storage aestd:data Item.tag
 function aestd:item/load

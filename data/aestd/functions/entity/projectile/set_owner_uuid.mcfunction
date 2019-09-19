@@ -6,5 +6,5 @@
 # Input: save chunk (1519204 6 0 RecordItem.tag.aestd.OwnerUUIDLeast|RecordItem.tag.aestd.OwnerUUIDMost)
 
 execute unless data entity @s OwnerUUIDLeast run data merge entity @s {OwnerUUIDLeast:0L,OwnerUUIDMost:0L}
-execute in minecraft:overworld run data modify entity @s OwnerUUIDLeast set from block 1519204 6 0 RecordItem.tag.aestd.EntityUUIDLeast
-execute in minecraft:overworld run data modify entity @s OwnerUUIDMost set from block 1519204 6 0 RecordItem.tag.aestd.EntityUUIDMost
+execute in minecraft:overworld run data modify entity @s OwnerUUIDLeast set from storage aestd:data UUID.Least
+execute in minecraft:overworld run data modify entity @s OwnerUUIDMost set from storage aestd:data UUID.Most

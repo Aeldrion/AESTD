@@ -1,4 +1,7 @@
-# Written by Aeldrion, Minecraft 1.14
-# Changes the data of a dropped item from the save chunk
+# Author: Aeldrion
+# Version: 19w38b
+# Project: AESTD
 
-data modify entity @s Item set from block 1519204 6 0 RecordItem.tag.aestd.SavedItem
+# Changes the data of a dropped item from storage
+
+data modify entity @s Item set from storage aestd:data Item

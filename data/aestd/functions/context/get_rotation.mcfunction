@@ -1,21 +1,19 @@
 # Author: Aeldrion
-# Version: 1.14.4
+# Version: 19w38b
 # Project: AESTD
 
-# Saves the context rotation to the sender's rotation scores
-# Input: context, output: aestd.rot.x|aestd.raw.y
+# Saves the context position to the executing entity's rotation scores
+# Output: aestd.rot.x|aestd.rot.y
 
 # Spawn a marker
-execute positioned as @p run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["aestd","aestd.context.rotation_cloud"]}
-execute positioned as @p run teleport @e[type=minecraft:area_effect_cloud,tag=aestd.context.rotation_cloud,limit=1] ~ ~ ~ ~ ~
+summon minecraft:area_effect_cloud -30000000 0 8880 {Tags: ["aestd", "aestd.context.position_cloud"]}
+teleport @e[type=minecraft:area_effect_cloud, tag=aestd.context.position_cloud, limit=1] -30000000 0 8880 ~ ~
+data modify storage aestd:private Rotation set from entity @e[type=minecraft:area_effect_cloud, tag=aestd.context.position_cloud, limit=1] Rotation
 
-# Save its rotation to #aestd
-execute store result score #aestd aestd.rot.x run data get entity @e[type=minecraft:area_effect_cloud,tag=aestd.context.rotation_cloud,limit=1] Rotation[0]
-execute store result score #aestd aestd.rot.y run data get entity @e[type=minecraft:area_effect_cloud,tag=aestd.context.rotation_cloud,limit=1] Rotation[1]
+# Save position to #aestd score
+execute store result score #aestd aestd.pos.x run data get storage aestd:private Rotation[0]
+execute store result score #aestd aestd.pos.y run data get storage aestd:private Rotation[1]
 
-# Copy these rotation values to sender, if there is one
-execute if entity @s run scoreboard players operation @s aestd.rot.x = #aestd aestd.rot.x
-execute if entity @s run scoreboard players operation @s aestd.rot.y = #aestd aestd.rot.y
-
-# Kill marker
-kill @e[type=minecraft:area_effect_cloud,tag=aestd.context.rotation_cloud,limit=1]
+# Save score to executing entity, if there is one
+scoreboard players operation @s aestd.rot.x = #aestd aestd.rot.x
+scoreboard players operation @s aestd.rot.y = #aestd aestd.rot.y
