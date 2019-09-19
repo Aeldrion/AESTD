@@ -4,7 +4,7 @@
 
 # Saves the numerical block ID of a block. This ID corresponds to the protocol_id found in registries.json.
 # This ID can then be used by aestd:item/set_block_id or aestd:entity/set_head_to_block_id
-# Input: context, output: aestd.block.id
+# Output: aestd.block.id
 
 execute if block ~ ~ ~ #aestd.internal:block_id_tree/quarter_1 run function aestd.internal:block_id/get/1
 execute if block ~ ~ ~ #aestd.internal:block_id_tree/quarter_2 run function aestd.internal:block_id/get/2

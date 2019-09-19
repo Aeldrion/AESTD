@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 1.14.4
+# Version: 19w38b
 # Project: AESTD
 
 # Summons an area_effect_cloud entity at given coordinates for this tick only with tag aestd.marker
@@ -8,7 +8,7 @@
 # Input: aestd.pos.x|aestd.pos.y|aestd.pos.z
 
 kill 000ae57d-da7a-9ac4-0000-000000000001
-summon minecraft:area_effect_cloud 1519204 1 0 {Tags:["aestd","aestd.marker"],UUIDLeast:1L,UUIDMost:3067078466247364L}
+summon minecraft:area_effect_cloud -30000000 0 7776 {Tags:["aestd","aestd.marker"],UUIDLeast:1L,UUIDMost:3067078466247364L}
 
 scoreboard players operation 000ae57d-da7a-9ac4-0000-000000000001 aestd.pos.x = @s aestd.pos.x
 scoreboard players operation 000ae57d-da7a-9ac4-0000-000000000001 aestd.pos.y = @s aestd.pos.y

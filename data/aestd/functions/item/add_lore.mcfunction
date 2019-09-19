@@ -7,12 +7,12 @@
 # Input: aestd.item.slot|storage aestd:input String tag
 
 ###### THESE COMMANDS SHOULD ONLY WORK IN A FUTURE SNAPSHOT ######
-# execute unless entity @s[tag=aestd.preformatted_text] run data merge block -30000000 0 8889 {Text1:'{"nbt":"String","storage":"aestd:input"}'}
+# execute unless entity @s[tag=aestd.preformatted_text] run data merge block -30000000 0 7778 {Text1:'{"nbt":"String","storage":"aestd:input"}'}
 
 # function aestd:item/save
 # execute unless data storage aestd.data Item.tag.display.Lore run data modify storage aestd.data Item merge value {tag:{display:{Lore:[]}}}
-# execute if entity @s[tag=aestd.preformatted_text] run data modify block 1519204 6 0 RecordItem.tag.aestd.SavedItem.tag.display.Lore append from block 1519204 6 0 RecordItem.tag.aestd.text
-# execute unless entity @s[tag=aestd.preformatted_text] run data modify block 1519204 6 0 RecordItem.tag.aestd.SavedItem.tag.display.Lore append from block 1519204 3 0 Text1
+# execute if entity @s[tag=aestd.preformatted_text] run data modify storage aestd:data Item.tag.display.Lore append from storage aestd:input String
+# execute unless entity @s[tag=aestd.preformatted_text] run data modify storage aestd:data Item.tag.display.Lore append from block -30000000 0 7778 Text1
 # function aestd:item/load
 ##################################################################
 
@@ -20,5 +20,5 @@
 # If you want to use preformatted text (eg. '{"text":"Hello world","color":"red"}'), add the tag aestd.preformatted_text to the sender.
 
 # EXAMPLE
-# Default: data modify block 1519204 6 0 RecordItem.tag.aestd.text set value "A line of lore"
-# Preformatted: data modify block 1519204 6 0 RecordItem.tag.aestd.text set value '{"text":"A preformatted line of lore"}'
+# Default: data modify storage aestd:input String set value "A line of lore"
+# Preformatted: data modify storage aestd:input String set value '{"text":"A preformatted line of lore"}'

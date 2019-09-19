@@ -6,8 +6,8 @@
 # Output: aestd.rot.x|aestd.rot.y
 
 # Spawn a marker
-summon minecraft:area_effect_cloud -30000000 0 8880 {Tags: ["aestd", "aestd.context.position_cloud"]}
-teleport @e[type=minecraft:area_effect_cloud, tag=aestd.context.position_cloud, limit=1] -30000000 0 8880 ~ ~
+summon minecraft:area_effect_cloud -30000000 0 7776 {Tags: ["aestd", "aestd.context.position_cloud"]}
+teleport @e[type=minecraft:area_effect_cloud, tag=aestd.context.position_cloud, limit=1] -30000000 0 7776 ~ ~
 data modify storage aestd:private Rotation set from entity @e[type=minecraft:area_effect_cloud, tag=aestd.context.position_cloud, limit=1] Rotation
 
 # Save position to #aestd score

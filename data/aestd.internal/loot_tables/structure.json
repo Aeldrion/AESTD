@@ -1,0 +1,295 @@
+{
+	"type": "minecraft:generic",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"feature": "village"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:golden_hoe",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": 15
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"feature": "swamp_hut"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:golden_hoe",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": 14
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"feature": "stronghold"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:golden_hoe",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": 13
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"feature": "shipwreck"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:golden_hoe",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": 12
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"feature": "pillager_outpost"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:golden_hoe",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": 11
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"feature": "ocean_ruin"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:golden_hoe",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": 10
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"feature": "monument"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:golden_hoe",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": 9
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"feature": "mineshaft"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:golden_hoe",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": 8
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"feature": "mansion"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:golden_hoe",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": 7
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"feature": "jungle_pyramid"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:golden_hoe",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": 6
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"feature": "igloo"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:golden_hoe",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": 5
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"feature": "fortress"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:golden_hoe",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": 4
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"feature": "endcity"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:golden_hoe",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": 3
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"feature": "desert_pyramid"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:golden_hoe",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": 2
+								}
+							]
+						},
+						{
+							"conditions": [
+								{
+									"condition": "minecraft:location_check",
+									"predicate": {
+										"feature": "buried_treasure"
+									}
+								}
+							],
+							"type": "minecraft:item",
+							"name": "minecraft:golden_hoe",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": 1
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:golden_hoe",
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": 0
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
