@@ -225,7 +225,7 @@ execute as @a[nbt={SelectedItem:{id:"minecraft:clock"}}] at @s run function aest
 
 # This function shoots an arrow from the executing player. The arrow's owner is the player, registrating all damage dealt by the arrow as player damage, triggering neutral behaviours and counting as player deaths
 # Summon arrow in front of the player's eyes
-execute anchored eyes run summon minecraft:arrow ^ ^ ^1 {Tags:["new"],Color:-1,pickup:1b}
+execute anchored eyes run summon minecraft:arrow ^ ^ ^1 {Tags:["new"],pickup:1b}
 # Set motion forward
 execute anchored eyes positioned ^ ^ ^13 as @e[type=minecraft:arrow,tag=new,limit=1] run function aestd:entity/set_motion_from_position
 # Set arrow's owner UUID to the player's
@@ -282,10 +282,10 @@ function aestd:item/add_enchantment
 ## aestd:item/add_lore
 
 # This function adds the text Hello world to the item contained in the fifth hotbar slot of the nearest player, with default formatting then with a different color and style.
-data modify block 1519204 6 0 RecordItem.tag.aestd.text set value "Hello world"
+data modify storage aestd:input String set value "Hello world"
 scoreboard players set @p aestd.item.slot 4
 function aestd:item/add_lore 
-data modify block 1519204 6 0 RecordItem.tag.aestd.text set value '{"text":"Hello world","color":"aqua","italic":false}'
+data modify storage aestd:input String set value '{"text":"Hello world","color":"aqua","italic":false}'
 tag @s add aestd.preformatted_text
 function aestd:item/add_lore
 tag @s remove aestd.preformatted_text
@@ -305,7 +305,7 @@ execute as @a run function aestd:item/load
 ## aestd:item/merge_nbt
 
 # This function sets a player's head item's name to hello
-data modify block 1519204 6 0 RecordItem.tag.aestd.nbt set value {display:{Name:'"hello"'}}
+data modify storage aestd:input nbt set value {display:{Name:'"hello"'}}
 scoreboard players set @s aestd.item.slot 103
 function aestd:item/merge_nbt
 
@@ -348,7 +348,7 @@ execute as @a run function aestd:item/set_block_id
 ## aestd:item/set_nbt
 
 # Completely resets a player's head item NBT (damage, enchantments, modifiers, repair cost, etc) and sets its name to hello
-data modify block 1519204 6 0 RecordItem.tag.aestd.nbt set value {display:{Name:'"hello"'}}
+data modify storage aestd:input nbt set value {display:{Name:'"hello"'}}
 scoreboard players set @s aestd.item.slot 103
 function aestd:item/set_nbt
 
