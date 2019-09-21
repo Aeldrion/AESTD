@@ -10,4 +10,4 @@ function aestd.core:load/setup_scoreboard
 function aestd.core:load/setup_storage
 function aestd.core:load/setup_save_chunk
 
-function aestd.internal:tags/run_second_clock
+function aestd.private:tags/run_second_clock

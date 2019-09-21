@@ -1,0 +1,10 @@
+{
+	"condition": "minecraft:entity_properties",
+	"predicate": {
+		"equipment": {
+			"chest": {
+				"tag": "#aestd:all"
+			}
+		}
+	}
+}

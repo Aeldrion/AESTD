@@ -15,4 +15,4 @@ scoreboard players reset @s aestd.pos.y
 scoreboard players reset @s aestd.pos.z
 
 scoreboard players set @s aestd.player.rcd 512
-execute at @s anchored eyes positioned ^ ^ ^ anchored feet run function aestd.internal:raycasting/raycast_forward
+execute at @s anchored eyes positioned ^ ^ ^ anchored feet run function aestd.private:raycasting/raycast_forward

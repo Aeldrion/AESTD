@@ -1,0 +1,10 @@
+{
+	"condition": "minecraft:entity_properties",
+	"predicate": {
+		"equipment": {
+			"offhand": {
+				"tag": "#aestd:all"
+			}
+		}
+	}
+}

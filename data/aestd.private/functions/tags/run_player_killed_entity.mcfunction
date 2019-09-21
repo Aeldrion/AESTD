@@ -2,4 +2,4 @@
 # Advancements are weird.
 
 function #aestd:player_killed_entity
-advancement revoke @s only aestd.internal:player_killed_entity
+advancement revoke @s only aestd.private:player_killed_entity

@@ -2,4 +2,4 @@
 # Advancements are weird.
 
 function #aestd:inventory_changed
-advancement revoke @s only aestd.internal:inventory_changed
+advancement revoke @s only aestd.private:inventory_changed

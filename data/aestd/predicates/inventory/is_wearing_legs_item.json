@@ -1,0 +1,10 @@
+{
+	"condition": "minecraft:entity_properties",
+	"predicate": {
+		"equipment": {
+			"mainhand": {
+				"tag": "#aestd:all"
+			}
+		}
+	}
+}

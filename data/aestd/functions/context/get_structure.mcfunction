@@ -6,13 +6,6 @@
 # If none is found, sets to 0
 # If context position is in the intersection of two different structures, the highest ID is returned
 
-# Call loot table and insert into chest
-replaceitem block -30000000 0 7777 container.0 minecraft:air
-execute store result score #aestd aestd.structure run loot insert -30000000 0 7777 loot aestd.internal:structure
-
-# Copy ID to sender, if there is one
-execute if entity @s run scoreboard players operation @s aestd.structure = #aestd aestd.structure
-
 # 1: Buried treasure
 # 2: Desert pyramid
 # 3: End city
@@ -28,3 +21,10 @@ execute if entity @s run scoreboard players operation @s aestd.structure = #aest
 # 13: Stronghold
 # 14: Swamp hut
 # 15: Village
+
+# Call loot table and insert into shulker box
+replaceitem block -30000000 0 7777 container.0 minecraft:air
+execute store result score #aestd aestd.structure run loot insert -30000000 0 7777 loot aestd.private:structure
+
+# Copy ID to sender, if there is one
+execute if entity @s run scoreboard players operation @s aestd.structure = #aestd aestd.structure

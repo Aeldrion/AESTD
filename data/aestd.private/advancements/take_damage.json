@@ -16,6 +16,6 @@
 		}
 	},
 	"rewards": {
-		"function": "aestd.internal:tags/run_take_damage"
+		"function": "aestd.private:tags/run_take_damage"
 	}
 }

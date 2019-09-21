@@ -62,6 +62,12 @@ scoreboard objectives remove aestd.biome
 # get_dimension
 scoreboard objectives remove aestd.dimension
 
+# get_light_level
+scoreboard objectives remove aestd.light
+
+# get_structure
+scoreboard objectives remove aestd.structure
+
 
 
 ## MATH FUNCTIONS

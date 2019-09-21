@@ -16,6 +16,6 @@
 		}
 	},
 	"rewards": {
-		"function": "aestd.internal:tags/run_inventory_changed"
+		"function": "aestd.private:tags/run_inventory_changed"
 	}
 }

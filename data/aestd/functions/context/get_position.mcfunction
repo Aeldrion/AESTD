@@ -2,7 +2,7 @@
 # Version: 19w38b
 # Project: AESTD
 
-# Saves the context position (x50) to the executing entity's position scores if the position is loaded
+# Saves the context position to the executing entity's position scores if the position is loaded
 # Output: aestd.pos.x|aestd.pos.y|aestd.pos.z
 
 # Spawn a marker

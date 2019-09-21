@@ -6,10 +6,10 @@
 # The slot index is detailed below
 # Input: aestd.item.slot, output: storage aestd:data Item
 
-execute if entity @s[type=minecraft:player,tag=!aestd.item.container] run function aestd.internal:inventory/save_player_item
-execute if entity @s[type=minecraft:item,tag=!aestd.item.container] run function aestd.internal:inventory/save_dropped_item
-execute if entity @s[type=#aestd:mobs,tag=!aestd.item.container] run function aestd.internal:inventory/save_mob_item
-execute if entity @s[tag=aestd.item.container] run function aestd.internal:inventory/save_container_item
+execute if entity @s[type=minecraft:player,tag=!aestd.item.container] run function aestd.private:inventory/save_player_item
+execute if entity @s[type=minecraft:item,tag=!aestd.item.container] run function aestd.private:inventory/save_dropped_item
+execute if entity @s[type=#aestd:mobs,tag=!aestd.item.container] run function aestd.private:inventory/save_mob_item
+execute if entity @s[tag=aestd.item.container] run function aestd.private:inventory/save_container_item
 
 data remove storage aestd:data Item.Slot
 

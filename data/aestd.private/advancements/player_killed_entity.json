@@ -16,6 +16,6 @@
 		}
 	},
 	"rewards": {
-		"function": "aestd.internal:tags/run_player_killed_entity"
+		"function": "aestd.private:tags/run_player_killed_entity"
 	}
 }
