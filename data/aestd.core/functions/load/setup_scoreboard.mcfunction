@@ -55,6 +55,8 @@ scoreboard objectives add aestd.biome dummy
 # get_dimension
 scoreboard objectives add aestd.dimension dummy
 
+# get_light_level
+scoreboard objectives add aestd.light dummy
 
 # get_structure
 scoreboard objectives add aestd.structure dummy
