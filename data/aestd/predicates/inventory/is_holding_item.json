@@ -1,10 +1,27 @@
 {
-	"condition": "minecraft:entity_properties",
-	"predicate": {
-		"equipment": {
-			"mainhand": {
-				"tag": "#aestd:all"
+	"condition": "minecraft:inverted",
+	"term": {
+		"condition": "minecraft:alternative",
+		"terms": [
+			{
+				"condition": "minecraft:entity_properties",
+				"predicate": {
+					"equipment": {
+						"mainhand": {
+							"item": "minecraft:air"
+						}
+					}
+				},
+				"entity": "this"
+			},
+			{
+				"condition": "minecraft:inverted",
+				"term": {
+					"condition": "minecraft:entity_properties",
+					"predicate": {},
+					"entity": "this"
+				}
 			}
-		}
+		]
 	}
 }
