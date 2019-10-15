@@ -1,0 +1,1 @@
+execute if data storage aestd:core {Version:{Functions:{"math/sin": 1}}} run function aestd.private:lib1/math/sin/v1

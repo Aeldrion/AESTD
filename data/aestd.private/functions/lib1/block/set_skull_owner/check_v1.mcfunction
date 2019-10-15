@@ -1,0 +1,1 @@
+execute if data storage aestd:core {Version:{Functions:{"block/set_skull_owner": 1}}} run function aestd.private:lib1/block/set_skull_owner/v1

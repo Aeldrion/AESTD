@@ -1,0 +1,1 @@
+execute if data storage aestd:core {Version:{Functions:{"world/get_moon_phase": 1}}} run function aestd.private:lib1/world/get_moon_phase/v1

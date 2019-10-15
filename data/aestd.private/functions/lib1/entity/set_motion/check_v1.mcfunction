@@ -1,0 +1,1 @@
+execute if data storage aestd:core {Version:{Functions:{"entity/set_motion": 1}}} run function aestd.private:lib1/entity/set_motion/v1

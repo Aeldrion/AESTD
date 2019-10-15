@@ -1,0 +1,1 @@
+execute if data storage aestd:core {Version:{Functions:{"item/add_custom_model_data": 1}}} run function aestd.private:lib1/item/add_custom_model_data/v1

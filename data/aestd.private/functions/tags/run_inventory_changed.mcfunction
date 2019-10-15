@@ -1,5 +1,8 @@
-# Written by Aeldrion, Minecraft 19w05a
+# Author: Aeldrion
+# Version: 19w41a
+# Project: AESTD
+
 # Advancements are weird.
 
-function #aestd:inventory_changed
+function #aestd1:inventory_changed
 advancement revoke @s only aestd.private:inventory_changed

@@ -1,0 +1,1 @@
+execute if data storage aestd:core {Version:{Functions:{"math/perlin_noise": 1}}} run function aestd.private:lib1/math/perlin_noise/v1

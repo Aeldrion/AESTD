@@ -1,0 +1,1 @@
+execute if data storage aestd:core {Version:{Functions:{"entity/teleport_to_chunk_corner": 1}}} run function aestd.private:lib1/entity/teleport_to_chunk_corner/v1

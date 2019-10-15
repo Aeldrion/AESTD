@@ -1,13 +1,13 @@
 # Author: Aeldrion
-# Version: 19w38b
+# Version: 19w41a
 # Project: AESTD
 
 # Sets up storage, scoreboard and save chunk
 
-scoreboard players set #aestd.version aestd.var 0
+scoreboard objectives add aestd.version dummy
+scoreboard players reset * aestd.version
+function #aestd.core:get_version
 
-function aestd.core:load/setup_scoreboard
-function aestd.core:load/setup_storage
-function aestd.core:load/setup_save_chunk
-
-function aestd.private:tags/run_second_clock
+function #aestd.core:setup_scoreboard
+function #aestd.core:setup_storage
+function #aestd.core:setup_save_chunk

@@ -1,5 +1,5 @@
 {
 	"values": [
-		"aestd.core:load"
+		"#load:__init"
 	]
 }

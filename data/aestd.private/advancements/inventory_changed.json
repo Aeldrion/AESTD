@@ -1,5 +1,5 @@
 {
-	"comment": "This advancement makes players run the #aestd:inventory_changed function tag every time the player moves an entity",
+	"comment": "This advancement makes players run the #aestd1:inventory_changed function tag every time the player moves an entity",
 	"display": {
 		"icon": {
 			"item": "minecraft:barrier"

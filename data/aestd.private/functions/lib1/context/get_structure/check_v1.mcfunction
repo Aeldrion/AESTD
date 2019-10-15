@@ -1,0 +1,1 @@
+execute if data storage aestd:core {Version:{Functions:{"context/get_structure": 1}}} run function aestd.private:lib1/context/get_structure/v1

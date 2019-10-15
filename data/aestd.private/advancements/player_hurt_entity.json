@@ -1,5 +1,5 @@
 {
-	"comment": "This advancement makes players run the #aestd:player_hurt_entity function tag every time the player damages an entity",
+	"comment": "This advancement makes players run the #aestd1:player_hurt_entity function tag every time the player damages an entity",
 	"display": {
 		"icon": {
 			"item": "minecraft:barrier"

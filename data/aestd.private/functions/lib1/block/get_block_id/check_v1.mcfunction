@@ -1,0 +1,1 @@
+execute if data storage aestd:core {Version:{Functions:{"block/get_block_id": 1}}} run function aestd.private:lib1/block/get_block_id/v1

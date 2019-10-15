@@ -1,0 +1,8 @@
+# Author: Aeldrion
+# Version: 19w41a
+# Project: AESTD v1.0
+
+# Teleports the player to their position scores (/50)
+# Input: aestd.pos.x|aestd.pos.y|aestd.pos.z
+
+function #aestd.private:lib1/player/set_position_scale50

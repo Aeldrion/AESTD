@@ -1,0 +1,1 @@
+execute if data storage aestd:core {Version:{Functions:{"entity/villager/zombify": 1}}} run function aestd.private:lib1/entity/villager/zombify/v1

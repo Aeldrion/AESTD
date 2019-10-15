@@ -1,0 +1,1 @@
+execute if data storage aestd:core {Version:{Functions:{"world/add_marker": 1}}} run function aestd.private:lib1/world/add_marker/v1

@@ -1,0 +1,1 @@
+execute if data storage aestd:core {Version:{Functions:{"entity/projectile/set_owner_uuid": 1}}} run function aestd.private:lib1/entity/projectile/set_owner_uuid/v1

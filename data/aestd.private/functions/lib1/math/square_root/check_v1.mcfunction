@@ -1,0 +1,1 @@
+execute if data storage aestd:core {Version:{Functions:{"math/square_root": 1}}} run function aestd.private:lib1/math/square_root/v1

@@ -1,0 +1,1 @@
+execute if data storage aestd:core {Version:{Functions:{"world/get_weather": 1}}} run function aestd.private:lib1/world/get_weather/v1

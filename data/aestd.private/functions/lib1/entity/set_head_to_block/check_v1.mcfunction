@@ -1,0 +1,1 @@
+execute if data storage aestd:core {Version:{Functions:{"entity/set_head_to_block": 1}}} run function aestd.private:lib1/entity/set_head_to_block/v1

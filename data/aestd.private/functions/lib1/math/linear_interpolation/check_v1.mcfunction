@@ -1,0 +1,1 @@
+execute if data storage aestd:core {Version:{Functions:{"math/linear_interpolation": 1}}} run function aestd.private:lib1/math/linear_interpolation/v1

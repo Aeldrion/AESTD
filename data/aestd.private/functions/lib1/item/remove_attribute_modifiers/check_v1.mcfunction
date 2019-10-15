@@ -1,0 +1,1 @@
+execute if data storage aestd:core {Version:{Functions:{"item/remove_attribute_modifiers": 1}}} run function aestd.private:lib1/item/remove_attribute_modifiers/v1

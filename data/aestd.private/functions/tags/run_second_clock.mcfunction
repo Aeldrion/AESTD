@@ -1,5 +1,8 @@
-# Written by Aeldrion, Minecraft 19w05a
-# Runs the #aestd:second tag every second
+# Author: Aeldrion
+# Version: 19w41a
+# Project: AESTD
 
-function #aestd:second
+# Runs the #aestd1:second tag every second
+
+function #aestd1:second
 schedule function aestd.private:tags/run_second_clock 1s

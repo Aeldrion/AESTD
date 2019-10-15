@@ -1,0 +1,7 @@
+# Author: Aeldrion
+# Version: 19w41a
+# Project: AESTD
+
+function aestd1:item/save
+data modify storage aestd:data Item.tag merge from storage aestd:input nbt
+function aestd1:item/load

@@ -1,0 +1,1 @@
+execute if data storage aestd:core {Version:{Functions:{"world/remove_time": 1}}} run function aestd.private:lib1/world/remove_time/v1

@@ -167,6 +167,11 @@
         "minecraft:lantern",
         "minecraft:sweet_berry_bush",
         "minecraft:structure_block",
-        "minecraft:jigsaw"
+        "minecraft:jigsaw",
+        "minecraft:composter",
+        "minecraft:bee_nest",
+        "minecraft:beehive",
+        "minecraft:honey_block",
+        "minecraft:honeycomb_block"
     ]
 }

@@ -1,6 +1,6 @@
 {
 	"pack": {
-		"pack_format": 1,
+		"pack_format": 4,
 		"description": "AESTD: Aeldrion's standard command library for Minecraft 1.15.\nTools to help you make Minecraft commands easier."
 	}
 }

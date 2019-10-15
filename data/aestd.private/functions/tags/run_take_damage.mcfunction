@@ -1,7 +1,10 @@
-# Written by Aeldrion, Minecraft 1.14
+# Author: Aeldrion
+# Version: 19w41a
+# Project: AESTD
+
 # Advancements are weird.
 
-function #aestd:take_damage
+function #aestd1:take_damage
 advancement revoke @s only aestd.private:take_damage
 
 execute if score @s aestd.deaths matches 1.. run function aestd.private:tags/run_player_dies

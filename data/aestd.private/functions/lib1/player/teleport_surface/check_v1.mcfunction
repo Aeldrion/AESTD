@@ -1,0 +1,1 @@
+execute if data storage aestd:core {Version:{Functions:{"player/teleport_surface": 1}}} run function aestd.private:lib1/player/teleport_surface/v1

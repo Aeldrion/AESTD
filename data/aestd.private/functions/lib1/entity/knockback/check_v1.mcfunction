@@ -1,0 +1,1 @@
+execute if data storage aestd:core {Version:{Functions:{"entity/knockback": 1}}} run function aestd.private:lib1/entity/knockback/v1

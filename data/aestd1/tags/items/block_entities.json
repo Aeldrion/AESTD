@@ -1,0 +1,21 @@
+{
+	"values": [
+		"minecraft:beehive",
+		"minecraft:bee_nest",
+		"#minecraft:signs",
+		"#minecraft:banners",
+		"#aestd1:store_items",
+		"minecraft:beacon",
+		"minecraft:spawner",
+		"minecraft:enchanting_table",
+		"minecraft:ender_chest",
+		"#aestd1:heads",
+		"#aestd1:command_blocks",
+		"minecraft:structure_block",
+		"minecraft:daylight_detector",
+		"minecraft:comparator",
+		"#aestd1:beds",
+		"minecraft:conduit",
+		"minecraft:bell"
+	]
+}

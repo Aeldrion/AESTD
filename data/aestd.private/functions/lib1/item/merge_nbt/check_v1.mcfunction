@@ -1,0 +1,1 @@
+execute if data storage aestd:core {Version:{Functions:{"item/merge_nbt": 1}}} run function aestd.private:lib1/item/merge_nbt/v1

@@ -1,0 +1,1 @@
+execute if data storage aestd:core {Version:{Functions:{"math/random_lcg": 1}}} run function aestd.private:lib1/math/random_lcg/v1

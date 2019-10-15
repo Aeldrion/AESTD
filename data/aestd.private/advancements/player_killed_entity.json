@@ -1,5 +1,5 @@
 {
-	"comment": "This advancement makes players run the #aestd:player_killed_entity function tag every time the player kills an entity",
+	"comment": "This advancement makes players run the #aestd1:player_killed_entity function tag every time the player kills an entity",
 	"display": {
 		"icon": {
 			"item": "minecraft:barrier"

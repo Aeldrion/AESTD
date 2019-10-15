@@ -1,0 +1,1 @@
+execute if data storage aestd:core {Version:{Functions:{"math/ticks_to_time": 1}}} run function aestd.private:lib1/math/ticks_to_time/v1

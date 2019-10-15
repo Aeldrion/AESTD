@@ -1,0 +1,58 @@
+This list explains what certain tags contain. It does not include every tag in AESTD's tag library, only the ones that I think may be ambiguous without an explanation.
+
+
+BLOCKS
+all: every block, including air and liquids, useful for state/nbt detection
+can_emit_light: blocks that can emit light
+cubic: every block whose collision box is 1*1*1 (needs verification)
+double_blocks: every block that takes the space of two blocks when placed, does not include banners because their collision box is actually one block tall even though their model is two blocks tall
+emit_light: blocks that constantly emit light (excludes eg redstone lamps which can be turned off)
+end_blocks: blocks that generate in the end (needs verification)
+falling_blocks: blocks that fall when unsupported (eg sand)
+flammable_blocks: blocks that can be destroyed by fire (including tnt)
+fortune_changes_drops: blocks that drop items in different quantities when destroyed using a fortune tool using Minecraft's default loot tables
+glass: blocks of glass (does not include glass panes)
+heads: mob skulls/heads and player heads
+infested: blocks that summon a silverfish when mined
+infinite_fire: blocks on top of which fire never extinguishes
+invisible: blocks that cannot be seen by a player
+liquids: source blocks and flowing liquids
+natural_logs: logs as they generate naturally (excludes stripped logs, wood and stripped wood whereas #minecraft:logs does not)
+nether_blocks: blocks that are generated in the nether (needs verification)
+noncubic: every block that is not in #aestd1:cubic (includes chests)
+opaque: cubic blocks that cannot be seen through, on top of which mobs can spawn  and through which light cannot go
+pistons: pistons, sticky pistons and piston heads
+plants: plants (flowers, saplings, tall grass, cacti...) (does not include potted plants and seeds)
+redstone_mechanism_components: blocks that have a different behaviour when activated by a redstone signal
+redstone_power_components: blocks that can emit a redstone signal (does not include redstone dust)
+seeds: nether warts and seeds that can grow on farmland
+silk_touch_changes_drops: blocks that drop different items when mined using a silk touch tool using Minecraft's default loot tables
+standing_banners: banners that are not hanging on a wall
+store_entities: block entities that can store entities as an NBT tag.
+store_items: block entities that can store items. Does not contain blocks that only contain items while a player is using their interface such as enchanting tables and crafting tables
+stripped_logs: stripped logs (does not include stripped wood)
+tnt_cannot_destroy: blocks that cannot be destroyed by TNT. Includes bubble columns since they can only be destroyed indirectly
+translucent: blocks whose models support translucency (pixels that are not fully opaque nor fully transparent, eg stained glass)
+unbreakable: blocks that cannot be destroyed by a survival player
+volcanic_stones: andesite, diorite, granite and their polished versions
+wall_banners: banners that are hanging on a wall
+wood: non-stripped wood blocks (six bark faces)
+
+
+ENTITY TYPES
+aligned_to_block_grid: entities that can only take integer coordinates (eg item frames)
+all: every entity type
+arthropods: entities that take more damage when struck using a weapon with the Bane of Arthropods enchantment
+bosses: living entities that cannot be affected by status effects (does not include elder guardians)
+breedable: all mobs that can be forced to breed by a player (does not include villagers)
+can_grief: non-player entities that can affect, place or destroy blocks
+display_armor: entities that can display armour in every slot using the ArmorItems tag
+display_horse_armor: mobs that can wear and display horse armour
+end: mobs that spawn in the end, including the ender dragon
+fishes: cods, tropical fish and salmons
+hostile: mobs that will always attack the player when they can (does not include mobs that will just retaliate, or polar bears even though they are hostile if there is a cub nearby)
+living_base: mobs, players and armour stands
+nether: mobs that can only spawn in the nether (does not include withers or endermen)
+partial_invisibility: mobs that will still display a part of their model when given the invisibility effect (does not take into account armour/held items)
+projectiles: entities that can be thrown by the player or another entity (does not include items)
+rideable: mobs that the player can ride (does not include boats and minecarts; see #aestd1:vehicles)

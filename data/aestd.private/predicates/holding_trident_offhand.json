@@ -1,0 +1,33 @@
+{
+	"condition": "minecraft:inverted",
+	"term": {
+		"condition": "minecraft:alternative",
+		"terms": [
+			{
+				"condition": "minecraft:entity_properties",
+				"predicate": {
+					"equipment": {
+						"mainhand": {
+							"item": "minecraft:trident"
+						}
+					}
+				},
+				"entity": "this"
+			},
+			{
+				"condition": "minecraft:inverted",
+				"term": {
+					"condition": "minecraft:entity_properties",
+					"predicate": {
+						"equipment": {
+							"offhand": {
+								"item": "minecraft:trident"
+							}
+						}
+					},
+					"entity": "this"
+				}
+			}
+		]
+	}
+}

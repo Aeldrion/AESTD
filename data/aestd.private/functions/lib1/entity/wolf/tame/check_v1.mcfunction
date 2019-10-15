@@ -1,0 +1,1 @@
+execute if data storage aestd:core {Version:{Functions:{"entity/wolf/tame": 1}}} run function aestd.private:lib1/entity/wolf/tame/v1

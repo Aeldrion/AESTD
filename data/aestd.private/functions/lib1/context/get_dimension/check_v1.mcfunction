@@ -1,0 +1,1 @@
+execute if data storage aestd:core {Version:{Functions:{"context/get_dimension": 1}}} run function aestd.private:lib1/context/get_dimension/v1
