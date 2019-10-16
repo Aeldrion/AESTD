@@ -1,13 +1,12 @@
 # AESTD
 
-**AESTD**, or **Aeldrion's standard command library**, is a utility data pack for Minecraft 1.14.4 meant to be used by other data pack creators.
-It contains tools that make the development of data packs easier, and relies on little-known tricks that may help command learners and advanced creators alike.
+**AESTD**, or **Aeldrion's standard command library**, is a utility data pack for Minecraft 1.14 and 1.15 designed to help command learners and advanced command artists alike by providing an efficient and powerful function-based framework while reducing compatibility issues between data packs. It includes a collection of functions and tools that rely on little-known tricks to do things most command artists don't know commands can do - detecting biomes, editing player inventories...
 
 ## Contents
 
 ### Function library
-The AESTD function library contains over 90 functions to simplify command making.
-It includes the following, and many more:
+The AESTD function library contains over 100 functions to simplify command making.
+It includes the following features, and many more:
 - Biome detection
 - Weather detection
 - Player inventory manipulation
@@ -26,8 +25,8 @@ Other data packs may append their functions to the function tags in order to det
 - Using a carrot on a stick (right-click detection)
 - Inventory changes
 
-### Benchmarking tool
-The benchmarking tools can be used to evaluate accurately the performance cost of a function.
+### Benchmarker
+Benchmarker is a benchmarking tool that can be used to evaluate accurately the performance cost of a function.
 This can be used to see what options are the most performant and therefore to optimise functions.
 
 ## Why should I use AESTD?
@@ -35,11 +34,11 @@ This can be used to see what options are the most performant and therefore to op
 ### Simplicity
 AESTD is easy to install, to merge with your data packs and to use.
 Functions require no extensive knowledge of commands and tricks on which they rely to be used by other command artists.
-Everything is already setup.
+Everything is already setup; the data pack requires no configuration.
 From the perspective of a player using your data pack or playing your map, AESTD will be completely invisible.
 
 ### Compatibility
-AESTD is compatible with other data packs and replaces almost nothing from vanilla.
+AESTD is compatible with other data packs and replaces nothing from vanilla.
 It can be used with other library data packs such as Phi or Lantern.
 Multiple data packs can also use the save chunk system for storing data.
 
@@ -51,7 +50,7 @@ Furthermore, the function tags use hidden advancements instead of scoreboard obj
 ## How do I use AESTD?
 
 ### Maps
-* Download AESTD below. Note that only the latest version is supported, meaning that you are on your own if you encounter bugs. However, later AESTD versions may be incompatible with outdated Minecraft versions.
+* Download AESTD below. Note that only the latest version is supported, you are on your own if you encounter bugs in older versions. However, later AESTD versions may be incompatible with outdated Minecraft versions.
 * Place the data pack in your map's `datapacks` folder. You don't need to extract it - it works both as a zip and as a folder.
 * AESTD will be automatically setup: all features are ready to be used.
 
@@ -69,11 +68,13 @@ https://www.twitter.com/Aeldrion
 
 ## Downloads
 
-[AESTD v0.2 (19w34a)](http://www.mediafire.com/file/y73kgz0l39z9zq3)
+[AESTD v0.3 (19w38b)](https://www.mediafire.com/file/3vdd467plz471na)
 
-[AESTD v0.2 (1.14.4)](http://www.mediafire.com/file/swp4mn1coisodfi)
+[AESTD v0.2 (19w34a)](https://www.mediafire.com/file/y73kgz0l39z9zq3)
 
-[AESTD v0.1 (19w05a)](http://www.mediafire.com/file/m7cwbkzd4jddqu6)
+[AESTD v0.2 (1.14.4)](https://www.mediafire.com/file/swp4mn1coisodfi)
+
+[AESTD v0.1 (19w05a)](https://www.mediafire.com/file/m7cwbkzd4jddqu6)
 
 ## Links
 
