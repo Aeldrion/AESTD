@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w41a
+# Version: 19w42a
 # Project: AESTD v1.0
 
 # Removes all NBT data from an item (name, enchantments, lore, damage…) (see aestd:item/save for slot index)

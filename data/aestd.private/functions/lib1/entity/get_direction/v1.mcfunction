@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w41a
+# Version: 19w42a
 # Project: AESTD
 
 execute store result score @s aestd.dir.x run data get entity @s direction[0] 1000

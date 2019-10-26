@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w41a
+# Version: 19w42a
 # Project: AESTD v1.0
 
 # Returns S1(x) = 3x^2-2x^3

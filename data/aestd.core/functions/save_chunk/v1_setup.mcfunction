@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w41a
+# Version: 19w42a
 # Project: AESTD
 
 # Checks if the save chunk is marked for force loading and setup

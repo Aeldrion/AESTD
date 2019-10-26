@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w41a
+# Version: 19w42a
 # Project: AESTD
 
 execute unless data entity @s OwnerUUIDLeast run data merge entity @s {OwnerUUIDLeast:0L,OwnerUUIDMost:0L}

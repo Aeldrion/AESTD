@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w41a
+# Version: 19w42a
 # Project: AESTD Benchmarker
 
 # Repeats a function until the worldborder reaches the place where it should be

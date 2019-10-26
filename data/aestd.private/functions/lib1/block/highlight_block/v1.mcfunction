@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w41a
+# Version: 19w42a
 # Project: AESTD
 
 execute align xyz run particle minecraft:end_rod ~0.5 ~ ~ 0.25 0 0 0 10 force

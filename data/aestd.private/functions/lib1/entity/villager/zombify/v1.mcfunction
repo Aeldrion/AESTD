@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w41a
+# Version: 19w42a
 # Project: AESTD
 
 execute if predicate aestd1:flags/is_baby at @s run playsound minecraft:entity.villager.death neutral @a ~ ~ ~ 1 2

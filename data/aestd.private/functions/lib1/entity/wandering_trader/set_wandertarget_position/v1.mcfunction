@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w41a
+# Version: 19w42a
 # Project: AESTD
 
 execute store result entity @s WanderTarget.X int 1 run scoreboard players get @s aestd.pos.x

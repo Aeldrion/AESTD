@@ -1,10 +1,10 @@
 # Author: Aeldrion
-# Version: 19w41a
+# Version: 19w42a
 # Project: AESTD
 
 execute if entity @s[type=minecraft:player, tag=!aestd.item.container] run function aestd.private:lib1/item/load/load_player_item
 execute if entity @s[type=minecraft:item, tag=!aestd.item.container] run function aestd.private:lib1/item/load/load_dropped_item
-execute if entity @s[type=#aestd1:mobs, tag=!aestd.item.container] run function aestd.private:lib1/item/load/load_mob_item
+execute if entity @s[type=#aestd.private:mobs, tag=!aestd.item.container] run function aestd.private:lib1/item/load/load_mob_item
 execute if entity @s[tag=aestd.item.container] run function aestd.private:lib1/item/load/load_container_item
 
 execute unless entity @s run summon minecraft:item ~ ~ ~ {Tags: ["aestd.new"], Item: {id: "minecraft:stone", Count: 1b}}

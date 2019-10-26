@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w41a
+# Version: 19w42a
 # Project: AESTD v1.0
 
 # Finds the block the player is looking at, up to 64 blocks away. Looks through water and lava

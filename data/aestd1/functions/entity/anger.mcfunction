@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w41a
+# Version: 19w42a
 # Project: AESTD v1.0
 
 # Makes the executing entity angry at an entity with a given UUID if it can (see aestd:entity/get_uuid)

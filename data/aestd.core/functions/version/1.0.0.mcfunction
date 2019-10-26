@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w41a
+# Version: 19w42a
 # Project: AESTD
 
 # Updates AESTD's version, its storage system version, its scoreboard version, its save chunk format version, its function library version and its tick function version

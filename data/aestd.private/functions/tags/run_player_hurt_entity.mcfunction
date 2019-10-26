@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w41a
+# Version: 19w42a
 # Project: AESTD
 
 # Revokes the advancement running this function, run the #aestd1:player_hurt_entity function tag and gives the damaged mob the tag aestd.damaged

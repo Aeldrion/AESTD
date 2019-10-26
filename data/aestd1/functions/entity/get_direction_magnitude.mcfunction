@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w41a
+# Version: 19w42a
 # Project: AESTD v1.0
 
 # Gets the magnitude of the executing entity's direction vector multiplied by 1000

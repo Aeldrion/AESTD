@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w41a
+# Version: 19w42a
 # Project: AESTD v1.0
 
 # Calculates an interpolation between two inputs (in and in2) for a parameter (var) in the closed interval [0, 1000]

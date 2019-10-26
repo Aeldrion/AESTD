@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w41a
+# Version: 19w42a
 # Project: AESTD v1.0
 
 # Sets the executing entity's owner to an entity with a given UUID (see aestd:entity/get_uuid)

@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w41a
+# Version: 19w42a
 # Project: AESTD
 
 scoreboard players operation #aestd.save_input aestd.math.in = @s aestd.math.in

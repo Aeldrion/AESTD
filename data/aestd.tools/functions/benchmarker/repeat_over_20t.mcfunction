@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w41a
+# Version: 19w42a
 # Project: AESTD Benchmarker
 
 # Runs a function tag as many times as possible in 50ms 20 times and displays the average number of iterations

@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w41a
+# Version: 19w42a
 # Project: AESTD
 
 execute store result entity @s[type=!minecraft:player] Pos[0] double 16 run data get entity @s Pos[0] 0.0625

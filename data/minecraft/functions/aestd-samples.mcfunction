@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w41a
+# Version: 19w42a
 # Project: AESTD documentation
 
 # This function is not meant to be used in a world. It contains samples of codes that use the functions from AESTD's function library so that you can understand what each function does and how it can be used.

@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w41a
+# Version: 19w42a
 # Project: AESTD
 
 execute store result entity @s direction[0] double 0.001 run scoreboard players get @s aestd.dir.x

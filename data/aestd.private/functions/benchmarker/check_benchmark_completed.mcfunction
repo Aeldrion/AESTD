@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w41a
+# Version: 19w42a
 # Project: AESTD Benchmarker
 
 # Verifies if the previous benchmark was finished and displays an error message otherwise

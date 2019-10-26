@@ -19,3 +19,8 @@ tellraw @a [" ", {"text": "AESTD wiki", "underlined": true, "clickEvent": {"acti
 tellraw @a [" ", {"text": "GitHub repository", "underlined": true, "clickEvent": {"action": "open_url", "value": "https://www.github.com/Aeldrion/AESTD"}}]
 tellraw @a [" ", {"text": "AESTD Discord server", "underlined": true, "clickEvent": {"action": "open_url", "value": "https://www.github.com/Aeldrion/AESTD"}}]
 tellraw @a {"text": " ^ Prefered network for help, bugs and feedback", "color": "gray"}
+tellraw @a "\n"
+tellraw @a {"text": "================", "color": "green", "bold": true}
+tellraw @a {"text": "Enabled modules:", "color": "green"}
+tellraw @a "\n"
+function #aestd.core:display_modules

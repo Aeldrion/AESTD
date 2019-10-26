@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w41a
+# Version: 19w42a
 # Project: AESTD v1.0
 
 # Gets the magnitude of a vector with given coordinates / ex: (1784,5139,3396) -> 6412

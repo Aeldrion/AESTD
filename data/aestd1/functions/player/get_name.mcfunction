@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w41a
+# Version: 19w42a
 # Project: AESTD v1.0
 
 # Saves the name of the executing player to storage. This name can then be used by other functions such as aestd:entity/set_head and aestd:block/set_skull_owner

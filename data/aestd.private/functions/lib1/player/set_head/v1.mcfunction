@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w41a
+# Version: 19w42a
 # Project: AESTD
 
 data modify storage aestd:private Item set value {id: "minecraft:player_head", Count: 1b, Slot: 0b, tag: {SkullOwner: {Name: ""}}}

@@ -1,8 +1,9 @@
 # Author: Aeldrion
-# Version: 19w41a
+# Version: 19w42a
 # Project: AESTD v1.0
 
-# Shoots a trident as the executing entity at context position following context rotation
+# Shoots a fully charged trident as the executing entity at context position following context rotation
+# By default, the trident is shot from the entity's feet; use anchored eyes to shoot from the eyes instead
 # The last shot trident gets the aestd.trident.last_shot tag
 # If the executing entity has the aestd.trident.from_inventory tag:
 # - If it is not holding a trident: No trident will spawn
