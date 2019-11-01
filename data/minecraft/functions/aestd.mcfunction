@@ -17,7 +17,7 @@ tellraw @a "\n"
 tellraw @a {"text": "Links:", "bold": true}
 tellraw @a [" ", {"text": "AESTD wiki", "underlined": true, "clickEvent": {"action": "open_url", "value": "https://minecraft.gamepedia.com/User:Aeldrion/Projects/AESTD"}}]
 tellraw @a [" ", {"text": "GitHub repository", "underlined": true, "clickEvent": {"action": "open_url", "value": "https://www.github.com/Aeldrion/AESTD"}}]
-tellraw @a [" ", {"text": "AESTD Discord server", "underlined": true, "clickEvent": {"action": "open_url", "value": "https://www.github.com/Aeldrion/AESTD"}}]
+tellraw @a [" ", {"text": "AESTD Discord server", "underlined": true, "clickEvent": {"action": "open_url", "value": "https://discord.gg/KJet4xF"}}]
 tellraw @a {"text": " ^ Prefered network for help, bugs and feedback", "color": "gray"}
 tellraw @a "\n"
 tellraw @a {"text": "================", "color": "green", "bold": true}
