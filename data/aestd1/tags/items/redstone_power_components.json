@@ -1,13 +1,15 @@
 {
 	"values": [
-		"minecraft:redstone_block",
+		"#aestd1:pressure_plates",
 		"#minecraft:buttons",
+		
 		"minecraft:daylight_detector",
 		"minecraft:detector_rail",
 		"minecraft:lever",
 		"minecraft:observer",
-		"#aestd1:pressure_plates",
+		"minecraft:redstone_block",
 		"minecraft:redstone_torch",
+		"minecraft:target",
 		"minecraft:trapped_chest",
 		"minecraft:tripwire_hook"
 	]

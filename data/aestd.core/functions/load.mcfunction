@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w42a
+# Version: 1.15.2
 # Project: AESTD
 
 # Sets up storage, scoreboard and save chunk

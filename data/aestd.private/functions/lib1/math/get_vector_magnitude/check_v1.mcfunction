@@ -1,1 +1,0 @@
-execute if data storage aestd:core {Version:{Functions:{"math/get_vector_magnitude": 1}}} run function aestd.private:lib1/math/get_vector_magnitude/v1

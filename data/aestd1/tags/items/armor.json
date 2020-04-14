@@ -1,9 +1,11 @@
 {
 	"values": [
-		"#aestd1:leather_armor",
 		"#aestd1:chainmail_armor",
+		"#aestd1:diamond_armor",
 		"#aestd1:golden_armor",
 		"#aestd1:iron_armor",
-		"#aestd1:diamond_armor"
+		"#aestd1:leather_armor",
+		"#aestd1:netherite_armor",
+		"minecraft:turtle_helmet"
 	]
 }

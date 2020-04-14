@@ -1,8 +1,10 @@
 {
 	"values": [
 		"#aestd1:emit_light",
-		"minecraft:redstone_lamp",
 		"#aestd1:furnaces",
+		"#aestd1:campfires",
+		
+		"minecraft:redstone_lamp",
 		"minecraft:redstone_ore",
 		"minecraft:redstone_torch"
 	]

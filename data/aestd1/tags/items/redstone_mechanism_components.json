@@ -1,14 +1,16 @@
 {
 	"values": [
 		"#aestd1:command_blocks",
-		"minecraft:dispenser",
-		"#minecraft:doors",
-		"minecraft:dropper",
 		"#aestd1:fence_gates",
+
+		"#minecraft:doors",
+		"#minecraft:rails",
+		
+		"minecraft:dispenser",
+		"minecraft:dropper",
 		"minecraft:hopper",
 		"minecraft:note_block",
 		"minecraft:piston",
-		"#minecraft:rails",
 		"minecraft:redstone_lamp",
 		"minecraft:tnt"
 	]

@@ -1,7 +1,8 @@
 {
 	"values": [
 		"minecraft:armor_stand",
-		"minecraft:zombie_pigman",
+		"minecraft:piglin",
+		"minecraft:zombified_piglin",
 		"#minecraft:skeletons",
 		"#aestd1:zombies"
 	]

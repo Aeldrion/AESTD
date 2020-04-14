@@ -1,0 +1,16 @@
+{
+	"values": [
+		"#aestd1:armor",
+		"#aestd1:axes",
+		"#aestd1:pickaxes",
+		"#aestd1:shovels",
+		"#aestd1:swords",
+		"#aestd1:food_on_a_stick",
+
+		"minecraft:elytra",
+		"minecraft:fishing_rod",
+		"minecraft:flint_and_steel",
+		"minecraft:shears",
+		"minecraft:trident"
+	]
+}

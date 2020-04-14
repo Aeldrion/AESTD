@@ -1,5 +1,6 @@
 {
 	"values": [
+		"#aestd1:nether_plants",
 		"#minecraft:flowers",
 		"#minecraft:saplings",
 		"minecraft:cactus",
@@ -9,6 +10,7 @@
 		"minecraft:seagrass",
 		"minecraft:sea_pickle",
 		"minecraft:tall_grass",
-		"minecraft:large_fern"
+		"minecraft:large_fern",
+		"minecraft:kelp"
 	]
 }

@@ -5,6 +5,8 @@
 		"minecraft:spruce_log",
 		"minecraft:dark_oak_log",
 		"minecraft:acacia_log",
-		"minecraft:jungle_log"
+		"minecraft:jungle_log",
+		"minecraft:crimson_stem",
+		"minecraft:warped_stem"
 	]
 }

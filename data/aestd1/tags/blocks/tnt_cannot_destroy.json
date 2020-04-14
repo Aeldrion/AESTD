@@ -1,13 +1,17 @@
 {
 	"values":[
 		"#aestd1:unbreakable",
-		"minecraft:dragon_egg",
 		"#minecraft:anvil",
+		"minecraft:ancient_debris",
+		"minecraft:crying_obsidian",
+		"minecraft:dragon_egg",
 		"minecraft:water",
 		"minecraft:lava",
 		"minecraft:obsidian",
 		"minecraft:enchanting_table",
 		"minecraft:ender_chest",
-		"minecraft:bubble_column"
+		"minecraft:bubble_column",
+		"minecraft:netherite_block",
+		"minecraft:respawn_anchor"
 	]
 }

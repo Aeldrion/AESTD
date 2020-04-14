@@ -1,0 +1,1 @@
+execute if data storage aestd:core {Version:{Functions:{"entity/anger": 2}}} run function aestd.private:lib1/entity/anger/v2

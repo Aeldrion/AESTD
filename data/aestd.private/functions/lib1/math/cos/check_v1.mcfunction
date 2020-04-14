@@ -1,1 +1,0 @@
-execute if data storage aestd:core {Version:{Functions:{"math/cos": 1}}} run function aestd.private:lib1/math/cos/v1

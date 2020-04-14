@@ -1,7 +1,6 @@
 {
 	"values": [
-		"#aestd1:display_horse_armor",
-		"minecraft:pig",
-		"minecraft:llama"
+		"#aestd1:rideable_mobs",
+		"#aestd1:vehicles"
 	]
 }

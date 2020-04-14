@@ -6,6 +6,7 @@
 		"minecraft:nether_quartz_ore",
 		"minecraft:lapis_ore",
 		"minecraft:redstone_ore",
+		"minecraft:gilded_blackstone",
 		"minecraft:glowstone",
 		"minecraft:sea_lantern",
 		"minecraft:melon",
@@ -15,6 +16,7 @@
 		"minecraft:wheat",
 		"minecraft:grass",
 		"minecraft:gravel",
+		"minecraft:nether_gold_ore",
 		"#minecraft:leaves"
 	]
 }

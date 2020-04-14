@@ -38,9 +38,8 @@ Everything is already setup; the data pack requires no configuration.
 From the perspective of a player using your data pack or playing your map, AESTD will be completely invisible.
 
 ### Compatibility
-AESTD is compatible with other data packs and replaces nothing from vanilla.
-It can be used with other library data packs such as Phi or Lantern.
-Multiple data packs can also use the save chunk system for storing data.
+AESTD strives to be compatible not only with other libraries such as Phi or Lantern, but with all data packs that modify Minecraft's data by minimising as much as possible modifications of the default namespace.
+Different versions of AESTD can even be used without conflicts.
 
 ### Efficiency
 AESTD will not affect the game's performance heavily on its own.

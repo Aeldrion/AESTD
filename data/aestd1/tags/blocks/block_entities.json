@@ -1,9 +1,9 @@
 {
 	"values": [
-		"#minecraft:signs",
 		"#minecraft:banners",
+		"#minecraft:beds",
+		"#minecraft:signs",
 
-		"#aestd1:beds",
 		"#aestd1:command_blocks",
 		"#aestd1:heads",
 		"#aestd1:store_items",
@@ -19,7 +19,6 @@
 		"minecraft:end_gateway",
 		"minecraft:end_portal",
 		"minecraft:ender_chest",
-		"minecraft:piston_head",
 		"minecraft:spawner",
 		"minecraft:structure_block"
 	]

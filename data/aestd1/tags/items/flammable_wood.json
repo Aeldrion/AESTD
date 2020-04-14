@@ -1,0 +1,11 @@
+{
+	"values": [
+		"#aestd1:flammable_planks",
+		"#aestd1:flammable_slabs",
+		"#aestd1:flammable_fence_gates",
+		"#aestd1:flammable_fences",
+		"#aestd1:flammable_signs",
+		"#aestd1:flammable_stairs",
+		"#minecraft:logs_that_burn"
+	]
+}

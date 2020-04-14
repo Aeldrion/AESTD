@@ -1,16 +1,22 @@
 {
 	"values": [
 		"#aestd1:glass",
-		"#minecraft:leaves",
 		"#aestd1:opaque",
+		"#minecraft:leaves",
+		
 		"minecraft:barrier",
+		"minecraft:beacon",
+		"minecraft:blast_furnace",
+		"minecraft:frosted_ice",
 		"minecraft:furnace",
+		"minecraft:glowstone",
+		"minecraft:honey_block",
 		"minecraft:ice",
 		"minecraft:jack_o_lantern",
 		"minecraft:sea_lantern",
 		"minecraft:slime_block",
+		"minecraft:smoker",
 		"minecraft:spawner",
-		"minecraft:tnt",
-		"minecraft:honey_block"
+		"minecraft:tnt"
 	]
 }

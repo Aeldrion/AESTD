@@ -1,19 +1,16 @@
 {
 	"values": [
-		"#minecraft:planks",
-		"#minecraft:wooden_slabs",
-		"#aestd1:wooden_fence_gates",
-		"#minecraft:signs",
-		"#minecraft:wooden_stairs",
-		"#minecraft:logs",
-		"minecraft:coal_block",
-		"#minecraft:leaves",
-		"#minecraft:wool",
-		"minecraft:bookshelf",
-		"minecraft:tnt",
-		"minecraft:vine",
+		"#aestd1:flammable_wood",
 		"#aestd1:plants",
 		"#minecraft:carpets",
+		"#minecraft:leaves",
+		"#minecraft:wool",
+		
+		"minecraft:coal_block",
+		"minecraft:bookshelf",
+		"minecraft:target",
+		"minecraft:tnt",
+		"minecraft:vine",
 		"minecraft:hay_block"
 	]
 }
