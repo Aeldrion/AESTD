@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w42a
+# Version: 1.16.2
 # Project: AESTD v1.0
 
 # Uses a modified Perlin noise algorithm to generate values between 0 and 1000

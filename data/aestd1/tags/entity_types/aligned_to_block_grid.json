@@ -1,4 +1,5 @@
 {
+	"description": "Entities that snap to the block grid unless they are another entity's passenger",
 	"values": [
 		"minecraft:shulker",
 		"minecraft:painting",

@@ -1,0 +1,12 @@
+{
+	"description": "Blocks that generate as part of Nether fortresses",
+	"values": [
+		"minecraft:nether_bricks",
+		"minecraft:nether_brick_fence",
+		"minecraft:nether_brick_stairs",
+		"minecraft:soul_sand",
+		"minecraft:nether_wart",
+		"minecraft:chest",
+		"minecraft:spawner"
+	]
+}

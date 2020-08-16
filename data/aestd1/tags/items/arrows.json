@@ -1,4 +1,5 @@
 {
+	"conditions": "Items that can be shot by a bow and loaded into a crossbow",
 	"values": [
 		"minecraft:arrow",
 		"minecraft:tipped_arrow",

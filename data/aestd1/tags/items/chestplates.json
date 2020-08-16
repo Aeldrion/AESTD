@@ -1,4 +1,5 @@
 {
+	"description": "Chestplates, not including elytra",
 	"values": [
 		"minecraft:leather_chestplate",
 		"minecraft:golden_chestplate",

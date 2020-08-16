@@ -1,0 +1,3 @@
+execute if block ~ ~ ~ #aestd.private:block_states/axis[axis=x] run data modify storage aestd:out BlockState.Properties merge value {axis: "x"}
+execute if block ~ ~ ~ #aestd.private:block_states/axis[axis=y] run data modify storage aestd:out BlockState.Properties merge value {axis: "y"}
+execute if block ~ ~ ~ #aestd.private:block_states/axis[axis=z] run data modify storage aestd:out BlockState.Properties merge value {axis: "z"}

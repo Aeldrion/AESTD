@@ -1,4 +1,5 @@
 {
+	"description": "Wooden tools, not including swords",
 	"values": [
 		"minecraft:wooden_axe",
 		"minecraft:wooden_hoe",

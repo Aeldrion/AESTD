@@ -1,4 +1,5 @@
 {
+	"description": "Mobs that cannot fight anything",
 	"values": [
 		"minecraft:bat",
 		"minecraft:chicken",

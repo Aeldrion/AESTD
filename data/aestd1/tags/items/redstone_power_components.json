@@ -1,4 +1,5 @@
 {
+	"description": "Blocks that can power a line of redstone, not including redstone dust itself",
 	"values": [
 		"#aestd1:pressure_plates",
 		"#minecraft:buttons",

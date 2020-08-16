@@ -1,0 +1,1 @@
+execute if data storage aestd:core {Version:{Functions:{"entity/shoot_arrow": 2}}} run function aestd.private:lib1/entity/shoot_arrow/v2

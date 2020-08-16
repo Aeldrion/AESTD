@@ -1,4 +1,5 @@
 {
+	"description": "Minecarts and variants",
 	"values": [
 		"minecraft:minecart",
 		"minecraft:chest_minecart",

@@ -1,12 +1,13 @@
 {
+	"description": "Foodstuffs obtained by cooking raw foodstuffs",
 	"values": [
+		"minecraft:baked_potato",
 		"minecraft:cooked_beef",
 		"minecraft:cooked_chicken",
 		"minecraft:cooked_cod",
 		"minecraft:cooked_mutton",
 		"minecraft:cooked_salmon",
 		"minecraft:cooked_porkchop",
-		"minecraft:cooked_potato",
 		"minecraft:cooked_rabbit"
 	]
 }

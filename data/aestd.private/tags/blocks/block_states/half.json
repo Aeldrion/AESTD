@@ -1,0 +1,15 @@
+{
+	"values": [
+		"#aestd.private:block_states/_doors",
+		"#aestd.private:block_states/_stairs",
+		"#aestd.private:block_states/_trapdoors",
+		
+		"minecraft:sunflower",
+		"minecraft:lilac",
+		"minecraft:rose_bush",
+		"minecraft:peony",
+		"minecraft:tall_grass",
+		"minecraft:large_fern",
+		"minecraft:tall_seagrass"
+	]
+}

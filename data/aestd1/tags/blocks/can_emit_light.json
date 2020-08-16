@@ -1,4 +1,5 @@
 {
+	"description": "Blocks that can emit light; if a block is in this tag but not in #aestd1:emit_light, test for the [lit=true] block state to tell whether it is currently emitting light or not",
 	"values": [
 		"#aestd1:emit_light",
 		"#aestd1:furnaces",

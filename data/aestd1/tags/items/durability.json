@@ -1,4 +1,5 @@
 {
+	"description": "Items that support damage and can have a durability bar",
 	"values": [
 		"#aestd1:armor",
 		"#aestd1:axes",

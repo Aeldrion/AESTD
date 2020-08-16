@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w42a
+# Version: 1.16.2
 # Project: AESTD v1.0
 
 # Calculates the sine of an integer (in degrees) multiplied by 1000

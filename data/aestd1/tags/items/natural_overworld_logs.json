@@ -1,0 +1,11 @@
+{
+	"description": "Logs and stems that generate naturally in the overworld, excluding stripped logs and wood (bark) blocks",
+	"values": [
+		"minecraft:oak_log",
+		"minecraft:birch_log",
+		"minecraft:spruce_log",
+		"minecraft:dark_oak_log",
+		"minecraft:acacia_log",
+		"minecraft:jungle_log"
+	]
+}

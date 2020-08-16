@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w42a
+# Version: 1.16.2
 # Project: AESTD Benchmarker
 
 # Starts benchmark (aestd.tools:benchmarker/repeat_1s)

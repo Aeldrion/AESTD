@@ -1,4 +1,5 @@
 {
+	"description": "Blocks that cannot be mined or normally destroyed",
 	"values": [
 		"#aestd1:command_blocks",
 		

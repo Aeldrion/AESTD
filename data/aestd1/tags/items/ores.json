@@ -1,4 +1,5 @@
 {
+	"description": "Ores, including gilded blackstone",
 	"values": [
 		"minecraft:coal_ore",
 		"minecraft:iron_ore",

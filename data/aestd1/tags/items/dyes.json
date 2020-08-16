@@ -1,4 +1,5 @@
 {
+	"description": "Items that can be used to colour sheep or in crafting to dye wool, therefore not including 'legacy' dyes such as bone meal and lapis lazuli",
 	"values": [
 		"minecraft:white_dye",
 		"minecraft:orange_dye",

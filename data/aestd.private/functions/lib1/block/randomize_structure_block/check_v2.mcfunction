@@ -1,0 +1,1 @@
+execute if data storage aestd:core {Version:{Functions:{"block/randomize_structure_block": 2}}} run function aestd.private:lib1/block/randomize_structure_block/v2

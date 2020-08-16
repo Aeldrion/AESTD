@@ -1,4 +1,5 @@
 {
+	"description": "Iron tools, not including iron swords",
 	"values": [
 		"minecraft:iron_axe",
 		"minecraft:iron_hoe",

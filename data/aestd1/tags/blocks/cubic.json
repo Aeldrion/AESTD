@@ -1,4 +1,5 @@
 {
+	"description": "All blocks with a 1x1x1 collision box",
 	"values": [
 		"#aestd1:glass",
 		"#aestd1:opaque",

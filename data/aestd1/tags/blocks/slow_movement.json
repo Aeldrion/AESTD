@@ -1,8 +1,9 @@
 {
+	"description": "Blocks that slow down players and mobs attempting to go through them",
 	"values": [
+		"#aestd1:liquids",
+		
 		"minecraft:cobweb",
-		"minecraft:lava",
-		"minecraft:sweet_berry_bush",
-		"minecraft:water"
+		"minecraft:sweet_berry_bush"
 	]
 }

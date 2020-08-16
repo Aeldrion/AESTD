@@ -1,4 +1,5 @@
 {
+	"description": "Blocks which can drop different amounts of items depending on the fortune enchantment if no block loot table is changed",
 	"values": [
 		"minecraft:coal_ore",
 		"minecraft:diamond_ore",

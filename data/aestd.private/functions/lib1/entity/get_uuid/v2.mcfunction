@@ -1,7 +1,6 @@
-# Author: Aeldrion
-# Version: 1.16
-# Project: AESTD
-
 data modify storage aestd:data UUID set from entity @s UUID
-tag @e[tag=aestd.uuid_selected, limit=1] remove aestd.uuid_selected
-tag @s add aestd.uuid_selected
+
+execute store result score $out.uuid[0] aestd run data get storage aestd:data UUID[0]
+execute store result score $out.uuid[1] aestd run data get storage aestd:data UUID[1]
+execute store result score $out.uuid[2] aestd run data get storage aestd:data UUID[2]
+execute store result score $out.uuid[3] aestd run data get storage aestd:data UUID[3] 

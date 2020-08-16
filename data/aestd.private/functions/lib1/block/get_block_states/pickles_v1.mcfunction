@@ -1,0 +1,4 @@
+execute if block ~ ~ ~ #aestd.private:block_states/pickles[pickles=1] run data modify storage aestd:out BlockState.Properties merge value {pickles: 1}
+execute if block ~ ~ ~ #aestd.private:block_states/pickles[pickles=2] run data modify storage aestd:out BlockState.Properties merge value {pickles: 2}
+execute if block ~ ~ ~ #aestd.private:block_states/pickles[pickles=3] run data modify storage aestd:out BlockState.Properties merge value {pickles: 3}
+execute if block ~ ~ ~ #aestd.private:block_states/pickles[pickles=4] run data modify storage aestd:out BlockState.Properties merge value {pickles: 4}

@@ -1,4 +1,5 @@
 {
+	"description": "Blocks that cannot be mined or normally destroyed, not including liquids and air but including nether portals",
 	"values": [
 		"minecraft:barrier",
 		"minecraft:bedrock",

@@ -1,4 +1,5 @@
 {
+	"description": "Warped wart blocks and nether wart blocks, same as the #minecraft:wart_blocks block tag",
 	"values": [
 		"minecraft:nether_wart_block",
 		"minecraft:warped_wart_block"

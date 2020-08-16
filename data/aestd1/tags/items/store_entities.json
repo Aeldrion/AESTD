@@ -1,4 +1,5 @@
 {
+	"description": "Block entities that can store information about entities",
 	"values": [
 		"minecraft:beehive",
 		"minecraft:bee_nest",

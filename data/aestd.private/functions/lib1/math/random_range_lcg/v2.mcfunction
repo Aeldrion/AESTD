@@ -1,6 +1,9 @@
-# Author: Aeldrion
-# Version: 19w42a
-# Project: AESTD
+# Calculate delta and run LCG
+scoreboard players operation #save aestd.math = $in aestd.math
+scoreboard players operation $in aestd.math = $in.max aestd.math
+scoreboard players operation $in aestd.math -= $in.min aestd.math
+function aestd1:math/random_lcg
 
-execute if entity @s run function aestd.private:lib1/math/random_range_lcg/v2_entity
-execute unless entity @s run function aestd.private:lib1/math/random_range_lcg/v2_no_entity
+# Restore input and add minimum
+scoreboard players operation $in aestd.math = #save aestd.math
+scoreboard players operation $out aestd.math += $in.min aestd.math

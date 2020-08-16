@@ -1,4 +1,5 @@
 {
+	"description": "Plants that generate in the Nether, i.e. fungi, roots, sprouts and vines",
 	"values": [
 		"#aestd1:fungi",
 		"#aestd1:nether_roots",

@@ -1,0 +1,34 @@
+{
+	"values": [
+		"minecraft:bell",
+		"minecraft:comparator",
+		"minecraft:lectern",
+		"minecraft:lever",
+		"minecraft:note_block",
+		"minecraft:observer",
+		"minecraft:repeater",
+		"minecraft:tripwire",
+		"minecraft:tripwire_hook",
+
+		"minecraft:activator_rail",
+		"minecraft:detector_rail",
+		"minecraft:powered_rail",
+
+		"#aestd.private:block_states/_buttons",
+		"#aestd.private:block_states/_fence_gates",
+		"#aestd.private:block_states/_doors",
+		"#aestd.private:block_states/_trapdoors",
+
+		"minecraft:stone_pressure_plate",
+		"minecraft:oak_pressure_plate",
+		"minecraft:spruce_pressure_plate",
+		"minecraft:birch_pressure_plate",
+		"minecraft:jungle_pressure_plate",
+		"minecraft:acacia_pressure_plate",
+		"minecraft:dark_oak_pressure_plate",
+		"minecraft:crimson_pressure_plate",
+		"minecraft:warped_pressure_plate",
+		"minecraft:heavy_weighted_pressure_plate",
+		"minecraft:light_weighted_pressure_plate"
+	]
+}

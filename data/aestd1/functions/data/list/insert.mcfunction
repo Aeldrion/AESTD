@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 1.15.2
+# Version: 1.16.2
 # Project: AESTD v1.1
 
 # Inserts an item at the nth position of a list

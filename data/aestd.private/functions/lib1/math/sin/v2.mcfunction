@@ -1,0 +1,2 @@
+summon minecraft:area_effect_cloud -30000000 1 7777 {Tags: ["aestd", "aestd.sin.cloud"]}
+execute as @e[type=minecraft:area_effect_cloud, tag=aestd.sin.cloud, limit=1] at @s run function aestd.private:lib1/math/sin/teleport_v2

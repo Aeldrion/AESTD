@@ -1,4 +1,5 @@
 {
+	"description": "Wearable items that grant extra armour",
 	"values": [
 		"#aestd1:chainmail_armor",
 		"#aestd1:diamond_armor",

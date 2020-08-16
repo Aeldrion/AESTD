@@ -1,14 +1,3 @@
-# Author: Aeldrion
-# Version: 1.16
-# Project: AESTD
-
-execute unless entity @s[nbt={HurtTime:10s}] run tag @s add aestd.damage.summon_cloud
-execute if entity @s[tag=aestd.damage.summon_cloud] run kill @e[type=minecraft:area_effect_cloud, tag=aestd.damage.thing_that_makes_mobs_angry, distance=..1, limit=1, sort=nearest]
-
-# Summon cloud and set OwnerUUID
-execute at @s[tag=aestd.damage.summon_cloud, type=!#aestd.private:undead] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags: ["aestd.damage.thing_that_makes_mobs_angry", "aestd","aestd.new"], Duration: 10, DurationOnUse: 0, WaitTime: 0, Particle: "block air", Effects:[{Id: 7b, Duration: 10, Amplifier: 31b, ShowParticles:0b}], Radius: 1.0f, RadiusOnUse: 0.0f, RadiusPerTick: 0.0f}
-execute at @s[tag=aestd.damage.summon_cloud, type=#aestd.private:undead] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags: ["aestd.damage.thing_that_makes_mobs_angry", "aestd","aestd.new"], Duration: 10, DurationOnUse: 0, WaitTime: 0, Particle: "block air", Effects:[{Id: 6b, Duration: 10, Amplifier: 31b, ShowParticles:0b}], Radius: 1.0f, RadiusOnUse: 0.0f, RadiusPerTick: 0.0f}
-execute at @s[tag=aestd.damage.summon_cloud] run data modify entity @e[type=minecraft:area_effect_cloud, tag=aestd.new, limit=1, sort=nearest] Owner set from storage aestd:data UUID
-execute at @s[tag=aestd.damage.summon_cloud] run tag @e[type=minecraft:area_effect_cloud, tag=aestd.new, limit=1, sort=nearest] remove aestd.new
-
-tag @s remove aestd.damage.summon_cloud
+execute if entity @s[type=#aestd.internal:supports_angryat] run function aestd.private:lib1/entity/anger/set_angry_at_v2
+execute if entity @s[type=#aestd.internal:doesnt_support_angryat_but_will_nonetheless_punch_you_if_you_attack_it_with_a_lingering_potion] run function aestd.private:lib1/entity/anger/use_lingering_potion_v2
+execute if entity @s[type=minecraft:piglin] run function aestd.private:lib1/entity/anger/set_angry_at_memory_v2

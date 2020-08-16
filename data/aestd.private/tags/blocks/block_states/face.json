@@ -1,0 +1,7 @@
+{
+	"values": [
+		"minecraft:grindstone",
+		"minecraft:lever",
+		"#aestd.private:block_states/_buttons"
+	]
+}

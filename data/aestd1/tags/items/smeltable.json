@@ -1,4 +1,5 @@
 {
+	"description": "Items that can be cooked into another in a furnace if no smelting recipes are added or removed",
 	"values": [
 		"#aestd1:iron_armor",
 		"#aestd1:iron_tools",

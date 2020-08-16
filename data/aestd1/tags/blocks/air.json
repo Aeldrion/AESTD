@@ -1,4 +1,5 @@
 {
+	"description": "All air blocks",
 	"values": [
 		"minecraft:air",
 		"minecraft:cave_air",

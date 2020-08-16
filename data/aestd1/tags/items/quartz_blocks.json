@@ -1,4 +1,5 @@
 {
+	"description": "Blocks derived from quartz",
 	"values": [
 		"minecraft:quartz_slab",
 		"minecraft:smooth_quartz",

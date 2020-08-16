@@ -1,4 +1,5 @@
 {
+	"description": "Mobs who can wear and display horse armour",
 	"values": [
 		"minecraft:horse",
 		"minecraft:donkey",

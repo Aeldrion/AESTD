@@ -1,4 +1,5 @@
 {
+	"description": "Leather armour, not including leather horse armour",
 	"values": [
 		"minecraft:leather_boots",
 		"minecraft:leather_leggings",

@@ -1,4 +1,5 @@
 {
+	"description": "Everything that can be inserted in an armour slot",
 	"values": [
 		"#aestd1:armor",
 		"#aestd1:heads",

@@ -1,4 +1,5 @@
 {
+	"description": "Everything in the foodstuffs section. Every entry in this list is not consumable as cakes can be placed down",
 	"values": [
 		"minecraft:apple",
 		"minecraft:mushroom_stew",

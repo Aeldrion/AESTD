@@ -1,4 +1,5 @@
 {
+	"description": "Mobs who always attack players in survival or adventure mode, including piglins even though they can be distracted",
 	"values": [
 		"minecraft:blaze",
 		"minecraft:creeper",
@@ -13,6 +14,7 @@
 		"minecraft:magma_cube",
 		"minecraft:phantom",
 		"minecraft:piglin",
+		"minecraft:piglin_brute",
 		"minecraft:pillager",
 		"minecraft:ravager",
 		"minecraft:shulker",

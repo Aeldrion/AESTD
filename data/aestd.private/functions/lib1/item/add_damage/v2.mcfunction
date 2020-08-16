@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w42a
+# Version: 1.16.2
 # Project: AESTD
 
 # This function already saves the item, so aestd:item/save doesn't need to run

@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w42a
+# Version: 1.16.2
 # Project: AESTD
 
 execute if entity @s[type=minecraft:player, tag=!aestd.item.container] run function aestd.private:lib1/item/load/load_player_item

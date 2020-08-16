@@ -1,11 +1,11 @@
 # Author: Aeldrion
-# Version: 19w42a
+# Version: 1.16.2
 # Project: AESTD Benchmarker
 
 # Runs a function tag as many times as possible in 50ms 20 times and displays the average number of iterations
 # Reads from the #aestd.tools:loop function tag
 
-data modify storage aestd:private Iterations set value []
+data modify storage aestd:data Iterations set value []
 gamerule maxCommandChainLength 10500000
 scoreboard players set #aestd.benchmarker.active 1
 worldborder set 30000000

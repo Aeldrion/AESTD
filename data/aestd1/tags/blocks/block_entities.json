@@ -1,4 +1,5 @@
 {
+	"description": "All block entities",
 	"values": [
 		"#minecraft:banners",
 		"#minecraft:beds",

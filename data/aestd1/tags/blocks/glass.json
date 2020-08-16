@@ -1,4 +1,5 @@
 {
+	"description": "Glass blocks and all sixteen stained variants, not including glass panes",
 	"values": [
 		"minecraft:white_stained_glass",
 		"minecraft:orange_stained_glass",

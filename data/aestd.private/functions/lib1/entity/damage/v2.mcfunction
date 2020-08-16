@@ -1,0 +1,2 @@
+execute if entity @s[type=minecraft:player] run function aestd.private:lib1/entity/damage/player_v2/root
+execute unless entity @s[type=minecraft:player] run function aestd.private:lib1/entity/damage/mob_v2/root

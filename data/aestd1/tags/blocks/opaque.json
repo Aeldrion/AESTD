@@ -1,4 +1,5 @@
 {
+	"description": "Blocks whose collision blocks is 1x1x1 and that are opaque, meaning that it obscures blocks behind it, completely prevents light from traveling through, ect. See https://minecraft.gamepedia.com/Opacity for a list of effects",
 	"values": [
 		"minecraft:acacia_log",
 		"minecraft:acacia_planks",

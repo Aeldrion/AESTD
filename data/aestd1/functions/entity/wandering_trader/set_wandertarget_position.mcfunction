@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w42a
+# Version: 1.16.2
 # Project: AESTD v1.0
 
 # Sets a wandering trader's WanderTarget position from its position scores

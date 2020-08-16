@@ -1,4 +1,5 @@
 {
+	"description": "Diamond armour, not including diamond horse armour",
 	"values": [
 		"minecraft:diamond_boots",
 		"minecraft:diamond_leggings",

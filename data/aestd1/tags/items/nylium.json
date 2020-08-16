@@ -1,4 +1,5 @@
 {
+	"description": "Crimson and warped nylium, same as the #minecraft:nylium block tag",
 	"values": [
 		"minecraft:crimson_nylium",
 		"minecraft:warped_nylium"

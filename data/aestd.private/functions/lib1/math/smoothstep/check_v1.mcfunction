@@ -1,1 +1,0 @@
-execute if data storage aestd:core {Version:{Functions:{"math/smoothstep": 1}}} run function aestd.private:lib1/math/smoothstep/v1

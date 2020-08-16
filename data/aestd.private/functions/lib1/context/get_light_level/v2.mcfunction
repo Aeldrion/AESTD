@@ -1,0 +1,16 @@
+execute if predicate aestd1:light_level/0 run scoreboard players set $light aestd 0
+execute if predicate aestd1:light_level/1 run scoreboard players set $light aestd 1
+execute if predicate aestd1:light_level/2 run scoreboard players set $light aestd 2
+execute if predicate aestd1:light_level/3 run scoreboard players set $light aestd 3
+execute if predicate aestd1:light_level/4 run scoreboard players set $light aestd 4
+execute if predicate aestd1:light_level/5 run scoreboard players set $light aestd 5
+execute if predicate aestd1:light_level/6 run scoreboard players set $light aestd 6
+execute if predicate aestd1:light_level/7 run scoreboard players set $light aestd 7
+execute if predicate aestd1:light_level/8 run scoreboard players set $light aestd 8
+execute if predicate aestd1:light_level/9 run scoreboard players set $light aestd 9
+execute if predicate aestd1:light_level/10 run scoreboard players set $light aestd 10
+execute if predicate aestd1:light_level/11 run scoreboard players set $light aestd 11
+execute if predicate aestd1:light_level/12 run scoreboard players set $light aestd 12
+execute if predicate aestd1:light_level/13 run scoreboard players set $light aestd 13
+execute if predicate aestd1:light_level/14 run scoreboard players set $light aestd 14
+execute if predicate aestd1:light_level/15 run scoreboard players set $light aestd 15

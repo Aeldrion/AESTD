@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w42a
+# Version: 1.16.2
 # Project: AESTD Benchmarker
 
 # Runs a function tag as many times as possible in one second and displays the number of iterations

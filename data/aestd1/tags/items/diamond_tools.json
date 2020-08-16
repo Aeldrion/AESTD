@@ -1,4 +1,5 @@
 {
+	"description": "Tools made out of diamond, not including diamond swords",
 	"values": [
 		"minecraft:diamond_axe",
 		"minecraft:diamond_hoe",

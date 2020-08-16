@@ -1,53 +1,46 @@
-# Author: Aeldrion
-# Version: 1.15
-# Project: AESTD
-
-# Input: aestd.math.var scores of #aestd.perlin.dgg.ix, iz
-# Output: aestd.math.var score of #aestd.perlin.dgg.dot_product
+# Input: aestd.math scores of #ix, iz
+# Output: aestd.math score of #dot_product
 
 # Compute the gradient vector
-scoreboard players set $100 aestd.math.var 100
-scoreboard players set $4 aestd.math.var 4
+scoreboard players operation #ix^2+37 aestd.math = #ix aestd.math
+scoreboard players operation #ix^2+37 aestd.math *= #ix aestd.math
+scoreboard players add #ix^2+37 aestd.math 37
+scoreboard players operation #ix^2+37 aestd.math += $in.seed aestd.math
 
-scoreboard players operation #aestd.perlin.dgg.ix^2+37 aestd.math.var = #aestd.perlin.dgg.ix aestd.math.var
-scoreboard players operation #aestd.perlin.dgg.ix^2+37 aestd.math.var *= #aestd.perlin.dgg.ix aestd.math.var
-scoreboard players add #aestd.perlin.dgg.ix^2+37 aestd.math.var 37
-scoreboard players operation #aestd.perlin.dgg.ix^2+37 aestd.math.var += #aestd aestd.math.seed
+scoreboard players operation #iz^2+11 aestd.math = #iz aestd.math
+scoreboard players operation #iz^2+11 aestd.math *= #iz aestd.math
+scoreboard players add #iz^2+11 aestd.math 12
 
-scoreboard players operation #aestd.perlin.dgg.iz^2+11 aestd.math.var = #aestd.perlin.dgg.iz aestd.math.var
-scoreboard players operation #aestd.perlin.dgg.iz^2+11 aestd.math.var *= #aestd.perlin.dgg.iz aestd.math.var
-scoreboard players add #aestd.perlin.dgg.iz^2+11 aestd.math.var 12
+scoreboard players operation #(ix^2+37)(iz^2+11)%100 aestd.math = #ix^2+37 aestd.math
+scoreboard players operation #(ix^2+37)(iz^2+11)%100 aestd.math *= #iz^2+11 aestd.math
+scoreboard players operation #(ix^2+37)(iz^2+11)%100 aestd.math %= $100 aestd.math.const
+scoreboard players operation #(*4+30)%100 aestd.math = #(ix^2+37)(iz^2+11)%100 aestd.math
+scoreboard players operation #(*4+30)%100 aestd.math *= $4 aestd.math.const
+scoreboard players add #(*4+30)%100 aestd.math 30
+scoreboard players operation #(*4+30)%100 aestd.math %= $100 aestd.math.const
 
-scoreboard players operation #aestd.perlin.dgg.(ix^2+37)(iz^2+11)%100 aestd.math.var = #aestd.perlin.dgg.ix^2+37 aestd.math.var
-scoreboard players operation #aestd.perlin.dgg.(ix^2+37)(iz^2+11)%100 aestd.math.var *= #aestd.perlin.dgg.iz^2+11 aestd.math.var
-scoreboard players operation #aestd.perlin.dgg.(ix^2+37)(iz^2+11)%100 aestd.math.var %= $100 aestd.math.var
-scoreboard players operation #aestd.perlin.dgg.(*4+30)%100 aestd.math.var = #aestd.perlin.dgg.(ix^2+37)(iz^2+11)%100 aestd.math.var
-scoreboard players operation #aestd.perlin.dgg.(*4+30)%100 aestd.math.var *= $4 aestd.math.var
-scoreboard players add #aestd.perlin.dgg.(*4+30)%100 aestd.math.var 30
-scoreboard players operation #aestd.perlin.dgg.(*4+30)%100 aestd.math.var %= $100 aestd.math.var
-
-execute if score #aestd.perlin.dgg.(*4+30)%100 aestd.math.var matches 0..24 run scoreboard players set #aestd.perlin.dgg.gx aestd.math.var 1
-execute if score #aestd.perlin.dgg.(*4+30)%100 aestd.math.var matches 0..24 run scoreboard players set #aestd.perlin.dgg.gz aestd.math.var 0
-execute if score #aestd.perlin.dgg.(*4+30)%100 aestd.math.var matches 25..49 run scoreboard players set #aestd.perlin.dgg.gx aestd.math.var 0
-execute if score #aestd.perlin.dgg.(*4+30)%100 aestd.math.var matches 25..49 run scoreboard players set #aestd.perlin.dgg.gz aestd.math.var 1
-execute if score #aestd.perlin.dgg.(*4+30)%100 aestd.math.var matches 50..74 run scoreboard players set #aestd.perlin.dgg.gx aestd.math.var -1
-execute if score #aestd.perlin.dgg.(*4+30)%100 aestd.math.var matches 50..74 run scoreboard players set #aestd.perlin.dgg.gz aestd.math.var 0
-execute if score #aestd.perlin.dgg.(*4+30)%100 aestd.math.var matches 75..99 run scoreboard players set #aestd.perlin.dgg.gx aestd.math.var 0
-execute if score #aestd.perlin.dgg.(*4+30)%100 aestd.math.var matches 75..99 run scoreboard players set #aestd.perlin.dgg.gz aestd.math.var -1
+execute if score #(*4+30)%100 aestd.math matches 0..24 run scoreboard players set #gx aestd.math 1
+execute if score #(*4+30)%100 aestd.math matches 0..24 run scoreboard players set #gz aestd.math 0
+execute if score #(*4+30)%100 aestd.math matches 25..49 run scoreboard players set #gx aestd.math 0
+execute if score #(*4+30)%100 aestd.math matches 25..49 run scoreboard players set #gz aestd.math 1
+execute if score #(*4+30)%100 aestd.math matches 50..74 run scoreboard players set #gx aestd.math -1
+execute if score #(*4+30)%100 aestd.math matches 50..74 run scoreboard players set #gz aestd.math 0
+execute if score #(*4+30)%100 aestd.math matches 75..99 run scoreboard players set #gx aestd.math 0
+execute if score #(*4+30)%100 aestd.math matches 75..99 run scoreboard players set #gz aestd.math -1
 
 
 # Compute the distance vector
-scoreboard players operation #aestd.perlin.dgg.ix aestd.math.var *= $1000 aestd.math.var
-scoreboard players operation #aestd.perlin.dgg.iz aestd.math.var *= $1000 aestd.math.var
+scoreboard players operation #ix aestd.math *= $1000 aestd.math.const
+scoreboard players operation #iz aestd.math *= $1000 aestd.math.const
 
-scoreboard players operation #aestd.perlin.dgg.dx aestd.math.var = #aestd.perlin_noise.x aestd.math.var
-scoreboard players operation #aestd.perlin.dgg.dx aestd.math.var -= #aestd.perlin.dgg.ix aestd.math.var
-scoreboard players operation #aestd.perlin.dgg.dz aestd.math.var = #aestd.perlin_noise.z aestd.math.var
-scoreboard players operation #aestd.perlin.dgg.dz aestd.math.var -= #aestd.perlin.dgg.iz aestd.math.var
+scoreboard players operation #dx aestd.math = #x aestd.math
+scoreboard players operation #dx aestd.math -= #ix aestd.math
+scoreboard players operation #dz aestd.math = #z aestd.math
+scoreboard players operation #dz aestd.math -= #iz aestd.math
 
 
 # Compute the dot product
-scoreboard players operation #aestd.perlin.dgg.dx aestd.math.var *= #aestd.perlin.dgg.gx aestd.math.var
-scoreboard players operation #aestd.perlin.dgg.dz aestd.math.var *= #aestd.perlin.dgg.gz aestd.math.var
-scoreboard players operation #aestd.perlin.dgg.dot_product aestd.math.var = #aestd.perlin.dgg.dx aestd.math.var
-scoreboard players operation #aestd.perlin.dgg.dot_product aestd.math.var += #aestd.perlin.dgg.dz aestd.math.var
+scoreboard players operation #dx aestd.math *= #gx aestd.math
+scoreboard players operation #dz aestd.math *= #gz aestd.math
+scoreboard players operation #dot_product aestd.math = #dx aestd.math
+scoreboard players operation #dot_product aestd.math += #dz aestd.math

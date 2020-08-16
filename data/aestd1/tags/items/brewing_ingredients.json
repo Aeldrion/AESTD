@@ -1,4 +1,5 @@
 {
+	"description": "Items that can be used as a brewing ingredient in a brewing stand",
 	"values": [
 		"minecraft:blaze_powder",
 		"minecraft:dragon_breath",

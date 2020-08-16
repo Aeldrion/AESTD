@@ -1,0 +1,2 @@
+data modify entity @s Brain.memories."minecraft:angry_at".value set from storage aestd:input UUID
+execute store result entity @s Brain.memories."minecraft:angery_at".ttl int 1 run scoreboard players get $anger_time aestd

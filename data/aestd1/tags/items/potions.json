@@ -1,4 +1,5 @@
 {
+	"description": "Everything that can be brewed in a brewing stand, includes water bottles which share the same item ID as consumable potions",
 	"values": [
 		"minecraft:potion",
 		"minecraft:splash_potion",

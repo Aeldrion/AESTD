@@ -1,4 +1,5 @@
 {
+	"description": "Stone tools, not including stone swords",
 	"values": [
 		"minecraft:stone_axe",
 		"minecraft:stone_hoe",

@@ -1,1 +1,0 @@
-execute if data storage aestd:core {Version:{Functions:{"entity/shoot_snowball": 1}}} run function aestd.private:lib1/entity/shoot_snowball/v1

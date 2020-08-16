@@ -1,1 +1,0 @@
-execute if data storage aestd:core {Version:{Functions:{"entity/wandering_trader/set_wandertarget_position": 1}}} run function aestd.private:lib1/entity/wandering_trader/set_wandertarget_position/v1

@@ -1,4 +1,5 @@
 {
+	"description": "Projectile entities, do not necessarily damage mobs and players if it hits one (potions and experience bottles)",
 	"values": [
 		"minecraft:arrow",
 		"minecraft:dragon_fireball",

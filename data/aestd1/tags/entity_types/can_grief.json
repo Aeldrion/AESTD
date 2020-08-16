@@ -1,4 +1,5 @@
 {
+	"description": "Entities that can affect blocks in the world. Apart from TNT and end crystals, the griefing behaviour of these mobs is controlled by the mobGriefing gamerule",
 	"values": [
 		"minecraft:blaze",
 		"minecraft:creeper",

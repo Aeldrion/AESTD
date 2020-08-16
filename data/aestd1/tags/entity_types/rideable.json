@@ -1,4 +1,5 @@
 {
+	"description": "Entities that players can ride by clicking on them",
 	"values": [
 		"#aestd1:rideable_mobs",
 		"#aestd1:vehicles"

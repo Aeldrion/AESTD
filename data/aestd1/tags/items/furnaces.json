@@ -1,4 +1,5 @@
 {
+	"description": "Block entities that can cook an item with a fuel, therefore not including campfires",
 	"values": [
 		"minecraft:furnace",
 		"minecraft:smoker",

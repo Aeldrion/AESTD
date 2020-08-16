@@ -1,4 +1,5 @@
 {
+	"description": "Shulker boxes and all sixteen coloured variants, same as the #minecraft:shulker_boxes block tag",
 	"values": [
 		"minecraft:white_shulker_box",
 		"minecraft:orange_shulker_box",

@@ -1,4 +1,5 @@
 {
+	"description": "Boss mobs, which have a boss bar and are unaffected by the /effect command",
 	"values": [
 		"minecraft:ender_dragon",
 		"minecraft:wither"

@@ -1,0 +1,4 @@
+execute if block ~ ~ ~ #aestd.private:block_states/half[half=lower] run data modify storage aestd:out BlockState.Properties merge value {half: "lower"}
+execute if block ~ ~ ~ #aestd.private:block_states/half[half=upper] run data modify storage aestd:out BlockState.Properties merge value {half: "upper"}
+execute if block ~ ~ ~ #aestd.private:block_states/half[half=top] run data modify storage aestd:out BlockState.Properties merge value {half: "top"}
+execute if block ~ ~ ~ #aestd.private:block_states/half[half=bottom] run data modify storage aestd:out BlockState.Properties merge value {half: "bottom"}

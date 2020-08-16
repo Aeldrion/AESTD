@@ -1,4 +1,5 @@
 {
+	"description": "Blocks which can drop different items depending on the silk touch enchantment if no block loot table is changed",
 	"values": [
 		"#aestd1:glass",
 		"#aestd1:glass_panes",

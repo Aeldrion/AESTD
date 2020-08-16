@@ -1,4 +1,5 @@
 {
+	"description": "Blocks derived from end stone bricks",
 	"values": [
 		"minecraft:end_stone_bricks",
 		"minecraft:end_stone_brick_stairs",

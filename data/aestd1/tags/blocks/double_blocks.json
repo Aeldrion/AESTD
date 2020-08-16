@@ -1,4 +1,5 @@
 {
+	"description": "Blocks that take two tiles of space when placed, not including banners whose hitbox is contained in a single box and which comprise of a single block",
 	"values": [
 		"#minecraft:beds",
 		"#minecraft:tall_flowers",

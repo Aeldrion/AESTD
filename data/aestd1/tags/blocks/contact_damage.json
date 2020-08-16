@@ -1,4 +1,5 @@
 {
+	"description": "Blocks that can deal damage when the player touches them, does not include sweet berry bushes which only deal damage when the player is moving",
 	"values": [
 		"#minecraft:campfires",
 		

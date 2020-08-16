@@ -1,0 +1,24 @@
+{
+	"values": [
+		"minecraft:campfire",
+		"minecraft:soul_campfire",
+		"minecraft:chain",
+		"minecraft:chest",
+		"minecraft:trapped_chest",
+		"minecraft:ender_chest",
+		"minecraft:conduit",
+		"minecraft:iron_bars",
+		"minecraft:ladder",
+		"minecraft:scaffolding",
+		"minecraft:sea_pickle",
+
+		"#aestd.private:block_states/_walls",
+		"#aestd.private:block_states/_glass_panes",
+		"#aestd.private:block_states/_signs",
+		"#aestd.private:block_states/_wall_signs",
+		"#aestd.private:block_states/_fences",
+		"#aestd.private:block_states/_stairs",
+		"#aestd.private:block_states/_trapdoors",
+		"#aestd.private:block_states/_slabs",
+	]
+}

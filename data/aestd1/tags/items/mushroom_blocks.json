@@ -1,4 +1,5 @@
 {
+	"description": "Blocks that generate as part of huge mushrooms",
 	"values": [
 		"minecraft:red_mushroom_block",
 		"minecraft:brown_mushroom_block",

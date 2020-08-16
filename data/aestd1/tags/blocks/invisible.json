@@ -1,8 +1,8 @@
 {
+	"description": "Blocks with no visible model",
 	"values": [
 		"minecraft:barrier",
 		"minecraft:structure_void",
-		"minecraft:piston_head",
 		"#aestd1:air"
 	]
 }

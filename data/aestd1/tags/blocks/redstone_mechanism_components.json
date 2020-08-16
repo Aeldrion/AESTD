@@ -1,4 +1,5 @@
 {
+	"description": "Blocks that redstone can interact with",
 	"values": [
 		"#aestd1:command_blocks",
 		"#aestd1:fence_gates",

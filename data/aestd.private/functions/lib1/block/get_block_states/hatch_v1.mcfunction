@@ -1,0 +1,3 @@
+execute if block ~ ~ ~ #aestd.private:block_states/hatch[hatch=0] run data modify storage aestd:out BlockState.Properties merge value {hatch: 0}
+execute if block ~ ~ ~ #aestd.private:block_states/hatch[hatch=1] run data modify storage aestd:out BlockState.Properties merge value {hatch: 1}
+execute if block ~ ~ ~ #aestd.private:block_states/hatch[hatch=2] run data modify storage aestd:out BlockState.Properties merge value {hatch: 2}

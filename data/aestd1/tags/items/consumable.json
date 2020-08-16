@@ -1,4 +1,5 @@
 {
+	"description": "Items that trigger the consume_item advancement trigger upon use",
 	"values": [
 		"minecraft:apple",
 		"minecraft:mushroom_stew",

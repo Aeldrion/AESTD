@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w42a
+# Version: 1.16.2
 # Project: AESTD v1.0
 
 # Saves the executing entity's motion multiplied by 1000 to its motion scores

@@ -1,0 +1,23 @@
+{
+	"description": "Blocks that generate as part of bastion remnants if no vanilla structure file is modified",
+	"values": [
+		"minecraft:polished_blackstone_bricks",
+		"minecraft:blackstone",
+		"minecraft:basalt",
+		"minecraft:polished_basalt",
+		"minecraft:gold_block",
+		"minecraft:polished_blackstone_brick_stairs",
+		"minecraft:chain",
+		"minecraft:lantern",
+		"minecraft:chiseled_polished_blackstone",
+		"minecraft:quartz_block",
+		"minecraft:smooth_quartz",
+		"minecraft:smooth_quartz_slab",
+		"minecraft:cracked_polished_blackstone_bricks",
+		"minecraft:blackstone_stairs",
+		"minecraft:chest",
+		"minecraft:lava",
+		"minecraft:blackstone_slab",
+		"minecraft:netherrack"
+	]
+}

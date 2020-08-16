@@ -1,0 +1,1 @@
+execute if data storage aestd:core {Version:{Functions:{"entity/get_distance": 2}}} run function aestd.private:lib1/entity/get_distance/v2

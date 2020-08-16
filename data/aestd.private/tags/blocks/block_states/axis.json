@@ -1,0 +1,43 @@
+{
+	"values": [
+		"minecraft:oak_wood",
+		"minecraft:spruce_wood",
+		"minecraft:birch_wood",
+		"minecraft:jungle_wood",
+		"minecraft:acacia_wood",
+		"minecraft:dark_oak_wood",
+		"minecraft:crimson_hyphae",
+		"minecraft:warped_hyphae",
+		"minecraft:stripped_oak_wood",
+		"minecraft:stripped_spruce_wood",
+		"minecraft:stripped_birch_wood",
+		"minecraft:stripped_jungle_wood",
+		"minecraft:stripped_acacia_wood",
+		"minecraft:stripped_dark_oak_wood",
+		"minecraft:stripped_crimson_hyphae",
+		"minecraft:stripped_warped_hyphae",
+
+		"minecraft:oak_log",
+		"minecraft:spruce_log",
+		"minecraft:birch_log",
+		"minecraft:jungle_log",
+		"minecraft:acacia_log",
+		"minecraft:dark_oak_log",
+		"minecraft:crimson_hyphae",
+		"minecraft:warped_hyphae",
+		"minecraft:stripped_oak_log",
+		"minecraft:stripped_spruce_log",
+		"minecraft:stripped_birch_log",
+		"minecraft:stripped_jungle_log",
+		"minecraft:stripped_acacia_log",
+		"minecraft:stripped_dark_oak_log",
+		"minecraft:stripped_crimson_stem",
+		"minecraft:stripped_warped_stem",
+
+		"minecraft:bone_block",
+		"minecraft:hay_block",
+		"minecraft:nether_portal",
+		"minecraft:purpur_pillar",
+		"minecraft:quartz_pillar"
+	]
+}

@@ -1,12 +1,7 @@
 {
+	"description": "All wood blocks (logs, stripped logs, wood, stripped wood, planks, slabs, fences, fence gates, signs and stairs), not to be confused with wood (bark) blocks only, and not dimension-specific like #aestd1:flammable_wood and #minecraft:non_flammable_wood",
 	"values": [
-		"minecraft:oak_wood",
-		"minecraft:birch_wood",
-		"minecraft:spruce_wood",
-		"minecraft:dark_oak_wood",
-		"minecraft:acacia_wood",
-		"minecraft:jungle_wood",
-		"minecraft:crimson_hyphae",
-		"minecraft:warped_hyphae"
+		"#aestd1:flammable_wood",
+		"#minecraft:non_flammable_wood"
 	]
 }

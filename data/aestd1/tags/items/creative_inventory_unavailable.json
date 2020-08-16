@@ -1,4 +1,5 @@
 {
+	"description": "Items that cannot be obtained from the creative inventory, not including air",
 	"values": [
 		"minecraft:barrier",
 		"#aestd1:command_blocks",

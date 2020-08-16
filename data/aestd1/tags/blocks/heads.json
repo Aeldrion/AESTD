@@ -1,4 +1,5 @@
 {
+	"description": "Player heads and mob heads/skulls, whether on ground or hung on a wall",
 	"values": [
 		"minecraft:skeleton_skull",
 		"minecraft:wither_skeleton_skull",

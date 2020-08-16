@@ -1,0 +1,10 @@
+{
+	"values": [
+		"minecraft:tripwire",
+		"minecraft:redstone_dust",
+		"minecraft:iron_bars",
+		"#aestd.private:block_states/_fences",
+		"#aestd.private:block_states/_fence_gates",
+		"#aestd.private:block_states/_glass_panes"
+	]
+}

@@ -1,4 +1,5 @@
 {
+	"description": "Mushrooms, not including mushroom blocks or the Nether's fungi",
 	"values": [
 		"minecraft:red_mushroom",
 		"minecraft:brown_mushroom"

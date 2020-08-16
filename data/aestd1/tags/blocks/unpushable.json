@@ -1,14 +1,18 @@
 {
+	"description": "Blocks pistons cannot push, including piston heads but not including pistons, and not including blocks that are broken when pushed or blocks that cannot be pushed indirectly with slime blocks",
 	"values": [
 		"#aestd1:unbreakable",
+		"#aestd1:store_items",
+		"#aestd1:store_entities",
+		"#aestd1:obsidian",
+
+		"#minecraft:signs",
 
 		"minecraft:beacon",
-		"minecraft:crying_obsidian",
+		"minecraft:daylight_detector",
 		"minecraft:enchanting_table",
 		"minecraft:ender_chest",
 		"minecraft:lodestone",
-		"minecraft:obsidian",
-		"minecraft:piston_head",
-		"minecraft:spawner"
+		"minecraft:piston_head"
 	]
 }

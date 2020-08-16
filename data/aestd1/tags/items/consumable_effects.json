@@ -1,4 +1,5 @@
 {
+	"description": "Consumable items that can inflict status effects upon consumption",
 	"values": [
 		"#aestd1:can_inflict_hunger",
 

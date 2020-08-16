@@ -1,9 +1,11 @@
 {
+	"description": "Blocks that fall down when updated without a support block",
 	"values": [
 		"#aestd1:concrete_powder",
-		"minecraft:gravel",
 		"#minecraft:anvil",
 		"#minecraft:sand",
+		
+		"minecraft:gravel",
 		"minecraft:dragon_egg",
 		"minecraft:scaffolding"
 	]

@@ -1,4 +1,5 @@
 {
+	"description": "Signs that can burn (i.e. signs built from overworld trees)",
 	"values": [
 		"minecraft:acacia_sign",
 		"minecraft:birch_sign",

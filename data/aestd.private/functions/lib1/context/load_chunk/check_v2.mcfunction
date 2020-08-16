@@ -1,0 +1,1 @@
+execute if data storage aestd:core {Version:{Functions:{"context/load_chunk": 2}}} run function aestd.private:lib1/context/load_chunk/v2

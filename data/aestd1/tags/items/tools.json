@@ -1,4 +1,5 @@
 {
+	"description": "Everything in the tools tab, excluding enchanted books",
 	"values": [
 		"#aestd1:wooden_tools",
 		"#aestd1:stone_tools",

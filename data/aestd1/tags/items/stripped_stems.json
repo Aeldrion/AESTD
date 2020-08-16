@@ -1,0 +1,7 @@
+{
+	"description": "Stripped stems, not including stripped hyphae",
+	"values": [
+		"minecraft:stripped_crimson_stem",
+		"minecraft:stripped_warped_stem"
+	]
+}

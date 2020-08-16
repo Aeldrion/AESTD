@@ -1,89 +1,77 @@
-# Author: Aeldrion
-# Version: 1.15
-# Project: AESTD
-
-execute if entity @s run scoreboard players operation #aestd aestd.math.in = @s aestd.math.in
-execute if entity @s run scoreboard players operation #aestd aestd.math.in2 = @s aestd.math.in2
-execute if entity @s run scoreboard players operation #aestd aestd.math.seed = @s aestd.math.seed
-
 # Determine grid cell coordinates
-scoreboard players operation #aestd.perlin_noise.x aestd.math.var = #aestd aestd.math.in
-scoreboard players operation #aestd.perlin_noise.z aestd.math.var = #aestd aestd.math.in2
+scoreboard players operation #x aestd.math = $in.x aestd.math
+scoreboard players operation #z aestd.math = $in.z aestd.math
 
-scoreboard players set $1000 aestd.math.var 1000
-scoreboard players operation #aestd.perlin_noise.floor(x) aestd.math.var = #aestd.perlin_noise.x aestd.math.var
-scoreboard players operation #aestd.perlin_noise.floor(x) aestd.math.var /= $1000 aestd.math.var
-scoreboard players operation #aestd.perlin_noise.floor(z) aestd.math.var = #aestd.perlin_noise.z aestd.math.var
-scoreboard players operation #aestd.perlin_noise.floor(z) aestd.math.var /= $1000 aestd.math.var
+scoreboard players operation #floor(x) aestd.math = #x aestd.math
+scoreboard players operation #floor(z) aestd.math = #z aestd.math
+scoreboard players operation #floor(z) aestd.math /= $1000 aestd.math.const
+scoreboard players operation #floor(x) aestd.math /= $1000 aestd.math.const
 
-scoreboard players operation #aestd.perlin_noise.ceil(x) aestd.math.var = #aestd.perlin_noise.floor(x) aestd.math.var
-scoreboard players add #aestd.perlin_noise.ceil(x) aestd.math.var 1
-scoreboard players operation #aestd.perlin_noise.ceil(z) aestd.math.var = #aestd.perlin_noise.floor(z) aestd.math.var
-scoreboard players add #aestd.perlin_noise.ceil(z) aestd.math.var 1
+scoreboard players operation #ceil(x) aestd.math = #floor(x) aestd.math
+scoreboard players operation #ceil(z) aestd.math = #floor(z) aestd.math
+scoreboard players add #ceil(x) aestd.math 1
+scoreboard players add #ceil(z) aestd.math 1
 
 
 # Determine interpolation weights
-scoreboard players operation #aestd.perlin_noise.sx aestd.math.var = #aestd aestd.math.in
-scoreboard players operation #aestd.perlin_noise.sx aestd.math.var %= $1000 aestd.math.var
-scoreboard players operation #aestd.perlin_noise.sz aestd.math.var = #aestd aestd.math.in2
-scoreboard players operation #aestd.perlin_noise.sz aestd.math.var %= $1000 aestd.math.var
+scoreboard players operation #sx aestd.math = $in.x aestd.math
+scoreboard players operation #sz aestd.math = $in.z aestd.math
+scoreboard players operation #sz aestd.math %= $1000 aestd.math.const
+scoreboard players operation #sx aestd.math %= $1000 aestd.math.const
 
 
 # Calculate grid point gradients
-scoreboard players operation #aestd.perlin.dgg.ix aestd.math.var = #aestd.perlin_noise.floor(x) aestd.math.var
-scoreboard players operation #aestd.perlin.dgg.iz aestd.math.var = #aestd.perlin_noise.floor(z) aestd.math.var
+scoreboard players operation #ix aestd.math = #floor(x) aestd.math
+scoreboard players operation #iz aestd.math = #floor(z) aestd.math
 function aestd.private:lib1/math/perlin_noise/dotgridgradient_v2
-scoreboard players operation #aestd.perlin_noise.n(0,0) aestd.math.var = #aestd.perlin.dgg.dot_product aestd.math.var
+scoreboard players operation #n(0,0) aestd.math = #dot_product aestd.math
 
-scoreboard players operation #aestd.perlin.dgg.ix aestd.math.var = #aestd.perlin_noise.ceil(x) aestd.math.var
-scoreboard players operation #aestd.perlin.dgg.iz aestd.math.var = #aestd.perlin_noise.floor(z) aestd.math.var
+scoreboard players operation #ix aestd.math = #ceil(x) aestd.math
+scoreboard players operation #iz aestd.math = #floor(z) aestd.math
 function aestd.private:lib1/math/perlin_noise/dotgridgradient_v2
-scoreboard players operation #aestd.perlin_noise.n(1,0) aestd.math.var = #aestd.perlin.dgg.dot_product aestd.math.var
+scoreboard players operation #n(1,0) aestd.math = #dot_product aestd.math
 
-scoreboard players operation #aestd.perlin.dgg.ix aestd.math.var = #aestd.perlin_noise.floor(x) aestd.math.var
-scoreboard players operation #aestd.perlin.dgg.iz aestd.math.var = #aestd.perlin_noise.ceil(z) aestd.math.var
+scoreboard players operation #ix aestd.math = #floor(x) aestd.math
+scoreboard players operation #iz aestd.math = #ceil(z) aestd.math
 function aestd.private:lib1/math/perlin_noise/dotgridgradient_v2
-scoreboard players operation #aestd.perlin_noise.n(0,1) aestd.math.var = #aestd.perlin.dgg.dot_product aestd.math.var
+scoreboard players operation #n(0,1) aestd.math = #dot_product aestd.math
 
-scoreboard players operation #aestd.perlin.dgg.ix aestd.math.var = #aestd.perlin_noise.ceil(x) aestd.math.var
-scoreboard players operation #aestd.perlin.dgg.iz aestd.math.var = #aestd.perlin_noise.ceil(z) aestd.math.var
+scoreboard players operation #ix aestd.math = #ceil(x) aestd.math
+scoreboard players operation #iz aestd.math = #ceil(z) aestd.math
 function aestd.private:lib1/math/perlin_noise/dotgridgradient_v2
-scoreboard players operation #aestd.perlin_noise.n(1,1) aestd.math.var = #aestd.perlin.dgg.dot_product aestd.math.var
+scoreboard players operation #n(1,1) aestd.math = #dot_product aestd.math
 
 
 # Interpolate
-scoreboard players operation #aestd aestd.math.in = #aestd.perlin_noise.sx aestd.math.var
+scoreboard players operation $in aestd.math = #sx aestd.math
 function aestd1:math/smoothstep
-scoreboard players operation #aestd aestd.math.var = #aestd aestd.math.out
-scoreboard players operation #aestd aestd.math.in = #aestd.perlin_noise.n(0,0) aestd.math.var
-scoreboard players operation #aestd aestd.math.in2 = #aestd.perlin_noise.n(1,0) aestd.math.var
+scoreboard players operation $in.min aestd.math = #n(0,0) aestd.math
+scoreboard players operation $in.max aestd.math = #n(1,0) aestd.math
+scoreboard players operation $in.parameter aestd.math = $out aestd.math
 function aestd1:math/linear_interpolation
-scoreboard players operation #aestd.perlin_noise.ix0 aestd.math.var = #aestd aestd.math.out
+scoreboard players operation #ix0 aestd.math = $out aestd.math
 
-scoreboard players operation #aestd aestd.math.in = #aestd.perlin_noise.sx aestd.math.var
+scoreboard players operation $in aestd.math = #sx aestd.math
 function aestd1:math/smoothstep
-scoreboard players operation #aestd aestd.math.var = #aestd aestd.math.out
-scoreboard players operation #aestd aestd.math.in = #aestd.perlin_noise.n(0,1) aestd.math.var
-scoreboard players operation #aestd aestd.math.in2 = #aestd.perlin_noise.n(1,1) aestd.math.var
+scoreboard players operation $in.min aestd.math = #n(0,1) aestd.math
+scoreboard players operation $in.max aestd.math = #n(1,1) aestd.math
+scoreboard players operation $in.parameter aestd.math = $out aestd.math
 function aestd1:math/linear_interpolation
-scoreboard players operation #aestd.perlin_noise.ix1 aestd.math.var = #aestd aestd.math.out
+scoreboard players operation #ix1 aestd.math = $out aestd.math
 
-scoreboard players operation #aestd aestd.math.in = #aestd.perlin_noise.sz aestd.math.var
+scoreboard players operation $in aestd.math = #sz aestd.math
 function aestd1:math/smoothstep
-scoreboard players operation #aestd aestd.math.var = #aestd aestd.math.out
-scoreboard players operation #aestd aestd.math.in = #aestd.perlin_noise.ix0 aestd.math.var
-scoreboard players operation #aestd aestd.math.in2 = #aestd.perlin_noise.ix1 aestd.math.var
+scoreboard players operation $in.min aestd.math = #ix0 aestd.math
+scoreboard players operation $in.max aestd.math = #ix1 aestd.math
+scoreboard players operation $in.parameter aestd.math = $out aestd.math
 function aestd1:math/linear_interpolation
 
 
-# [0, 1000]
-scoreboard players set $2 aestd.math.var 2
-scoreboard players add #aestd aestd.math.out 1000
-scoreboard players operation #aestd aestd.math.out /= $2 aestd.math.var
+# [-1000, 1000]  ->  [0, 1000]
+scoreboard players add $out aestd.math 1000
+scoreboard players operation $out aestd.math /= $2 aestd.math.const
 
 
 # Reset input values
-scoreboard players operation #aestd aestd.math.in = #aestd.perlin_noise.x aestd.math.var
-scoreboard players operation #aestd aestd.math.in2 = #aestd.perlin_noise.x aestd.math.var
-
-scoreboard players operation @s aestd.math.out = #aestd aestd.math.out
+scoreboard players operation $in aestd.math = #x aestd.math
+scoreboard players operation $in aestd.math2 = #x aestd.math

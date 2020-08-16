@@ -1,26 +1,21 @@
 {
+	"description": "Blocks that generate in the Nether",
 	"values": [
 		"#aestd1:nether_plants",
+		"#aestd1:bastion_blocks",
+		"#aestd1:fortress_blocks",
 
 		"#minecraft:nylium",
 		"#minecraft:wart_blocks",
+		"#minecraft:fire",
 
 		"minecraft:ancient_debris",
-		"minecraft:basalt",
 		"minecraft:bedrock",
 		"minecraft:crimson_stem",
-		"minecraft:fire",
 		"minecraft:glowstone",
-		"minecraft:lava",
 		"minecraft:magma_block",
-		"minecraft:nether_bricks",
-		"minecraft:nether_brick_fence",
 		"minecraft:nether_gold_ore",
-		"minecraft:nether_wart",
-		"minecraft:netherrack",
 		"minecraft:shroomlight",
-		"minecraft:soul_fire",
-		"minecraft:soul_sand",
 		"minecraft:soul_soil",
 		"minecraft:warped_stem"
 	]

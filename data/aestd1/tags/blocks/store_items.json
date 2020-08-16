@@ -1,4 +1,5 @@
 {
+	"description": "Block entities that can store items, not including enchanting tables",
 	"values": [
 		"#aestd1:furnaces",
 		

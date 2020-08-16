@@ -1,4 +1,5 @@
 {
+	"description": "Blocks derived from purpur",
 	"values": [
 		"minecraft:purpur_slab",
 		"minecraft:purpur_block",

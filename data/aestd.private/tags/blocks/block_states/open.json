@@ -1,0 +1,9 @@
+{
+	"values": [
+		"minecraft:barrel",
+
+		"#aestd.private:block_states/_fence_gates",
+		"#aestd.private:block_states/_doors",
+		"#aestd.private:block_states/_trapdoors"
+	]
+}

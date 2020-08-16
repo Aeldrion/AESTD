@@ -1,1 +1,0 @@
-execute if data storage aestd:core {Version:{Functions:{"entity/get_direction": 1}}} run function aestd.private:lib1/entity/get_direction/v1

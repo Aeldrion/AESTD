@@ -1,4 +1,5 @@
 {
+	"description": "Coral fans and coral plants, whether they are dead or not; does not include coral blocks",
 	"values": [
 		"#minecraft:corals",
 		"#aestd1:dead_corals"

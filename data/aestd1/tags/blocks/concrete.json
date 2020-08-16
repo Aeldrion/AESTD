@@ -1,4 +1,5 @@
 {
+	"description": "All sixteen colours of concrete blocks",
 	"values": [
 		"minecraft:white_concrete",
 		"minecraft:orange_concrete",

@@ -1,4 +1,5 @@
 {
+	"description": "Helmets, including turtle helmet but not including other types of headgear (heads)",
 	"values": [
 		"minecraft:leather_helmet",
 		"minecraft:golden_helmet",

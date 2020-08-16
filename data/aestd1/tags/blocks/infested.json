@@ -1,4 +1,5 @@
 {
+	"description": "Infested blocks, which summon silverfish when mined",
 	"values": [
 		"minecraft:infested_stone",
 		"minecraft:infested_cobblestone",

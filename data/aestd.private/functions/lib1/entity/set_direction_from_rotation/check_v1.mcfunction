@@ -1,1 +1,0 @@
-execute if data storage aestd:core {Version:{Functions:{"entity/set_direction_from_rotation": 1}}} run function aestd.private:lib1/entity/set_direction_from_rotation/v1

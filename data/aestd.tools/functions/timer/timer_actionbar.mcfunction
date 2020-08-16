@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w42a
+# Version: 1.16.2
 # Project: AESTD timer
 
 # Displays a timer in the executing player's actionbar, based on their aestd.math.in score (in ticks)

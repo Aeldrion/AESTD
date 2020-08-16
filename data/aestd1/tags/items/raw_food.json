@@ -1,4 +1,5 @@
 {
+	"description": "Foodstuffs that can be cooked into another in a furnace",
 	"values": [
 		"minecraft:beef",
 		"minecraft:chicken",

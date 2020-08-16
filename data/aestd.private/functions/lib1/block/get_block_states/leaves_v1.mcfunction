@@ -1,0 +1,3 @@
+execute if block ~ ~ ~ #aestd.private:block_states/leaves[leaves=large] run data modify storage aestd:out BlockState.Properties merge value {leaves: "large"}
+execute if block ~ ~ ~ #aestd.private:block_states/leaves[leaves=none] run data modify storage aestd:out BlockState.Properties merge value {leaves: "none"}
+execute if block ~ ~ ~ #aestd.private:block_states/leaves[leaves=small] run data modify storage aestd:out BlockState.Properties merge value {leaves: "small"}

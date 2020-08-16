@@ -1,4 +1,5 @@
 {
+	"description": "Blocks that always emit light",
 	"values": [
 		"minecraft:beacon",
 		"minecraft:brewing_stand",
@@ -23,7 +24,9 @@
 		"minecraft:sea_pickle",
 		"minecraft:shroomlight",
 		"minecraft:soul_fire",
-		"minecraft:soul_fire_lantern",
+		"minecraft:soul_lantern",
+		"minecraft:soul_torch",
+		"minecraft:soul_wall_torch",
 		"minecraft:torch",
 		"minecraft:wall_torch"
 	]

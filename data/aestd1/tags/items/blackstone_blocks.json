@@ -1,0 +1,12 @@
+{
+	"description": "All blocks derived from blackstone, polished or not",
+	"values": [
+		"#aestd1:polished_blackstone_blocks",
+
+		"minecraft:blackstone_wall",
+		"minecraft:blackstone",
+		"minecraft:blackstone_slab",
+		"minecraft:blackstone_stairs",
+		"minecraft:gilded_blackstone"
+	]
+}

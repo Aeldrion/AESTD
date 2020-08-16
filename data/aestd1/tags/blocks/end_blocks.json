@@ -1,4 +1,5 @@
 {
+	"description": "Blocks that generate in the end, including end city/end ship blocks",
 	"values": [
 		"minecraft:end_stone",
 		"minecraft:obsidian",
@@ -7,6 +8,14 @@
 		"minecraft:chorus_plant",
 		"minecraft:chorus_flower",
 		"#aestd1:end_stone_brick_blocks",
-		"#aestd1:purpur_blocks"
+		"#aestd1:purpur_blocks",
+		"minecraft:dragon_head",
+		"minecraft:dragon_wall_head",
+		"minecraft:magenta_stained_glass",
+		"minecraft:magenta_wall_banner",
+		"minecraft:ladder",
+		"minecraft:end_rod",
+		"minecraft:chest",
+		"minecraft:brewing_stand"
 	]
 }

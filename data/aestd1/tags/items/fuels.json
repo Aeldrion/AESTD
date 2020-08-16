@@ -1,10 +1,11 @@
 {
+	"description": "Items that can be used as fuel in furnaces, smokers and blast furnaces",
 	"values": [
 		"#aestd1:mushroom_blocks",
-		"#aestd1:wooden_fence_gates",
+		"#aestd1:flammable_fence_gates",
 		"#aestd1:wooden_tools",
-		"#aestd1:wooden_trapdoors",
 
+		"#minecraft:wooden_trapdoors",
 		"#minecraft:banners",
 		"#minecraft:boats",
 		"#minecraft:carpets",

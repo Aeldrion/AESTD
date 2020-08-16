@@ -1,0 +1,7 @@
+{
+	"description": "Coral fans and coral plants, whether they are dead or not; does not include coral blocks",
+	"values": [
+		"#aestd1:corals",
+		"#aestd1:dead_corals"
+	]
+}

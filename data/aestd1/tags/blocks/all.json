@@ -1,4 +1,5 @@
 {
+	"description": "All blocks in the vanilla game, for use in CanBreak/CanPlaceOn for example, or to test for block states indifferently of block ID",
 	"values": [
 		"#aestd1:air",
 		"#aestd1:all_but_air"

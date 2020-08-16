@@ -1,8 +1,9 @@
 # Author: Aeldrion
-# Version: 19w42a
+# Version: 1.16.2
 # Project: AESTD
 
 ## GENERIC OBJECTIVES
+scoreboard objectives add aestd dummy
 scoreboard objectives add aestd.var dummy
 scoreboard objectives add aestd.list_mode dummy
 
@@ -33,29 +34,13 @@ scoreboard objectives add aestd.rot.y dummy
 
 
 ## CONTEXT FUNCTIONS
-scoreboard objectives add aestd.biome dummy
-scoreboard objectives add aestd.dimension dummy
-scoreboard objectives add aestd.light dummy
-scoreboard objectives add aestd.structure dummy
+scoreboard objectives add aestd.context dummy
 
 
 ## MATH FUNCTIONS
 # generic
-scoreboard objectives add aestd.math.in dummy
-scoreboard objectives add aestd.math.in2 dummy
-scoreboard objectives add aestd.math.out dummy
-scoreboard objectives add aestd.math.seed dummy
-scoreboard objectives add aestd.math.var dummy
-scoreboard objectives add aestd.math.var2 dummy
-scoreboard objectives add aestd.math.var3 dummy
-# random
-scoreboard objectives add aestd.random dummy
-scoreboard objectives add aestd.random.min dummy
-scoreboard objectives add aestd.random.max dummy
-# vector
-scoreboard objectives add aestd.vector.x dummy
-scoreboard objectives add aestd.vector.y dummy
-scoreboard objectives add aestd.vector.z dummy
+scoreboard objectives add aestd.math dummy
+scoreboard objectives add aestd.math.const dummy
 
 
 ## ITEM FUNCTIONS
@@ -90,5 +75,21 @@ scoreboard objectives add aestd.click_coas minecraft.used:minecraft.carrot_on_a_
 scoreboard players set #aestd.lcg.multiplier aestd.math.var 1630111353
 scoreboard players set #aestd.lcg.increment aestd.math.var 1623164762
 scoreboard players set #aestd.lcg.modulus aestd.math.var 2147483647
+
+scoreboard players set $20 aestd.math.const -1
+scoreboard players set $20 aestd.math.const 2
+scoreboard players set $20 aestd.math.const 3
+scoreboard players set $20 aestd.math.const 4
+scoreboard players set $20 aestd.math.const 5
+scoreboard players set $20 aestd.math.const 8
+scoreboard players set $20 aestd.math.const 20
+scoreboard players set $20 aestd.math.const 60
+scoreboard players set $20 aestd.math.const 100
+scoreboard players set $20 aestd.math.const 300
+scoreboard players set $20 aestd.math.const 1000
+scoreboard players set $20 aestd.math.const 1200
+scoreboard players set $20 aestd.math.const 6000
+scoreboard players set $20 aestd.math.const 24000
+scoreboard players set $20 aestd.math.const 72000
 
 execute store result score $aetlas.seed aetlas.var run seed

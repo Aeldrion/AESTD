@@ -1,5 +1,5 @@
 # Author: Aeldrion
-# Version: 19w42a
+# Version: 1.16.2
 # Project: AESTD
 
 execute at @s run playsound minecraft:item.shield.break player @a ~ ~ ~ 1 1.1

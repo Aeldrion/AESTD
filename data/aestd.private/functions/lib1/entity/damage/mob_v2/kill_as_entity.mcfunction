@@ -1,0 +1,3 @@
+data merge entity @s {NoAI: 1b}
+summon minecraft:area_effect_cloud ~ ~ ~ {Tags: ["aestd.damage.kill", "aestd", "aestd.new"], Duration: 10, DurationOnUse: 0, WaitTime: 0, Particle: "block air", Effects:[{Id: 6b, Duration: 10, Amplifier: 28b, ShowParticles:0b}, {Id: 7b, Duration: 10, Amplifier: 28b, ShowParticles:0b}], Radius: 0.1f, RadiusOnUse: 0.0f, RadiusPerTick: 0.0f}
+execute as @e[type=minecraft:area_effect_cloud, tag=aestd.damage.kill, tag=aestd.new, limit=1] run function aestd.private:lib1/entity/damage/set_aec_owner_v2
