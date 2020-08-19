@@ -1,0 +1,61 @@
+=== anger ===
+
+Makes the executing entity angry against another, if possible.
+
+If the executing entity is an iron golem, a wolf, a polar bear, a bee, an enderman, a piglin or a zombified piglin, it should execute this function as intended.
+
+Other neutral or hostile mobs can be angered against other entities using this function as well, but will be damaged by an area effect cloud. In this case, this function might not work if the executing entity has a target that is still alive and within follow range.
+
+If the executing entity is a passive mob or is not a mob, it cannot be angered and the function will do nothing.
+
+==== Input ====
+
+* '''Storage tag:''' {{cd|aestd:input AngerTarget}} - Which entity to have the executing entity attack.
+* '''Score:''' {{cd|$in.anger_time aestd}} - How many ticks the anger should last. Only supported for iron golems, wolves, polar bears, bees, endermen, piglins and zombified piglins.
+
+==== Technical details ====
+
+If the executing entity is an iron golem, a wolf, a polar bear, a bee, an enderman or a zombified piglin, this function sets the executing entity's {{cd|AngryAt}} NBT tag to the specified UUID, and sets its {{cd|AngerTime}} NBT tag to the specified duration. For piglins, the {{cd|Brain.memories."minecraft:angry_at".value}} and {{cd|Brain.memories."minecraft:angry_at".ttl}} NBT tags are used instead.
+
+Other neutral and hostile mobs support neither of these tags; in this case, a more archaic method is employed - an area effect cloud with Instant Health and Instant Damage effects is summoned at the executing entity's position. Amplifiers are set up to ensure the entity does not take actual damage. The area effect cloud's owner is the specified UUID; therefore, when the executing entity is hurt, it tries to retaliate against the presumed attacker.
+
+==== Example ====
+
+ # This function will get all bees to attack a random player.
+ data modify storage aestd:input AngerTarget set from entity @r UUID
+ execute as @e[type=minecraft:bee] run function aestd1:entity/anger
+
+
+=== damage ===
+
+Hurts the executing entity. Armour reduction, shielding and resistance are not taken into account. Supports using totems of undying. For technical reasons, suppresses Health Boost effects and bypasses absorption hearts for players.
+
+==== Input ====
+
+* '''Score:''' {{cd|$in.damage aestd}} - How much damage should be dealt. 100 = {{hp|1}}
+* '''Tag:''' {{cd|aestd.damage.hurt_by_entity}} - Whether or not to deal damage "as" another entity, relevant for experience drops, anger mechanisms and advancement triggers.
+* '''Tag:''' {{cd|aestd.damage.fire}} - Whether or not to deal fire damage.
+* '''Score:''' {{cd|$in.damage.fire_duration aestd}} - How many ticks should fire last, if fire damage is dealt.
+* '''Storage tag:''' {{cd|aestd:input UUID}} - Which entity to blame the damage for, if the {{cd|aestd.damage.hurt_by_entity}} tag is present.
+
+==== Technical details ====
+
+First, the function tests whether or not the executing entity will survive the damage it is dealt.
+
+If it does, health is removed using {{Command|execute store}}, and fake damage is handled using Instant Health and Instant Damage effects. Amplifiers are set up to ensure the entity does not take actual damage. If the executing entity is a boss mob and is therefore immune to {{Command|effect}}, area effect clouds are used instead. Anger behaviour, if there should be any, is handled by calling the [[User:Aeldrion/Projects/AESTD/Function_library#anger|aestd1:entity/anger]] function. If it does not survive the damage, the entity is killed, either with a {{cd|kill}} command if there is no entity to blame the damage for, or by settings its health close to 0 and with an area effect cloud if there is.
+
+For players, negative maximum health attribute modifiers are applied to reduce health to what it should be after taking damage. Health is refreshed by giving and clearing a Health Boost effect. If the player is to die, a {{Command|kill}} command is executed.
+
+Finally, totems of undying are dealt with simply by giving the executing entity Instant Damage or Instant Health with a great amplifier if it is to die.
+
+=== fake_damage ===
+
+Hurts the executing entity without actually removing any health. The entity will flash red, play its hurt sound if applicable and panick if its behavior supports it.
+
+==== Technical details ====
+
+For all but non boss mobs, Instant Damage or Instant Health effects are given, with amplifiers set up so to ensure the entity does not take actual damage. If the executing entity is a boss mob and is therefore immune to {{Command|effect}}, area effect clouds are used instead.
+
+=== get_distance ===
+
+Returns the distance, in millimetres, between the executing entity's feet and the executing position

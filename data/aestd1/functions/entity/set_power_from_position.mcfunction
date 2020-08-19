@@ -7,4 +7,4 @@
 # Further than 40 blocks away, direction is not guaranteed to be exact due to the direction tag resetting values above 10
 # WARNING: Does not work on players
 
-function #aestd.private:lib1/entity/set_direction_from_position
+function #aestd.private:lib1/entity/set_power_from_position

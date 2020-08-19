@@ -6,4 +6,4 @@
 # Input: aestd.math.in
 # WARNING: Does not work on players
 
-function #aestd.private:lib1/entity/set_direction_magnitude
+function #aestd.private:lib1/entity/set_power_magnitude

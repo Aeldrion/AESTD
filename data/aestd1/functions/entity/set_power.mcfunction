@@ -7,4 +7,4 @@
 
 # WARNING: Does not work on players and entities that use Motion instead of direction
 
-function #aestd.private:lib1/entity/set_direction
+function #aestd.private:lib1/entity/set_power

@@ -6,4 +6,4 @@
 # Example: if the executing entity's direction is 1.784; 5.139; 3.396, the magnitude is 6412
 # Output: aestd.math.out
 
-function #aestd.private:lib1/entity/get_direction_magnitude
+function #aestd.private:lib1/entity/get_power_magnitude
