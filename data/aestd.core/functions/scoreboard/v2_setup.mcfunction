@@ -76,20 +76,20 @@ scoreboard players set #aestd.lcg.multiplier aestd.math.var 1630111353
 scoreboard players set #aestd.lcg.increment aestd.math.var 1623164762
 scoreboard players set #aestd.lcg.modulus aestd.math.var 2147483647
 
-scoreboard players set $20 aestd.math.const -1
-scoreboard players set $20 aestd.math.const 2
-scoreboard players set $20 aestd.math.const 3
-scoreboard players set $20 aestd.math.const 4
-scoreboard players set $20 aestd.math.const 5
-scoreboard players set $20 aestd.math.const 8
+scoreboard players set $-1 aestd.math.const -1
+scoreboard players set $2 aestd.math.const 2
+scoreboard players set $3 aestd.math.const 3
+scoreboard players set $4 aestd.math.const 4
+scoreboard players set $5 aestd.math.const 5
+scoreboard players set $8 aestd.math.const 8
 scoreboard players set $20 aestd.math.const 20
-scoreboard players set $20 aestd.math.const 60
-scoreboard players set $20 aestd.math.const 100
-scoreboard players set $20 aestd.math.const 300
-scoreboard players set $20 aestd.math.const 1000
-scoreboard players set $20 aestd.math.const 1200
-scoreboard players set $20 aestd.math.const 6000
-scoreboard players set $20 aestd.math.const 24000
-scoreboard players set $20 aestd.math.const 72000
+scoreboard players set $60 aestd.math.const 60
+scoreboard players set $100 aestd.math.const 100
+scoreboard players set $300 aestd.math.const 300
+scoreboard players set $1000 aestd.math.const 1000
+scoreboard players set $1200 aestd.math.const 1200
+scoreboard players set $6000 aestd.math.const 6000
+scoreboard players set $24000 aestd.math.const 24000
+scoreboard players set $72000 aestd.math.const 72000
 
 execute store result score $aetlas.seed aetlas.var run seed
