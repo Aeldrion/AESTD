@@ -1,3 +1,5 @@
+## **Note: AESTD was last updated for Minecraft 1.15 and is no longer in development.**
+
 # AESTD
 
 **AESTD**, or **Aeldrion's standard command library**, is a utility data pack for Minecraft 1.14 and 1.15 designed to help command learners and advanced command artists alike by providing an efficient and powerful function-based framework while reducing compatibility issues between data packs. It includes a collection of functions and tools that rely on little-known tricks to do things most command artists don't know commands can do - detecting biomes, editing player inventories...
